@@ -10,28 +10,18 @@ using System.Windows.Documents;
 using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
 using System.Windows.Shapes;
-using GestionEgresados.ViewController;
 
-
-namespace GestionEgresados
+namespace GestionEgresados.ViewController
 {
     /// <summary>
-    /// Lógica de interacción para MainWindow.xaml
+    /// Lógica de interacción para menuAdmin.xaml
     /// </summary>
-    public partial class MainWindow : Window
+    public partial class menuAdmin : Window
     {
-        public MainWindow()
+        public menuAdmin()
         {
             InitializeComponent();
-        }
-              
-        private void Button_Clic_Admin(object sender, RoutedEventArgs e)
-        {
-            AdminLogin adminLogin = new AdminLogin();
-            adminLogin.Show();
-            this.Close();
         }
     }
 }

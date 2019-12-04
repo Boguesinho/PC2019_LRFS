@@ -6,9 +6,16 @@
         xmlns:local="clr-namespace:GestionEgresados"
         mc:Ignorable="d"
         WindowStartupLocation="CenterScreen"
-        Title="Main" Height="500" Width="800">
+        Title="Sistema de seguimiento de egresados" Height="500" Width="800">
     <Grid>
-        <Button x:Name ="btn_reporte" Content="Reportes" HorizontalAlignment="Left" Margin="678,371,0,0" VerticalAlignment="Top" Width="75" Height="25" Click="Button_Click_Reporte"/>
+        <Rectangle Fill="#27519B" HorizontalAlignment="Center" Height="35" Stroke="#00000000" VerticalAlignment="Top" Width="794"/>
+        <Label Content="Sistema de seguimiento de egresados" HorizontalAlignment="Center" VerticalAlignment="Center" Width="376" Height="31" Margin="210,4,206,434" FontFamily="Arial" FontSize="20" FontWeight="Bold" Foreground="White"/>
+        <Label Content="Iniciar sesión" HorizontalAlignment="Center" VerticalAlignment="Center" Width="138" Height="31" Margin="328,40,326,398" FontFamily="Arial" FontSize="20" FontWeight="Bold" Foreground="Black"/>
+
+        <Button Content="Administrador" Margin="311,119,312,0" VerticalAlignment="Top" BorderBrush="#FF00983D" Background="#FF00983D" BorderThickness="0,1,1,1" Height="36" FontFamily="Arial" FontSize="15" FontWeight="Bold" Click="Button_Clic_Admin" Foreground="White"/>
+        <Button Content="Egresado/Estudiante" Margin="311,186,312,0" VerticalAlignment="Top" BorderBrush="#FF00983D" Background="#FF00983D" BorderThickness="0,1,1,1" Height="36" FontFamily="Arial" FontSize="15" FontWeight="Bold" Click="Button_Clic_Admin" Foreground="White"/>
+        <Button Content="Empleador" Margin="311,251,312,0" VerticalAlignment="Top" BorderBrush="#FF00983D" Background="#FF00983D" BorderThickness="0,1,1,1" Height="36" FontFamily="Arial" FontSize="15" FontWeight="Bold" Click="Button_Clic_Admin" Foreground="White"/>
+
 
     </Grid>
 </Window>
