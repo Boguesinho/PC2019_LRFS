@@ -5,9 +5,10 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:GestionEgresados"
         mc:Ignorable="d"
-        Title="Main" Height="450" Width="800">
+        WindowStartupLocation="CenterScreen"
+        Title="Main" Height="500" Width="800">
     <Grid>
-        <Button Content="Button" HorizontalAlignment="Left" Margin="628,359,0,0" VerticalAlignment="Top" Width="75"/>
+        <Button x:Name ="btn_reporte" Content="Reportes" HorizontalAlignment="Left" Margin="678,371,0,0" VerticalAlignment="Top" Width="75" Height="25" Click="Button_Click_Reporte"/>
 
     </Grid>
 </Window>
