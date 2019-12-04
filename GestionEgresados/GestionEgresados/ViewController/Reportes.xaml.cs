@@ -10,28 +10,18 @@ using System.Windows.Documents;
 using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
 using System.Windows.Shapes;
-using GestionEgresados.ViewController;
 
-
-namespace GestionEgresados
+namespace GestionEgresados.ViewController
 {
     /// <summary>
-    /// Lógica de interacción para MainWindow.xaml
+    /// Lógica de interacción para Reportes.xaml
     /// </summary>
-    public partial class MainWindow : Window
+    public partial class Reportes : Window
     {
-        public MainWindow()
+        public Reportes()
         {
             InitializeComponent();
-        }
-
-        private void Button_Click_Reporte(object sender, RoutedEventArgs e)
-        {
-            Reporte reporte = new Reporte();
-            reporte.Show();
-            this.Close();
         }
     }
 }
