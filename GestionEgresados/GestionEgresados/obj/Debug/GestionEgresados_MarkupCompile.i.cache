@@ -10,11 +10,11 @@ none
 false
 DEBUG;TRACE
 C:\Users\Luis Fajardo\Documents\GitHub\PC2019_LRFS\GestionEgresados\GestionEgresados\App.xaml
-2-1611616436
+3-122760247
 
-12-1989875064
+13265047120
 13-1505183044
-MainWindow.xaml;ViewController\Reportes.xaml;
+AdminLogin.xaml;ViewController\menuAdmin.xaml;ViewController\Reportes.xaml;
 
-True
+False
 

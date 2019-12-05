@@ -23,5 +23,20 @@ namespace GestionEgresados.ViewController
         {
             InitializeComponent();
         }
+
+        private void GridEgresados_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+
+        }
+
+        private void RadioButton_Checked(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }

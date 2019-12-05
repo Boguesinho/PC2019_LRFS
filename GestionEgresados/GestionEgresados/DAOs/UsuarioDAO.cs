@@ -13,9 +13,9 @@ namespace GestionEgresados
     public class UsuarioDAO
     {
 
-        public static Usuario getLogin(String usuario, String password)
+        public static Usuario GetLogin(String user, String contrasenia)
         {
-            Usuario user = null;
+            Usuario userGeneral = null;
             SqlConnection conn = null;
             try
             {
@@ -25,24 +25,28 @@ namespace GestionEgresados
                 if (conn != null)
                 {
                     String query = String.Format("SELECT " +
-                        "x.tipoUsuario," +
-                        "x.user," +                       
-                        "x.password " +
+                        "x.idUsuario,"+
+                        "x.usuario," +                       
+                        "x.contrasenia," +
+                        "x.tipoUsuario " +
                         "FROM dbo.usuario x " +
-                        "WHERE x.user = '{0}' AND x.password = '{1}';", user, password);
+                        "WHERE x.usuario = '{0}' AND x.contrasenia = '{1}';", user, contrasenia);
                     Console.WriteLine(query);
                     command = new SqlCommand(query, conn);
                     rd = command.ExecuteReader();
                     while (rd.Read())
                     {
-                        user = new Usuario();
-                        user.TipoUsuario = (!rd.IsDBNull(0)) ? rd.GetInt32(0) : 0;
-                        user.User = (!rd.IsDBNull(1)) ? rd.GetString(1) : "";                        
-                        user.Password = (!rd.IsDBNull(7)) ? rd.GetString(7) : "";
+                        userGeneral = new Usuario
+                        {
+                            Idusuario = (!rd.IsDBNull(0))? rd.GetInt32(0) : 0 ,
+                            Nombreuser = (!rd.IsDBNull(1)) ? rd.GetString(1) : "",
+                            Contrasenia = (!rd.IsDBNull(2)) ? rd.GetString(2) : "",
+                            TipoUsuario = (!rd.IsDBNull(0)) ? rd.GetString(3) : "",
+                        };
                     }
                     rd.Close();
                     command.Dispose();
-                    Console.WriteLine(user);
+                    Console.WriteLine(userGeneral);
                 }
             }
             //Cambiar las excepciones, buscar cuáles nos podría dar
@@ -57,7 +61,7 @@ namespace GestionEgresados
                     conn.Close();
                 }
             }
-            return user;
+            return userGeneral;
         }
     }
 }
