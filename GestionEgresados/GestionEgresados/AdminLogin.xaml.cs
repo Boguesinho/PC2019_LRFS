@@ -20,9 +20,9 @@ namespace GestionEgresados.ViewController
     /// </summary>
     public partial class AdminLogin : Window
     {
-        private string usuario;
+        private string user;
         private string contrasenia;
-        private int tipoUsuario;
+        private string tipoUsuario;
 
         public AdminLogin()
         {
@@ -33,18 +33,43 @@ namespace GestionEgresados.ViewController
         {
             if (validarCampos())
             {
-                usuario = txt_user.Text;
+                user = txt_user.Text;
                 contrasenia = txt_pass.Password;
-                //tipoUsuario= 
-
-                Usuario user = UsuarioDAO.GetLogin(tipoUsuario, usuario, contrasenia);
-                if (user != null && user.TipoUsuario == 1)
+                //tipoUsuario = "Administrador";
+                //tipoUsuario = ""+ cb_tipoUsuario.SelectedValue;
+                /*
+                if (cb_tipoUsuario.SelectedIndex >= 0)
                 {
-                    MessageBox.Show(this, "Bienvenido: " + user.User, "Información");
-                    menuAdmin menuAdmin = new menuAdmin();
+                    ComboBoxItem cbi = (ComboBoxItem)cb_tipoUsuario.SelectedValue;
+                    tipoUsuario = "" + cbi.Content;
+                }
+                */
+
+                Usuario userGeneral = UsuarioDAO.GetLogin(user, contrasenia);
+                if (userGeneral != null && userGeneral.Idusuario > 0)
+                {
+                    MessageBox.Show(this, "Bienvenido: " + userGeneral.Nombreuser, "Información");
+                    MenuAdmin menuAdmin = new MenuAdmin(userGeneral);
                     menuAdmin.Show();
                     this.Close();
                 }
+                /*
+                if (user != null && user.TipoUsuario == "Egresado")
+                {
+                    MessageBox.Show(this, "Bienvenido: " + user.User, "Información");
+                    menuEgresado menuegresado = new menuEgresado();
+                    menuegresado.Show();
+                    this.Close();
+                }
+                if (user != null && user.TipoUsuario == "Empleador")
+                {
+                    MessageBox.Show(this, "Bienvenido: " + user.User, "Información");
+                    menuEmpleador menuEmpleado = new menuEmpleador();
+                    menuEmpleado.Show();
+                    this.Close();
+                }
+                */
+
                 else
                 {
                     MessageBox.Show(this, "Sin acceso", "Error");
@@ -63,8 +88,6 @@ namespace GestionEgresados.ViewController
 
         private void btn_cancelar(object sender, RoutedEventArgs e)
         {
-            MainWindow mainWindow = new MainWindow();
-            mainWindow.Show();
             this.Close();
         }
 
@@ -79,6 +102,11 @@ namespace GestionEgresados.ViewController
                 return false;
             }
             return true;
+        }
+
+        private void ComboBox_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+
         }
     }
 }

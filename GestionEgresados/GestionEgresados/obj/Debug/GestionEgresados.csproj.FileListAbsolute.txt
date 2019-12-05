@@ -1,6 +1,4 @@
 C:\Users\Luis Fajardo\Documents\GitHub\PC2019_LRFS\GestionEgresados\GestionEgresados\obj\Debug\GestionEgresados.csprojAssemblyReference.cache
-C:\Users\Luis Fajardo\Documents\GitHub\PC2019_LRFS\GestionEgresados\GestionEgresados\obj\Debug\MainWindow.g.cs
-C:\Users\Luis Fajardo\Documents\GitHub\PC2019_LRFS\GestionEgresados\GestionEgresados\obj\Debug\ViewController\AdminLogin.g.cs
 C:\Users\Luis Fajardo\Documents\GitHub\PC2019_LRFS\GestionEgresados\GestionEgresados\obj\Debug\ViewController\Reportes.g.cs
 C:\Users\Luis Fajardo\Documents\GitHub\PC2019_LRFS\GestionEgresados\GestionEgresados\obj\Debug\App.g.cs
 C:\Users\Luis Fajardo\Documents\GitHub\PC2019_LRFS\GestionEgresados\GestionEgresados\obj\Debug\GestionEgresados_MarkupCompile.cache
@@ -8,12 +6,14 @@ C:\Users\Luis Fajardo\Documents\GitHub\PC2019_LRFS\GestionEgresados\GestionEgres
 C:\Users\Luis Fajardo\Documents\GitHub\PC2019_LRFS\GestionEgresados\GestionEgresados\bin\Debug\GestionEgresados.exe.config
 C:\Users\Luis Fajardo\Documents\GitHub\PC2019_LRFS\GestionEgresados\GestionEgresados\bin\Debug\GestionEgresados.exe
 C:\Users\Luis Fajardo\Documents\GitHub\PC2019_LRFS\GestionEgresados\GestionEgresados\bin\Debug\GestionEgresados.pdb
-C:\Users\Luis Fajardo\Documents\GitHub\PC2019_LRFS\GestionEgresados\GestionEgresados\obj\Debug\MainWindow.baml
 C:\Users\Luis Fajardo\Documents\GitHub\PC2019_LRFS\GestionEgresados\GestionEgresados\obj\Debug\ViewController\Reportes.baml
-C:\Users\Luis Fajardo\Documents\GitHub\PC2019_LRFS\GestionEgresados\GestionEgresados\obj\Debug\ViewController\AdminLogin.baml
 C:\Users\Luis Fajardo\Documents\GitHub\PC2019_LRFS\GestionEgresados\GestionEgresados\obj\Debug\GestionEgresados.g.resources
 C:\Users\Luis Fajardo\Documents\GitHub\PC2019_LRFS\GestionEgresados\GestionEgresados\obj\Debug\GestionEgresados.Properties.Resources.resources
 C:\Users\Luis Fajardo\Documents\GitHub\PC2019_LRFS\GestionEgresados\GestionEgresados\obj\Debug\GestionEgresados.csproj.GenerateResource.cache
 C:\Users\Luis Fajardo\Documents\GitHub\PC2019_LRFS\GestionEgresados\GestionEgresados\obj\Debug\GestionEgresados.csproj.CoreCompileInputs.cache
 C:\Users\Luis Fajardo\Documents\GitHub\PC2019_LRFS\GestionEgresados\GestionEgresados\obj\Debug\GestionEgresados.exe
 C:\Users\Luis Fajardo\Documents\GitHub\PC2019_LRFS\GestionEgresados\GestionEgresados\obj\Debug\GestionEgresados.pdb
+C:\Users\Luis Fajardo\Documents\GitHub\PC2019_LRFS\GestionEgresados\GestionEgresados\obj\Debug\ViewController\menuAdmin.g.cs
+C:\Users\Luis Fajardo\Documents\GitHub\PC2019_LRFS\GestionEgresados\GestionEgresados\obj\Debug\ViewController\menuAdmin.baml
+C:\Users\Luis Fajardo\Documents\GitHub\PC2019_LRFS\GestionEgresados\GestionEgresados\obj\Debug\AdminLogin.g.cs
+C:\Users\Luis Fajardo\Documents\GitHub\PC2019_LRFS\GestionEgresados\GestionEgresados\obj\Debug\AdminLogin.baml

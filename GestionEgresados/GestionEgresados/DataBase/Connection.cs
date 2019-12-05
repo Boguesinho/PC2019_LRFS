@@ -11,7 +11,7 @@ namespace GestionEgresados.DataBase
     {
         private static String SERVER = "localhost";
         private static String PORT = "1433";
-        private static String DATABASE = "gestionAlumnos";
+        private static String DATABASE = "gestionarAlumnos";
         private static String USER = "luisr";
         private static String PASSWORD = "1234";
 

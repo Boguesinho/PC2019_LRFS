@@ -1,4 +1,5 @@
-﻿using System;
+﻿using GestionEgresados.Clases;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -17,11 +18,15 @@ namespace GestionEgresados.ViewController
     /// <summary>
     /// Lógica de interacción para menuAdmin.xaml
     /// </summary>
-    public partial class menuAdmin : Window
+    public partial class MenuAdmin : Window
     {
-        public menuAdmin()
+        private Usuario loguser { get; set; }
+
+        public MenuAdmin(Usuario user)
         {
+            this.loguser = user;
             InitializeComponent();
+            
         }
     }
 }

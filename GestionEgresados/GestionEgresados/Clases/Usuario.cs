@@ -8,27 +8,28 @@ namespace GestionEgresados.Clases
 {
     public class Usuario 
     {
-        private Int32 tipoUsuario;
-        private String user;             
-        private String password;
         private Int32 idUsuario;
+        private string usuario;             
+        private string contrasenia;
+        private string tipoUsuario;
+        
         //Checar si hay que poner los idEgresado, idAdmin, idCuestionario
 
 
 
         public override string ToString()
         {
-            return String.Format("tipoUsuario: {0}, user: {1}, password: {2}, idUsuario: {3}",
-                                 tipoUsuario, user, password, idUsuario);
+            return String.Format("idUsuario: {0} , usuario: {1}, contrasenia: {2}, tipoUsuario: {3} ",
+                                 idUsuario, usuario, contrasenia, tipoUsuario);
         }
 
-        public int TipoUsuario { get => tipoUsuario; set => tipoUsuario = value; }
-
-        public string User { get => user; set => user = value; }
-
-        public string Password { get => password; set => password = value; }
-
         public int Idusuario { get => idUsuario; set => idUsuario = value; }
+
+        public string Nombreuser { get => usuario; set => usuario = value; }
+
+        public string Contrasenia { get => contrasenia; set => contrasenia = value; }              
+
+        public string TipoUsuario { get => tipoUsuario; set => tipoUsuario = value; }
 
     }
 }
