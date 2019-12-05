@@ -44,8 +44,9 @@ namespace GestionEgresados.ViewController
                     tipoUsuario = "" + cbi.Content;
                 }
                 */
-
+                
                 Usuario userGeneral = UsuarioDAO.GetLogin(user, contrasenia);
+                //Login para validar que sea un admin
                 if (userGeneral != null && userGeneral.Idusuario > 0)
                 {
                     MessageBox.Show(this, "Bienvenido: " + userGeneral.Nombreuser, "Información");
