@@ -11,6 +11,7 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
+using GestionEgresados.Clases;
 
 namespace GestionEgresados.ViewController
 {
@@ -19,9 +20,13 @@ namespace GestionEgresados.ViewController
     /// </summary>
     public partial class Reportes : Window
     {
+
+      
+
         public Reportes()
         {
             InitializeComponent();
+            dataGridEgresados.ItemsSource = Egresado.GetDatosEgresados();
         }
 
         private void GridEgresados_SelectionChanged(object sender, SelectionChangedEventArgs e)

@@ -58,6 +58,7 @@
     <Compile Include="AdminLogin.xaml.cs">
       <DependentUpon>AdminLogin.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Clases\Egresado.cs" />
     <Compile Include="ViewController\menuAdmin.xaml.cs">
       <DependentUpon>menuAdmin.xaml</DependentUpon>
     </Compile>
