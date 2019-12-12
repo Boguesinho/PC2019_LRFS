@@ -16,7 +16,7 @@
             <DataGrid.Columns>
                 <DataGridTextColumn Binding="{Binding Path=nombre}" ClipboardContentBinding="{x:Null}" Header="Nombre" HeaderStringFormat="Nombre" Width="200" CanUserReorder="False" CanUserResize="False" CanUserSort="False"/>
                 <DataGridTextColumn Binding="{Binding Path=correo}" ClipboardContentBinding="{x:Null}" Header="Correo" HeaderStringFormat="Correo" Width="190" CanUserReorder="False" CanUserResize="False" CanUserSort="False"/>
-                <DataGridTextColumn Binding="{Binding Path=telefono}" ClipboardContentBinding="{x:Null}" Header="Teléfono" HeaderStringFormat="Telefono" Width="Auto" CanUserReorder="False" CanUserResize="False" CanUserSort="False"/>
+                <DataGridTextColumn Binding="{Binding Path=telefono}" ClipboardContentBinding="{x:Null}" Header="Teléfono" HeaderStringFormat="Telefono" Width="78" CanUserReorder="False" CanUserResize="False" CanUserSort="False"/>
 
             </DataGrid.Columns>
         </DataGrid>

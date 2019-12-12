@@ -12,6 +12,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
 using GestionEgresados.Clases;
+using GestionEgresados.DAOs;
 
 namespace GestionEgresados.ViewController
 {
@@ -21,13 +22,12 @@ namespace GestionEgresados.ViewController
     public partial class Reportes : Window
     {
 
-        
+        EgresadoDAO egresado = new EgresadoDAO();
 
         public Reportes()
         {
             InitializeComponent();
-            dataGridEgresados.ItemsSource = Egresado.GetDatosEgresados();
-
+            dataGridEgresados.ItemsSource = egresado.GetInfoEgresado();
 
 
         }
