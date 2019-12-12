@@ -43,5 +43,11 @@ namespace GestionEgresados.ViewController
         {
 
         }
+
+        private void btn_regresar(object sender, RoutedEventArgs e)
+        {
+           
+            this.Close();
+        }
     }
 }

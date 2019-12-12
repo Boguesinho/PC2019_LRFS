@@ -35,5 +35,12 @@ namespace GestionEgresados.ViewController
             reportes.Show();
             this.Close();
         }
+
+        private void btn_regresar(object sender, RoutedEventArgs e)
+        {
+            AdminLogin adminLogin = new AdminLogin();
+            adminLogin.Show();
+            this.Close();
+        }
     }
 }
