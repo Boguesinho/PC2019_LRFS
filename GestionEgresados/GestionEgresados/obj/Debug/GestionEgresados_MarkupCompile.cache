@@ -4,17 +4,21 @@
 winexe
 C#
 .cs
-C:\Users\Alejandro\Documents\GitHub\PC2019_LRFS\GestionEgresados\GestionEgresados\obj\Debug\
+C:\Users\Luis Fajardo\Documents\GitHub\PC2019_LRFS\GestionEgresados\GestionEgresados\obj\Debug\
 GestionEgresados
 none
 false
 DEBUG;TRACE
-C:\Users\Alejandro\Documents\GitHub\PC2019_LRFS\GestionEgresados\GestionEgresados\App.xaml
+C:\Users\Luis Fajardo\Documents\GitHub\PC2019_LRFS\GestionEgresados\GestionEgresados\App.xaml
 3-122760247
 
+<<<<<<< Updated upstream
 14-734054020
+=======
+14-578562066
+>>>>>>> Stashed changes
 13-1505183044
 AdminLogin.xaml;ViewController\menuAdmin.xaml;ViewController\Reportes.xaml;
 
-False
+True
 
