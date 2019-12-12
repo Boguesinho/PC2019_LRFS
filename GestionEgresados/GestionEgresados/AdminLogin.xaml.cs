@@ -15,6 +15,7 @@ using System.Windows.Shapes;
 
 namespace GestionEgresados.ViewController
 {
+    // Prueba prueba prueba
     /// <summary>
     /// Lógica de interacción para AdminLogin.xaml
     /// </summary>
@@ -37,17 +38,16 @@ namespace GestionEgresados.ViewController
                 contrasenia = txt_pass.Password;
                 //tipoUsuario = "Administrador";
                 //tipoUsuario = ""+ cb_tipoUsuario.SelectedValue;
-                /*
+                
                 if (cb_tipoUsuario.SelectedIndex >= 0)
                 {
                     ComboBoxItem cbi = (ComboBoxItem)cb_tipoUsuario.SelectedValue;
                     tipoUsuario = "" + cbi.Content;
                 }
-                */
-                
-                Usuario userGeneral = UsuarioDAO.GetLogin(user, contrasenia);
+                                
+                Usuario userGeneral = UsuarioDAO.GetLogin(user, contrasenia, tipoUsuario);
                 //Login para validar que sea un admin
-                if (userGeneral != null && userGeneral.Idusuario > 0)
+                if (userGeneral != null && userGeneral.Idusuario > 0 &&userGeneral.TipoUsuario=="Administrador")
                 {
                     MessageBox.Show(this, "Bienvenido: " + userGeneral.Nombreuser, "Información");
                     MenuAdmin menuAdmin = new MenuAdmin(userGeneral);

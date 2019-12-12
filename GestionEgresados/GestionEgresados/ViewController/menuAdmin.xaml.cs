@@ -28,5 +28,19 @@ namespace GestionEgresados.ViewController
             InitializeComponent();
             
         }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            Reportes reportes = new Reportes();
+            reportes.Show();
+            this.Close();
+        }
+
+        private void btn_regresar(object sender, RoutedEventArgs e)
+        {
+            AdminLogin adminLogin = new AdminLogin();
+            adminLogin.Show();
+            this.Close();
+        }
     }
 }

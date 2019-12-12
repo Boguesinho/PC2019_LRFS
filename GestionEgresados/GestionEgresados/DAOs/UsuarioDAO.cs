@@ -13,7 +13,7 @@ namespace GestionEgresados
     public class UsuarioDAO
     {
 
-        public static Usuario GetLogin(String user, String contrasenia)
+        public static Usuario GetLogin(String user, String contrasenia, String tipoUsuario)
         {
             Usuario userGeneral = null;
             SqlConnection conn = null;
@@ -30,7 +30,7 @@ namespace GestionEgresados
                         "x.contrasenia," +
                         "x.tipoUsuario " +
                         "FROM dbo.usuario x " +
-                        "WHERE x.usuario = '{0}' AND x.contrasenia = '{1}';", user, contrasenia);
+                        "WHERE x.usuario = '{0}' AND x.contrasenia = '{1}' AND x.tipoUsuario = '{2}';", user, contrasenia, tipoUsuario);
                     Console.WriteLine(query);
                     command = new SqlCommand(query, conn);
                     rd = command.ExecuteReader();

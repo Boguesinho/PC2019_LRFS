@@ -5,8 +5,19 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:GestionEgresados.ViewController"
         mc:Ignorable="d"
-        Title="menuAdmin" Height="450" Width="800">
+        Title="Menu" Height="500" Width="800">
     <Grid>
-        
+        <Rectangle Fill="#27519B" HorizontalAlignment="Center" Height="35" Stroke="#00000000" VerticalAlignment="Top" Width="794"/>
+        <Label Content="Menú Administrador" HorizontalAlignment="Center" VerticalAlignment="Center" Width="204" Height="31" Margin="282,3,306,435" FontFamily="Arial" FontSize="20" FontWeight="Bold" Foreground="White"/>
+        <Label Content="Hola @admin" HorizontalAlignment="Center" VerticalAlignment="Center" Width="104" Height="31" Margin="337,35,351,403" FontFamily="Arial" FontSize="15" FontWeight="Bold" Foreground="Black"/>
+        <Button Content="Generar reporte de Egresados" HorizontalAlignment="Left" Margin="164,303,0,0" VerticalAlignment="Top" Width="211" Height="41" Click="Button_Click"/>
+        <Button Content="Regresar" HorizontalAlignment="Left" Margin="60,392,0,0" VerticalAlignment="Top" Width="101" Click="btn_regresar" Height="33" FontSize="16">
+            <Button.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="White" Offset="0"/>
+                    <GradientStop Color="#FFFF3717" Offset="1"/>
+                </LinearGradientBrush>
+            </Button.Background>
+        </Button>
     </Grid>
 </Window>
