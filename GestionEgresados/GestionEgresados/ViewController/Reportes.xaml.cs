@@ -21,12 +21,15 @@ namespace GestionEgresados.ViewController
     public partial class Reportes : Window
     {
 
-      
+        
 
         public Reportes()
         {
             InitializeComponent();
             dataGridEgresados.ItemsSource = Egresado.GetDatosEgresados();
+
+
+
         }
 
         private void GridEgresados_SelectionChanged(object sender, SelectionChangedEventArgs e)
@@ -39,9 +42,15 @@ namespace GestionEgresados.ViewController
 
         }
 
-        private void Button_Click(object sender, RoutedEventArgs e)
-        {
 
+        private void DataGridEgresados_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+           
+        }
+
+        private void BtnSeleccionar_Click(object sender, RoutedEventArgs e)
+        {
+            
         }
     }
 }
