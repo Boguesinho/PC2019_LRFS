@@ -12,21 +12,33 @@ namespace GestionEgresados.Clases
         public String nombre { get; set; }
         public String correo { get; set; }
         public String telefono { get; set; }
+        public bool seleccionado { get; set; }
 
-        public Egresado(String nombre, String correo, String telefono)
+
+        public Egresado(String nombre, String correo, String telefono, bool seleccionado)
         {
             this.nombre = nombre;
             this.correo = correo;
             this.telefono = telefono;
+            this.seleccionado = seleccionado;
         }
 
         public static List<Egresado> GetDatosEgresados()
         {
-            return new List<Egresado>(new Egresado[4] {
-            new Egresado("Alejandro", "Alescaale978@gmail.com", "2282736412"),
-            new Egresado("Edgar Alejandro Ortega Cortes", "Alex-blanco-00@hotmail.com", "2282736412"),
-            new Egresado("Alejandro", "Alescaale978@gmail.com", "2282736412"),
-            new Egresado("Alejandro", "Alescaale978@gmail.com", "2282736412")
+            return new List<Egresado>(new Egresado[12] {
+            new Egresado("Pancho Francisco Perez Gomez", "asddsdssffdsassa@gmail.com", "2282736412", false),
+            new Egresado("Pancho Francisco Perez Gomez", "asdassgfdadsdasa@gmail.com", "2282736412", false),
+            new Egresado("Pancho Francisco Perez Gomez", "asdasdsdssffdssa@gmail.com", "2282736412", false),
+            new Egresado("Pancho Francisco Perez Gomez", "assdsdsdsddaffsa@gmail.com", "2282736412", false),
+            new Egresado("Pancho Francisco Perez Gomez", "asdsdsdsdssasffa@gmail.com", "2282736412", false),
+            new Egresado("Pancho Francisco Perez Gomez", "asdsdsdsdssasffa@gmail.com", "2282736412", false),
+            new Egresado("Pancho Francisco Perez Gomez", "asdsdsdsdssasffa@gmail.com", "2282736412", false),
+            new Egresado("Pancho Francisco Perez Gomez", "asdsdsdsdssasffa@gmail.com", "2282736412", false),
+            new Egresado("Pancho Francisco Perez Gomez", "asdsdsdsdssasffa@gmail.com", "2282736412", false),
+            new Egresado("Pancho Francisco Perez Gomez", "asdsdsdsdssasffa@gmail.com", "2282736412", false),
+            new Egresado("Pancho Francisco Perez Gomez", "asdsdsdsdssasffa@gmail.com", "2282736412", false),
+            new Egresado("Pancho Francisco Perez Gomez", "asdsdsdsdssasffa@gmail.com", "2282736412", false)
+
         });
         }
 
