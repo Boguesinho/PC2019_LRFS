@@ -25,15 +25,24 @@ namespace GestionEgresados.ViewController
         public MenuAdmin(Usuario user)
         {
             this.loguser = user;
-            InitializeComponent();
-            
+            InitializeComponent();            
         }
-
-        private void Button_Click(object sender, RoutedEventArgs e)
+               
+        private void Button_Click_Reportes(object sender, RoutedEventArgs e)
         {
             Reportes reportes = new Reportes();
             reportes.Show();
             this.Close();
+        }
+
+        private void Button_Click_Egresados(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void Button_Click_Estadisticas(object sender, RoutedEventArgs e)
+        {
+
         }
     }
 }
