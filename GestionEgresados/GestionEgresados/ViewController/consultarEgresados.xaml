@@ -11,7 +11,7 @@
         <Label Content="Consultar egresados" HorizontalAlignment="Center" VerticalAlignment="Center" Width="222" Height="31" Margin="282,3,288,435" FontFamily="Arial" FontSize="20" FontWeight="Bold" Foreground="White"/>
         <Label Content="Selecciona un egresado" Height="31" Margin="300,34,306,404" FontFamily="Arial" FontSize="15" FontWeight="Bold" Foreground="Black"/>
 
-        <DataGrid x:Name="dataGridEgresados" SelectionMode="Single"  AutoGenerateColumns="False" IsReadOnly="True" Height="252" Margin="83,102,162,0" VerticalAlignment="Top" ItemsSource="{Binding}" SelectionChanged="DataGridEgresados_SelectionChanged" RowBackground="#FFF1E6E6" CanUserResizeRows="False">
+        <DataGrid x:Name="dataGridEgresados" SelectionMode="Single"  AutoGenerateColumns="False" IsReadOnly="True" Height="252" Margin="83,102,155,0" VerticalAlignment="Top" ItemsSource="{Binding}" SelectionChanged="DataGridEgresados_SelectionChanged" RowBackground="#FFF1E6E6" CanUserResizeRows="False">
             <DataGrid.Columns>
                 <DataGridTextColumn Binding="{Binding Path=nombre}" ClipboardContentBinding="{x:Null}" Header="Nombre" HeaderStringFormat="Nombre" Width="200" CanUserReorder="False" CanUserResize="False" CanUserSort="False"/>
                 <DataGridTextColumn Binding="{Binding Path=correo}" ClipboardContentBinding="{x:Null}" Header="Correo" HeaderStringFormat="Correo" Width="190" CanUserReorder="False" CanUserResize="False" CanUserSort="False"/>
@@ -19,6 +19,7 @@
                 <DataGridTextColumn Binding="{Binding Path=genero}" ClipboardContentBinding="{x:Null}" Header="Genero" HeaderStringFormat="Genero" Width="78" CanUserReorder="False" CanUserResize="False" CanUserSort="False"/>
             </DataGrid.Columns>
         </DataGrid>
+        <Button Content="Modificar" HorizontalAlignment="Left" Margin="606,415,0,0" VerticalAlignment="Top" Width="75" Click="Button_Click_Modificar"/>
 
     </Grid>
 </Window>

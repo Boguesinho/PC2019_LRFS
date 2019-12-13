@@ -124,6 +124,8 @@ namespace GestionEgresados.DAOs
 
                 }
             }
+
+
             //Cambiar las excepciones.
             catch (Exception ex)
             {

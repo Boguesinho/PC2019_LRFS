@@ -28,8 +28,24 @@ namespace GestionEgresados.ViewController
             dataGridEgresados.ItemsSource = egresado.GetInfoEgresado();
         }
 
+        
+        private void Button_Click_Modificar(object sender, RoutedEventArgs e)
+        {
+            if (dataGridEgresados.SelectedIndex != -1)
+            {
+                modificarEgresado modificarEgresad = new modificarEgresado(dataGridEgresados.SelectedValue.ToString());
+                modificarEgresad.ShowDialog();
+            }
+            else
+            {
+                MessageBox.Show("Debes seleccionar un alumno");
+            }
+        }
+
         private void DataGridEgresados_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
+            
+
 
         }
     }

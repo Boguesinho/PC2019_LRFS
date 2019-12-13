@@ -66,6 +66,9 @@
     <Compile Include="ViewController\menuAdmin.xaml.cs">
       <DependentUpon>menuAdmin.xaml</DependentUpon>
     </Compile>
+    <Compile Include="ViewController\modificarEgresado.xaml.cs">
+      <DependentUpon>modificarEgresado.xaml</DependentUpon>
+    </Compile>
     <Compile Include="ViewController\Reportes.xaml.cs">
       <DependentUpon>Reportes.xaml</DependentUpon>
     </Compile>
@@ -87,6 +90,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="ViewController\menuAdmin.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="ViewController\modificarEgresado.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
