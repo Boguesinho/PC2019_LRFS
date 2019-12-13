@@ -10,6 +10,7 @@ namespace GestionEgresados.Clases
     class Egresado
     {
         public Int32 idEgresado { get; set; }
+        public String matricula { get; set; }
         public String nombre { get; set; }
         public String correo { get; set; }
         public String telefono { get; set; }
@@ -27,8 +28,9 @@ namespace GestionEgresados.Clases
 
         }
 
-        public Egresado(String nombre, String correo, String telefono, String genero)
+        public Egresado(String matricula, String nombre, String correo, String telefono, String genero)
         {
+            this.matricula = matricula;
             this.nombre = nombre;
             this.correo = correo;
             this.telefono = telefono;

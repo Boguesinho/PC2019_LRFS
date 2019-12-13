@@ -13,12 +13,9 @@ namespace GestionEgresados.DAOs
     public class EgresadoDAO
     {
 
-        public EgresadoDAO()
-        {
-
-        }
-        /*
-        public ArrayList GetInfoEgresado()
+        
+        
+        public ArrayList GetInfoEgresadoByMatricula(String matricula)
         {
             Egresado egresado = null;
             SqlConnection conn = null;
@@ -33,11 +30,16 @@ namespace GestionEgresados.DAOs
                 {
                     String query = String.Format("SELECT " +
                         "x.idEgresado," +
+                        "x.matricula," +
                         "x.nombre," +
                         "x.apellidos," +
                         "x.correo," +
-                        "x.telefono " +
-                        "FROM dbo.egresado x ;");
+                        "x.telefono," +
+                        "x.licenciatura," +
+                        "x.genero," +
+                        "x.estatus " +
+                        "FROM dbo.egresado x " +
+                        "WHERE x.matricula = '{0}';", matricula);
                         
                     Console.WriteLine(query);
                     command = new SqlCommand(query, conn);
@@ -47,9 +49,10 @@ namespace GestionEgresados.DAOs
                         egresado = new Egresado
                         {
                             idEgresado = (!rd.IsDBNull(0)) ? rd.GetInt32(0) : 0,
-                            nombre = (!rd.IsDBNull(1)) ? rd.GetString(1) + " "+ rd.GetString(2) : "",
-                            correo = (!rd.IsDBNull(3)) ? rd.GetString(3) : "",
-                            telefono = (!rd.IsDBNull(4)) ? rd.GetString(4) : "",
+                            matricula = (!rd.IsDBNull(1)) ? rd.GetString(1) : "",
+                            nombre = (!rd.IsDBNull(2)) ? rd.GetString(2) + " "+ rd.GetString(3) : "",
+                            correo = (!rd.IsDBNull(4)) ? rd.GetString(4) : "",
+                            licenciatura = (!rd.IsDBNull(5)) ? rd.GetString(5) : "",
                         };
 
                         arregloEgresados.Add(egresado);
@@ -74,7 +77,7 @@ namespace GestionEgresados.DAOs
             }
             return arregloEgresados;
         }
-        */
+        
 
         public ArrayList GetInfoEgresado()
         {

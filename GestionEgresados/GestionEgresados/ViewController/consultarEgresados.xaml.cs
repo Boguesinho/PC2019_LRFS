@@ -33,6 +33,7 @@ namespace GestionEgresados.ViewController
         {
             if (dataGridEgresados.SelectedIndex != -1)
             {
+                //revisar si es correcto pasar los datos de egresado de esta mnera o atributo por atributo
                 modificarEgresado modificarEgresad = new modificarEgresado(dataGridEgresados.SelectedValue.ToString());
                 modificarEgresad.ShowDialog();
             }

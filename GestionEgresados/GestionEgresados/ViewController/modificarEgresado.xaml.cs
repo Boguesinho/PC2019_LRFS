@@ -26,12 +26,14 @@ namespace GestionEgresados.ViewController
             InitializeComponent();
         }
 
-        public modificarEgresado(String matricula)
+        public modificarEgresado(String matricula )
         {
-            InitializeComponent();
+            //InitializeComponent();
             //EgresadoDAO egresadoDAO = new EgresadoDAO();
-            //Egresado e = egresadoDAO.GetInfoEgresado();
-            //textboxNombre.Text = egresado.nombre;
+            //var egresado = egresadoDAO.GetInfoEgresadoByMatricula(matricula);
+            //textboxNombre.Text = egresado.ToString(matricula, nombre );
+
+
 
 
             
