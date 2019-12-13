@@ -60,6 +60,9 @@
     </Compile>
     <Compile Include="Clases\Egresado.cs" />
     <Compile Include="DAOs\EgresadoDAO.cs" />
+    <Compile Include="ViewController\consultarEgresados.xaml.cs">
+      <DependentUpon>consultarEgresados.xaml</DependentUpon>
+    </Compile>
     <Compile Include="ViewController\menuAdmin.xaml.cs">
       <DependentUpon>menuAdmin.xaml</DependentUpon>
     </Compile>
@@ -76,6 +79,10 @@
     <Compile Include="DAOs\UsuarioDAO.cs" />
     <Compile Include="DataBase\Connection.cs" />
     <Page Include="AdminLogin.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="ViewController\consultarEgresados.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

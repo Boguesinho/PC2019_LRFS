@@ -10,15 +10,11 @@ none
 false
 DEBUG;TRACE
 C:\Users\Luis Fajardo\Documents\GitHub\PC2019_LRFS\GestionEgresados\GestionEgresados\App.xaml
-3-122760247
+4835134241
 
-<<<<<<< Updated upstream
-14-734054020
-=======
-14-578562066
->>>>>>> Stashed changes
+15-87370000
 13-1505183044
-AdminLogin.xaml;ViewController\menuAdmin.xaml;ViewController\Reportes.xaml;
+AdminLogin.xaml;ViewController\consultarEgresados.xaml;ViewController\menuAdmin.xaml;ViewController\Reportes.xaml;
 
-True
+False
 

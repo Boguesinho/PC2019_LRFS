@@ -13,10 +13,7 @@ namespace GestionEgresados.Clases
         private string contrasenia;
         private string tipoUsuario;
         
-        //Checar si hay que poner los idEgresado, idAdmin, idCuestionario
-
-
-
+       
         public override string ToString()
         {
             return String.Format("idUsuario: {0} , usuario: {1}, contrasenia: {2}, tipoUsuario: {3} ",
