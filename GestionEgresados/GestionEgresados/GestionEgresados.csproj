@@ -63,6 +63,7 @@
     <Compile Include="ViewController\menuAdmin.xaml.cs">
       <DependentUpon>menuAdmin.xaml</DependentUpon>
     </Compile>
+    <Compile Include="ViewController\ReporteGenerado.cs" />
     <Compile Include="ViewController\Reportes.xaml.cs">
       <DependentUpon>Reportes.xaml</DependentUpon>
     </Compile>
