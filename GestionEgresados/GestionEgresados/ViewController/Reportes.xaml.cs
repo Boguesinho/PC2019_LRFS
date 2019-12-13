@@ -45,12 +45,12 @@ namespace GestionEgresados.ViewController
 
         private void DataGridEgresados_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
-           
+
         }
 
         private void BtnSeleccionar_Click(object sender, RoutedEventArgs e)
         {
-            
+
         }
     }
 }
