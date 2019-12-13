@@ -46,5 +46,12 @@ namespace GestionEgresados.ViewController
         {
 
         }
+
+        private void btn_cancelar(object sender, RoutedEventArgs e)
+        {
+            AdminLogin adminLogin = new AdminLogin();
+            adminLogin.Show();
+            this.Close();
+        }
     }
 }

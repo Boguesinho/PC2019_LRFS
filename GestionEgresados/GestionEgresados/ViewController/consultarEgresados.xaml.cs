@@ -45,8 +45,13 @@ namespace GestionEgresados.ViewController
         private void DataGridEgresados_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
             
+        }
 
-
+        private void btn_cancelar(object sender, RoutedEventArgs e)
+        {
+            AdminLogin adminLogin = new AdminLogin();
+            adminLogin.Show();
+            this.Close();
         }
     }
 }

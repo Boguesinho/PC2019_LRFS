@@ -20,6 +20,13 @@
             </DataGrid.Columns>
         </DataGrid>
         <Button Content="Modificar" HorizontalAlignment="Left" Margin="606,415,0,0" VerticalAlignment="Top" Width="75" Click="Button_Click_Modificar"/>
-
+        <Button Content="Cancelar" HorizontalAlignment="Left" Margin="31,408,0,0" VerticalAlignment="Top" Width="101" Click="btn_cancelar" Height="33" FontSize="16">
+            <Button.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="White" Offset="0"/>
+                    <GradientStop Color="#FFFF3717" Offset="1"/>
+                </LinearGradientBrush>
+            </Button.Background>
+        </Button>
     </Grid>
 </Window>
