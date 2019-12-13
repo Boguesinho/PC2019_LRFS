@@ -60,15 +60,10 @@
     </Compile>
     <Compile Include="Clases\Egresado.cs" />
     <Compile Include="DAOs\EgresadoDAO.cs" />
-    <Compile Include="ViewController\consultarEgresados.xaml.cs">
-      <DependentUpon>consultarEgresados.xaml</DependentUpon>
-    </Compile>
     <Compile Include="ViewController\menuAdmin.xaml.cs">
       <DependentUpon>menuAdmin.xaml</DependentUpon>
     </Compile>
-    <Compile Include="ViewController\modificarEgresado.xaml.cs">
-      <DependentUpon>modificarEgresado.xaml</DependentUpon>
-    </Compile>
+    <Compile Include="ViewController\ReporteGenerado.cs" />
     <Compile Include="ViewController\Reportes.xaml.cs">
       <DependentUpon>Reportes.xaml</DependentUpon>
     </Compile>
@@ -85,15 +80,7 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="ViewController\consultarEgresados.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
     <Page Include="ViewController\menuAdmin.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="ViewController\modificarEgresado.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

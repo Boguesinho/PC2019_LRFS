@@ -13,10 +13,6 @@ namespace GestionEgresados.Clases
         public String nombre { get; set; }
         public String correo { get; set; }
         public String telefono { get; set; }
-        public String licenciatura { get; set; }
-        public String genero { get; set; }
-        public Int32 estatus { get; set; }
-
 
 
         public Egresado(String nombre, String correo, String telefono)
@@ -26,16 +22,6 @@ namespace GestionEgresados.Clases
             this.telefono = telefono;
 
         }
-
-        public Egresado(String nombre, String correo, String telefono, String genero)
-        {
-            this.nombre = nombre;
-            this.correo = correo;
-            this.telefono = telefono;
-            this.genero = genero;
-        }
-
-
 
         public Egresado()
         {

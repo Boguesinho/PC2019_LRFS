@@ -37,9 +37,7 @@ namespace GestionEgresados.ViewController
 
         private void Button_Click_Egresados(object sender, RoutedEventArgs e)
         {
-            consultarEgresados egresados = new consultarEgresados();
-            egresados.Show();
-            this.Close();
+
         }
 
         private void Button_Click_Estadisticas(object sender, RoutedEventArgs e)
