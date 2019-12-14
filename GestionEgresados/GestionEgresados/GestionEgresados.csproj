@@ -81,6 +81,12 @@
     <Compile Include="DAOs\AdministradorDAO.cs" />
     <Compile Include="DAOs\UsuarioDAO.cs" />
     <Compile Include="DataBase\Connection.cs" />
+    <Compile Include="ViewController\VentanaLaboral.xaml.cs">
+      <DependentUpon>VentanaLaboral.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ViewController\VentanaSatisfaccion.xaml.cs">
+      <DependentUpon>VentanaSatisfaccion.xaml</DependentUpon>
+    </Compile>
     <Page Include="AdminLogin.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -98,6 +104,14 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="ViewController\Reportes.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="ViewController\VentanaLaboral.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="ViewController\VentanaSatisfaccion.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

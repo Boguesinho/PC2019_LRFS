@@ -14,8 +14,8 @@ namespace GestionEgresados.DAOs
     {
 
         
-        
-        public ArrayList GetInfoEgresadoByMatricula(String matricula)
+        /*
+        public Egresado GetInfoEgresadoByMatricula(String toSearchInBD)
         {
             Egresado egresado = null;
             SqlConnection conn = null;
@@ -75,9 +75,9 @@ namespace GestionEgresados.DAOs
                     conn.Close();
                 }
             }
-            return arregloEgresados;
+            return egresado;
         }
-        
+        */
 
         public ArrayList GetInfoEgresado()
         {

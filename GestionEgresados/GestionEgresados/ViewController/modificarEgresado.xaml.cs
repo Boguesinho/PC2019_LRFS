@@ -1,5 +1,6 @@
 ﻿using GestionEgresados.Clases;
 using GestionEgresados.DAOs;
+using GestionEgresados.ViewController;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -21,24 +22,22 @@ namespace GestionEgresados.ViewController
     /// </summary>
     public partial class modificarEgresado : Window
     {
+        EgresadoDAO egresado = new EgresadoDAO();
+        
         public modificarEgresado()
         {
             InitializeComponent();
         }
-
+        /*
         public modificarEgresado(String matricula )
         {
-            //InitializeComponent();
-            //EgresadoDAO egresadoDAO = new EgresadoDAO();
-            //var egresado = egresadoDAO.GetInfoEgresadoByMatricula(matricula);
-            //textboxNombre.Text = egresado.ToString(matricula, nombre );
-
-
-
-
-            
+            InitializeComponent();
+            EgresadoDAO egresadoDAO = new EgresadoDAO();
+            var egresado = egresadoDAO.GetInfoEgresadoByMatricula(matricula);
+            textboxMatricula.Text = egresado.matricula;
+                        
         }
-        
+        */
         private void ButtonGuardar_Click(object sender, RoutedEventArgs e)
         {
 

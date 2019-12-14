@@ -31,9 +31,9 @@
         </DataGrid>
         <Label Content="Selecciona la encuesta" HorizontalAlignment="Center" VerticalAlignment="Center" Width="176" Height="28" Margin="116,328,502,115" FontFamily="Arial" FontSize="15" FontWeight="Bold" Foreground="Black" RenderTransformOrigin="0.665,0.417"/>
         <Rectangle Fill="#FFB9CDE0" HorizontalAlignment="Left" Height="40" Margin="116,356,0,0" Stroke="#00000000" VerticalAlignment="Top" Width="563"/>
-        <RadioButton Content="Encuesta de satisfacción" HorizontalAlignment="Left" Margin="170,367,0,0" VerticalAlignment="Top" Height="20" Width="199" Checked="RadioButton_Checked" FontFamily="Arial" FontSize="15"/>
-        <RadioButton Content="Encuesta de información laboral" HorizontalAlignment="Left" Margin="392,367,0,0" VerticalAlignment="Top" Height="20" Width="257" Checked="RadioButton_Checked" FontFamily="Arial" FontSize="15"/>
-        <Button x:Name = "btnGenerarReporte" Content="Generar reporte" HorizontalAlignment="Left" Margin="339,414,0,0" VerticalAlignment="Top" Width="132" BorderBrush="#FF00983D" Background="#FF00983D" BorderThickness="0,1,1,1" Height="36" FontFamily="Arial" FontSize="15" FontWeight="Bold" Foreground="White"/>
+        <RadioButton x:Name="rb_satisfaccion" Content="Encuesta de satisfacción" HorizontalAlignment="Left" Margin="170,367,0,0" VerticalAlignment="Top" Height="20" Width="199" Checked="RadioButton_Checked_Satisfaccion" FontFamily="Arial" FontSize="15"/>
+        <RadioButton x:Name="rb_laboral" Content="Encuesta de información laboral" HorizontalAlignment="Left" Margin="392,367,0,0" VerticalAlignment="Top" Height="20" Width="257" Checked="RadioButton_Checked_Laboral" FontFamily="Arial" FontSize="15"/>
+        <Button x:Name = "btnGenerarReporte" Content="Generar reporte" HorizontalAlignment="Left" Margin="339,414,0,0" VerticalAlignment="Top" Width="132" BorderBrush="#FF00983D" Background="#FF00983D" BorderThickness="0,1,1,1" Height="36" FontFamily="Arial" FontSize="15" FontWeight="Bold" Foreground="White" Click="BtnGenerarReporte_Click"/>
         <Button Content="Cancelar" HorizontalAlignment="Left" Margin="31,408,0,0" VerticalAlignment="Top" Width="101" Click="btn_cancelar" Height="33" FontSize="16">
             <Button.Background>
                 <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
