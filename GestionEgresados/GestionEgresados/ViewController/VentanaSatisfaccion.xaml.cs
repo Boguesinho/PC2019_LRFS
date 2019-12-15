@@ -23,5 +23,15 @@ namespace GestionEgresados.ViewController
         {
             InitializeComponent();
         }
+
+        private void Window_Scroll(object sender, System.Windows.Controls.Primitives.ScrollEventArgs e)
+        {
+
+        }
+
+        private void Button_Click_Cancelar(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }
