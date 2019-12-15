@@ -1,6 +1,8 @@
 ﻿using GestionEgresados.DAOs;
 using System;
+using System.Collections;
 using System.Collections.Generic;
+using System.Data;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -21,21 +23,29 @@ namespace GestionEgresados.ViewController
     public partial class consultarEgresados : Window
     {
         EgresadoDAO egresado = new EgresadoDAO();
+        public String matriculaSeleccionada = "";
 
         public consultarEgresados()
         {
             InitializeComponent();
-            dataGridEgresados.ItemsSource = egresado.GetInfoEgresado();
+            ArrayList arregloEgresados = new ArrayList();
+            arregloEgresados = egresado.GetInfoEgresado();
+            dataGridEgresados.ItemsSource = arregloEgresados;
+            
         }
 
+   
+        
         
         private void Button_Click_Modificar(object sender, RoutedEventArgs e)
         {
             if (dataGridEgresados.SelectedIndex != -1)
             {
-                //revisar si es correcto pasar los datos de egresado de esta mnera o atributo por atributo
-                modificarEgresado modificarEgresad = new modificarEgresado();
-                modificarEgresad.Show();
+                modificarEgresado modificarEgresado = new modificarEgresado();
+                modificarEgresado.Show();
+                this.Close();
+                modificarEgresado.llenarDatosEgresado(matriculaSeleccionada);
+
             }
             else
             {
@@ -45,7 +55,11 @@ namespace GestionEgresados.ViewController
 
         private void DataGridEgresados_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
-            
+            DataGrid dataGrid = sender as DataGrid;
+            DataGridRow row = (DataGridRow)dataGrid.ItemContainerGenerator.ContainerFromIndex(dataGrid.SelectedIndex);
+            DataGridCell RowColumn = dataGrid.Columns[1].GetCellContent(row).Parent as DataGridCell;
+            string CellValue = ((TextBlock)RowColumn.Content).Text;
+            matriculaSeleccionada = CellValue;
         }
 
         private void btn_cancelar(object sender, RoutedEventArgs e)

@@ -23,54 +23,49 @@ namespace GestionEgresados.ViewController
     public partial class modificarEgresado : Window
     {
         EgresadoDAO egresado = new EgresadoDAO();
+        String matriculaActual = "";
         
         public modificarEgresado()
         {
             InitializeComponent();
         }
-        /*
-        public modificarEgresado(String matricula )
+        
+        public void llenarDatosEgresado(String matricula)
         {
             InitializeComponent();
             EgresadoDAO egresadoDAO = new EgresadoDAO();
-            var egresado = egresadoDAO.GetInfoEgresadoByMatricula(matricula);
-            textboxMatricula.Text = egresado.matricula;
+            matriculaActual = matricula;
+            string[] egresadoSeleccionado = egresadoDAO.GetInfoEgresadoPorMatricula(matricula);
+
+            textboxMatricula.Text = egresadoSeleccionado[0];
+            textboxNombre.Text = egresadoSeleccionado[1];
+            textboxApellidos.Text = egresadoSeleccionado[2];
+            textboxLicenciatura.Text = egresadoSeleccionado[3];
+            textboxCorreo.Text = egresadoSeleccionado[4];
+            textboxTelefono.Text = egresadoSeleccionado[5];
                         
         }
-        */
+        
         private void ButtonGuardar_Click(object sender, RoutedEventArgs e)
         {
+            EgresadoDAO egresadoDAO = new EgresadoDAO();
+            egresadoDAO.SetInfoEgresado(textboxMatricula.Text, textboxNombre.Text, textboxApellidos.Text, 
+                                        textboxLicenciatura.Text, textboxCorreo.Text, textboxTelefono.Text,
+                                        matriculaActual);
 
+            
+            consultarEgresados consultarE = new consultarEgresados();
+            consultarE.Show();
+            this.Close();
         }
+
 
         private void ButtonCancelar_Click(object sender, RoutedEventArgs e)
         {
-
+            consultarEgresados consultaEgresados = new consultarEgresados();
+            consultaEgresados.Show();
+            this.Close();
         }
 
-        private void TextboxMatricula_TextChanged(object sender, TextChangedEventArgs e)
-        {
-
-        }
-
-        private void TextboxNombre_TextChanged(object sender, TextChangedEventArgs e)
-        {
-
-        }
-
-        private void TextboxApellidos_TextChanged(object sender, TextChangedEventArgs e)
-        {
-
-        }
-
-        private void TextboxLicenciatura_TextChanged(object sender, TextChangedEventArgs e)
-        {
-
-        }
-
-        private void TextboxCorreo_TextChanged(object sender, TextChangedEventArgs e)
-        {
-
-        }
     }
 }

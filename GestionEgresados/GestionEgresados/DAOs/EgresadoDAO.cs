@@ -5,6 +5,7 @@ using System.Data.SqlClient;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows;
 using GestionEgresados.Clases;
 using GestionEgresados.DataBase;
 
@@ -12,14 +13,61 @@ namespace GestionEgresados.DAOs
 {
     public class EgresadoDAO
     {
-
         
-        /*
-        public Egresado GetInfoEgresadoByMatricula(String toSearchInBD)
+
+
+        public void SetInfoEgresado (String matricula, String nombre, String apellidos, String licenciatura, String correo, String telefono, String matriculaActual)
         {
-            Egresado egresado = null;
             SqlConnection conn = null;
-            ArrayList arregloEgresados = new ArrayList();
+
+            try
+            {
+                conn = ConnectionUtils.getConnection();
+                SqlCommand command;
+                if (conn != null)
+                {
+                    String query = String.Format("UPDATE dbo.egresado SET dbo.egresado.matricula = '{0}', "+  
+                        "dbo.egresado.nombre = '{1}', "+
+                        "dbo.egresado.apellidos = '{2}', "+
+                        "dbo.egresado.licenciatura = '{3}', "+
+                        "dbo.egresado.correo = '{4}', "+
+                        "dbo.egresado.telefono = '{5}' "+
+                        "WHERE dbo.egresado.matricula = '{6}';"
+                        , matricula, nombre, apellidos, licenciatura, correo, telefono, matriculaActual);
+                    
+                    Console.WriteLine(query);
+                    command = new SqlCommand(query, conn);
+                    command.ExecuteNonQuery();
+                    command.Dispose();
+
+                    MessageBox.Show("Los cambios han sido guardados");
+
+                }
+                
+            }
+            //Cambiar las excepciones.
+            catch (Exception ex)
+            {
+                MessageBox.Show("No se han podido realizar los cambios.");
+            }
+            finally
+            {
+                if (conn != null)
+                {
+                    conn.Close();
+                }
+            }
+        }
+
+
+
+
+
+        public string[] GetInfoEgresadoPorMatricula(String matricula)
+        {
+
+            string[] egresadoSeleccionado = new string[6];
+            SqlConnection conn = null;
 
             try
             {
@@ -46,16 +94,12 @@ namespace GestionEgresados.DAOs
                     rd = command.ExecuteReader();
                     while (rd.Read())
                     {
-                        egresado = new Egresado
-                        {
-                            idEgresado = (!rd.IsDBNull(0)) ? rd.GetInt32(0) : 0,
-                            matricula = (!rd.IsDBNull(1)) ? rd.GetString(1) : "",
-                            nombre = (!rd.IsDBNull(2)) ? rd.GetString(2) + " "+ rd.GetString(3) : "",
-                            correo = (!rd.IsDBNull(4)) ? rd.GetString(4) : "",
-                            licenciatura = (!rd.IsDBNull(5)) ? rd.GetString(5) : "",
-                        };
-
-                        arregloEgresados.Add(egresado);
+                        egresadoSeleccionado[0] = (!rd.IsDBNull(1)) ? rd.GetString(1) : "";
+                        egresadoSeleccionado[1] = (!rd.IsDBNull(2)) ? rd.GetString(2) : "";
+                        egresadoSeleccionado[2] = (!rd.IsDBNull(3)) ? rd.GetString(3) : "";
+                        egresadoSeleccionado[3] = (!rd.IsDBNull(6)) ? rd.GetString(6) : "";
+                        egresadoSeleccionado[4] = (!rd.IsDBNull(4)) ? rd.GetString(4) : "";
+                        egresadoSeleccionado[5] = (!rd.IsDBNull(5)) ? rd.GetString(5) : "";
 
                     }
                     rd.Close();
@@ -75,9 +119,9 @@ namespace GestionEgresados.DAOs
                     conn.Close();
                 }
             }
-            return egresado;
+            return egresadoSeleccionado;
         }
-        */
+        
 
         public ArrayList GetInfoEgresado()
         {
@@ -96,6 +140,7 @@ namespace GestionEgresados.DAOs
                         "x.idEgresado," +
                         "x.nombre," +
                         "x.apellidos," +
+                        "x.matricula, " +
                         "x.correo," +
                         "x.telefono," +
                         "x.licenciatura," +
@@ -110,13 +155,12 @@ namespace GestionEgresados.DAOs
                     {
                         egresado = new Egresado
                         {
-                            idEgresado = (!rd.IsDBNull(0)) ? rd.GetInt32(0) : 0,
                             nombre = (!rd.IsDBNull(1)) ? rd.GetString(1) + " " + rd.GetString(2) : "",
-                            correo = (!rd.IsDBNull(3)) ? rd.GetString(3) : "",
-                            telefono = (!rd.IsDBNull(4)) ? rd.GetString(4) : "",
-                            licenciatura = (!rd.IsDBNull(5)) ? rd.GetString(5) : "",
-                            genero = (!rd.IsDBNull(6)) ? rd.GetString(6) : "",
-                            estatus = (!rd.IsDBNull(7)) ? rd.GetInt32(7) : 0,
+                            matricula = (!rd.IsDBNull(3)) ? rd.GetString(3) : "",
+                            correo = (!rd.IsDBNull(4)) ? rd.GetString(4) : "",
+                            telefono = (!rd.IsDBNull(5)) ? rd.GetString(5) : "",
+                            genero = (!rd.IsDBNull(7)) ? rd.GetString(7) : "",
+
                         };
 
                         arregloEgresados.Add(egresado);
