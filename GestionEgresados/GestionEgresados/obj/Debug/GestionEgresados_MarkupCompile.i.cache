@@ -10,11 +10,11 @@ none
 false
 DEBUG;TRACE
 C:\Users\Luis Fajardo\Documents\GitHub\PC2019_LRFS\GestionEgresados\GestionEgresados\App.xaml
-71204743852
+7475140373
 
-19262882713
+191952101575
 13-1505183044
-AdminLogin.xaml;ViewController\consultarEgresados.xaml;ViewController\menuAdmin.xaml;ViewController\modificarEgresado.xaml;ViewController\Reportes.xaml;ViewController\VentanaLaboral.xaml;ViewController\VentanaSatisfaccion.xaml;
+AdminLogin.xaml;ViewController\ConsultarEgresados.xaml;ViewController\MenuAdmin.xaml;ViewController\ModificarEgresado.xaml;ViewController\Reportes.xaml;ViewController\VentanaLaboral.xaml;ViewController\VentanaSatisfaccion.xaml;
 
 True
 

@@ -60,14 +60,14 @@
     </Compile>
     <Compile Include="Clases\Egresado.cs" />
     <Compile Include="DAOs\EgresadoDAO.cs" />
-    <Compile Include="ViewController\consultarEgresados.xaml.cs">
-      <DependentUpon>consultarEgresados.xaml</DependentUpon>
+    <Compile Include="ViewController\ConsultarEgresados.xaml.cs">
+      <DependentUpon>ConsultarEgresados.xaml</DependentUpon>
     </Compile>
-    <Compile Include="ViewController\menuAdmin.xaml.cs">
-      <DependentUpon>menuAdmin.xaml</DependentUpon>
+    <Compile Include="ViewController\MenuAdmin.xaml.cs">
+      <DependentUpon>MenuAdmin.xaml</DependentUpon>
     </Compile>
-    <Compile Include="ViewController\modificarEgresado.xaml.cs">
-      <DependentUpon>modificarEgresado.xaml</DependentUpon>
+    <Compile Include="ViewController\ModificarEgresado.xaml.cs">
+      <DependentUpon>ModificarEgresado.xaml</DependentUpon>
     </Compile>
     <Compile Include="ViewController\Reportes.xaml.cs">
       <DependentUpon>Reportes.xaml</DependentUpon>
@@ -91,15 +91,15 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="ViewController\consultarEgresados.xaml">
+    <Page Include="ViewController\ConsultarEgresados.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="ViewController\menuAdmin.xaml">
+    <Page Include="ViewController\MenuAdmin.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="ViewController\modificarEgresado.xaml">
+    <Page Include="ViewController\ModificarEgresado.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
