@@ -14,14 +14,7 @@
         <Button Content="Generar reporte de Egresados" HorizontalAlignment="Left" Margin="84,330,0,0" VerticalAlignment="Top" Width="235" Height="41" Click="Button_Click_Reportes"/>
         <Button Content="Generar estadísticas de Egresados" HorizontalAlignment="Left" Margin="463,330,0,0" VerticalAlignment="Top" Width="249" Height="41" Click="Button_Click_Estadisticas"/>
         <Button Content="Ver egresados" HorizontalAlignment="Left" Margin="282,207,0,0" VerticalAlignment="Top" Width="211" Height="41" Click="Button_Click_Egresados"/>
-        <Button Content="Cancelar" HorizontalAlignment="Left" Margin="31,408,0,0" VerticalAlignment="Top" Width="101" Click="btn_cancelar" Height="33" FontSize="16">
-            <Button.Background>
-                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
-                    <GradientStop Color="White" Offset="0"/>
-                    <GradientStop Color="#FFFF3717" Offset="1"/>
-                </LinearGradientBrush>
-            </Button.Background>
-        </Button>
+        <Button x:Name = "btnVolver" Content="Salir" HorizontalAlignment="Left" Margin="28,403,0,0" VerticalAlignment="Top" Width="85" BorderBrush="#FF00983D" Background="#FF747C77" BorderThickness="0,1,1,1" Height="36" FontFamily="Arial" FontSize="15" FontWeight="Bold" Foreground="White" Click="BtnSalir_Click"/>
 
     </Grid>
 </Window>

@@ -50,7 +50,7 @@ namespace GestionEgresados.ViewController
                 if (userGeneral != null && userGeneral.Idusuario > 0 &&userGeneral.TipoUsuario=="Administrador")
                 {
                     MessageBox.Show(this, "Bienvenido: " + userGeneral.Nombreuser, "Información");
-                    MenuAdmin menuAdmin = new MenuAdmin(userGeneral);
+                    MenuAdmin menuAdmin = new MenuAdmin();
                     menuAdmin.Show();
                     this.Close();
                 }
@@ -86,12 +86,7 @@ namespace GestionEgresados.ViewController
             }
 
         }
-
-        private void btn_cancelar(object sender, RoutedEventArgs e)
-        {
-            this.Close();
-        }
-
+        
         private bool validarCampos()
         {
             if (txt_user.Text == null || txt_user.Text.Length == 0)
@@ -108,6 +103,11 @@ namespace GestionEgresados.ViewController
         private void ComboBox_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
 
+        }
+
+        private void BtnSalir_Click(object sender, RoutedEventArgs e)
+        {
+            this.Close();
         }
     }
 }

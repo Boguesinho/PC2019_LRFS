@@ -61,11 +61,11 @@ namespace GestionEgresados.ViewController
             string CellValue = ((TextBlock)RowColumn.Content).Text;
             matriculaSeleccionada = CellValue;
         }
-
-        private void btn_cancelar(object sender, RoutedEventArgs e)
+               
+        private void BtnSalir_Click(object sender, RoutedEventArgs e)
         {
-            AdminLogin adminLogin = new AdminLogin();
-            adminLogin.Show();
+            MenuAdmin menuAdmin = new MenuAdmin();
+            menuAdmin.Show();
             this.Close();
         }
     }

@@ -16,15 +16,6 @@
         <Label Content="Contraseña" HorizontalAlignment="Left" Margin="305,146,0,0" VerticalAlignment="Top" Width="89" Height="37" HorizontalContentAlignment="Right" FontSize="16"/>
         <TextBox x:Name="txt_user" HorizontalAlignment="Left" Height="23" Margin="305,118,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="185"/>
         <PasswordBox x:Name="txt_pass" HorizontalAlignment="Left" Margin="305,183,0,0" VerticalAlignment="Top" Width="185" Height="24"/>
-
-        <Button Content="Cancelar" HorizontalAlignment="Left" Margin="60,392,0,0" VerticalAlignment="Top" Width="101" Click="btn_cancelar" Height="33" FontSize="16">
-            <Button.Background>
-                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
-                    <GradientStop Color="White" Offset="0"/>
-                    <GradientStop Color="#FFFF3717" Offset="1"/>
-                </LinearGradientBrush>
-            </Button.Background>
-        </Button>
         <Button Content="Iniciar sesión" Margin="328,370,326,0" VerticalAlignment="Top" BorderBrush="#FF00983D" Background="#FF00983D" BorderThickness="0,1,1,1" Height="34" FontFamily="Arial" FontSize="15" FontWeight="Bold" Click="Button_Clic_iniciar" Foreground="White"/>
         <Label Content="Tipo de usuario" HorizontalAlignment="Left" Margin="305,228,0,0" VerticalAlignment="Top" Width="122" Height="38" HorizontalContentAlignment="Right" FontSize="16"/>
         <ComboBox x:Name="cb_tipoUsuario" HorizontalAlignment="Left" Margin="307,271,0,0" VerticalAlignment="Top" Width="183" SelectionChanged="ComboBox_SelectionChanged">
@@ -32,6 +23,7 @@
             <ComboBoxItem>Egresado</ComboBoxItem>
             <ComboBoxItem>Empleador</ComboBoxItem>
         </ComboBox>
+        <Button x:Name = "btnVolver" Content="Salir" HorizontalAlignment="Left" Margin="28,403,0,0" VerticalAlignment="Top" Width="85" BorderBrush="#FF00983D" Background="#FF747C77" BorderThickness="0,1,1,1" Height="36" FontFamily="Arial" FontSize="15" FontWeight="Bold" Foreground="White" Click="BtnSalir_Click"/>
 
     </Grid>
 </Window>

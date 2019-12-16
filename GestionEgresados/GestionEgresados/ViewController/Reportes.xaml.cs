@@ -52,12 +52,6 @@ namespace GestionEgresados.ViewController
 
         }
 
-        private void btn_cancelar(object sender, RoutedEventArgs e)
-        {
-            AdminLogin adminLogin = new AdminLogin();
-            adminLogin.Show();
-            this.Close();
-        }
 
         private void BtnGenerarReporte_Click(object sender, RoutedEventArgs e)
         {
@@ -94,6 +88,13 @@ namespace GestionEgresados.ViewController
         private void RadioButton_Checked_Laboral(object sender, RoutedEventArgs e)
         {
 
+        }
+
+        private void BtnSalir_Click(object sender, RoutedEventArgs e)
+        {
+            MenuAdmin menuAdmin = new MenuAdmin();
+            menuAdmin.Show();
+            this.Close();
         }
     }
 }
