@@ -5,15 +5,53 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:GestionEgresados.ViewController"
         mc:Ignorable="d"
-        
-        Title="VentanaSatisfaccion" Height="500" Width="800">
-    <ScrollViewer Margin="0,0,2,1">
-        <Grid>            
-            <Rectangle Fill="#27519B" HorizontalAlignment="Center" Height="35" Stroke="#00000000" VerticalAlignment="Top" Width="794" Grid.ColumnSpan="2" Margin="-11,0,-10,0"/>
-            <Label Content="Reportes" HorizontalAlignment="Center" VerticalAlignment="Center" Width="96" Height="32" Margin="350,3,327,449" FontFamily="Arial" FontSize="20" FontWeight="Bold" Foreground="White"/>
-            <Rectangle Fill="#27519B" HorizontalAlignment="Center" Height="22" Stroke="#00000000" VerticalAlignment="Top" Width="724" Margin="36,49,13,0"/>
-            <Label Content="Opinion de aspectos propios de la institución" HorizontalAlignment="Center" VerticalAlignment="Center" Width="336" Height="30" Margin="224,47,213,407" FontFamily="Arial" FontSize="15" FontWeight="Bold" Foreground="Black"/>
-            <Button x:Name = "btnVolver" Content="Volver" HorizontalAlignment="Left" Margin="36,416,0,0" VerticalAlignment="Top" Width="85" BorderBrush="#FF00983D" Background="#FF747C77" BorderThickness="0,1,1,1" Height="36" FontFamily="Arial" FontSize="15" FontWeight="Bold" Foreground="White" Click="BtnVolver_Click"/>
+        Title="VentanaSatisfaccion" Height="450" Width="800" WindowStartupLocation="CenterScreen">
+    <ScrollViewer>
+        <Grid Height="784">
+            <Label Content="Encuesta Satisfacción" HorizontalAlignment="Center" VerticalAlignment="Center" Width="240" Height="31" Margin="278,4,257,384" FontFamily="Arial" FontSize="20" FontWeight="Bold" Foreground="White"/>
+            <Button x:Name = "btnVolver" Content="Volver" HorizontalAlignment="Left" Margin="357,730,0,0" VerticalAlignment="Top" Width="85" BorderBrush="#FF00983D" Background="#FF747C77" BorderThickness="0,1,1,1" Height="36" FontFamily="Arial" FontSize="15" FontWeight="Bold" Foreground="White" Click="BtnVolver_Click"/>
+            <Rectangle Fill="#27519B" HorizontalAlignment="Center" Height="48" Stroke="#00000000" VerticalAlignment="Top" Width="775"/>
+            <Label Content="Encuesta Satisfacción" HorizontalAlignment="Center" VerticalAlignment="Center" Width="240" Height="31" Margin="278,12.5,257,740.5" FontFamily="Arial" FontSize="20" FontWeight="Bold" Foreground="White"/>
+            <Rectangle Fill="#FF535D6E" HorizontalAlignment="Center" Height="35" Stroke="#00000000" VerticalAlignment="Top" Width="638" Margin="80,123,57,0"/>
+            <Label Content="1.- Opinión sobre aspectos de la institución" HorizontalAlignment="Center" VerticalAlignment="Center" Width="379" Height="31" Margin="211,129.5,185,623.5" FontFamily="Arial" FontSize="18" FontWeight="Bold" Foreground="White"/>
+            <Rectangle Fill="#FF535D6E" HorizontalAlignment="Center" Height="35" Stroke="#00000000" VerticalAlignment="Top" Width="775" Margin="0,48,0,0"/>
+            <Label x:Name ="labelEgresado" Content="Egresado:" HorizontalAlignment="Center" VerticalAlignment="Center" Width="765" Height="31" Margin="10,55.5,0,697.5" FontFamily="Arial" FontSize="16" FontWeight="Bold" Foreground="White"/>
+            <Rectangle Fill="#FF8391A8" HorizontalAlignment="Center" Height="35" Stroke="#00000000" VerticalAlignment="Top" Width="638" Margin="80,163,57,0"/>
+            <Rectangle Fill="#FF8391A8" HorizontalAlignment="Center" Height="35" Stroke="#00000000" VerticalAlignment="Top" Width="638" Margin="80,203,57,0"/>
+            <Rectangle Fill="#FF8391A8" HorizontalAlignment="Center" Height="35" Stroke="#00000000" VerticalAlignment="Top" Width="638" Margin="80,243,57,0"/>
+            <Rectangle Fill="#FF8391A8" HorizontalAlignment="Center" Height="35" Stroke="#00000000" VerticalAlignment="Top" Width="638" Margin="80,283,57,0"/>
+            <Rectangle Fill="#FF8391A8" HorizontalAlignment="Center" Height="35" Stroke="#00000000" VerticalAlignment="Top" Width="638" Margin="80,323,57,0"/>
+            <Rectangle Fill="#FF8391A8" HorizontalAlignment="Center" Height="35" Stroke="#00000000" VerticalAlignment="Top" Width="638" Margin="80,363,57,0"/>
+            <Label Content="a) Plan de estudios" HorizontalAlignment="Center" VerticalAlignment="Center" Width="379" Height="31" Margin="97,169.5,299,583.5" FontFamily="Arial" FontSize="16" FontWeight="Bold" Foreground="White"/>
+            <Label Content="b) Desempeño de los docentes" HorizontalAlignment="Center" VerticalAlignment="Center" Width="379" Height="31" Margin="97,209.5,299,543.5" FontFamily="Arial" FontSize="16" FontWeight="Bold" Foreground="White"/>
+            <Label Content="c) Organización administrativa" HorizontalAlignment="Center" VerticalAlignment="Center" Width="379" Height="31" Margin="97,249.5,299,503.5" FontFamily="Arial" FontSize="16" FontWeight="Bold" Foreground="White"/>
+            <Label Content="d) Instalaciones" HorizontalAlignment="Center" VerticalAlignment="Center" Width="379" Height="31" Margin="97,289.5,299,463.5" FontFamily="Arial" FontSize="16" FontWeight="Bold" Foreground="White"/>
+            <Label Content="e) Servicios de apoyo" HorizontalAlignment="Center" VerticalAlignment="Center" Width="379" Height="31" Margin="97,333.5,299,419.5" FontFamily="Arial" FontSize="16" FontWeight="Bold" Foreground="White"/>
+            <Label Content="f) Actividades culturales/deportivas" HorizontalAlignment="Center" VerticalAlignment="Center" Width="379" Height="31" Margin="97,369.5,299,383.5" FontFamily="Arial" FontSize="16" FontWeight="Bold" Foreground="White"/>
+            <Rectangle Fill="#FF535D6E" HorizontalAlignment="Center" Height="35" Stroke="#00000000" VerticalAlignment="Top" Width="638" Margin="80,448,57,0"/>
+            <Label Content="2.- Medida en que estas EE ayudaron en otras" HorizontalAlignment="Center" VerticalAlignment="Center" Width="403" Height="31" Margin="198,454.5,174,298.5" FontFamily="Arial" FontSize="18" FontWeight="Bold" Foreground="White"/>
+            <Rectangle Fill="#FF8391A8" HorizontalAlignment="Center" Height="35" Stroke="#00000000" VerticalAlignment="Top" Width="638" Margin="80,488,57,0"/>
+            <Rectangle Fill="#FF8391A8" HorizontalAlignment="Center" Height="35" Stroke="#00000000" VerticalAlignment="Top" Width="638" Margin="80,528,57,0"/>
+            <Rectangle Fill="#FF8391A8" HorizontalAlignment="Center" Height="35" Stroke="#00000000" VerticalAlignment="Top" Width="638" Margin="80,568,57,0"/>
+            <Rectangle Fill="#FF8391A8" HorizontalAlignment="Center" Height="35" Stroke="#00000000" VerticalAlignment="Top" Width="638" Margin="80,608,57,0"/>
+            <Rectangle Fill="#FF8391A8" HorizontalAlignment="Center" Height="35" Stroke="#00000000" VerticalAlignment="Top" Width="638" Margin="80,648,57,0"/>
+            <Label Content="a) Inglés I" HorizontalAlignment="Center" VerticalAlignment="Center" Width="379" Height="31" Margin="97,494.5,299,258.5" FontFamily="Arial" FontSize="16" FontWeight="Bold" Foreground="White"/>
+            <Label Content="b) Inglés II" HorizontalAlignment="Center" VerticalAlignment="Center" Width="379" Height="31" Margin="97,534.5,299,218.5" FontFamily="Arial" FontSize="16" FontWeight="Bold" Foreground="White"/>
+            <Label Content="c) Computación básica" HorizontalAlignment="Center" VerticalAlignment="Center" Width="379" Height="31" Margin="97,575.5,299,177.5" FontFamily="Arial" FontSize="16" FontWeight="Bold" Foreground="White"/>
+            <Label Content="d) Lectura y redacción" HorizontalAlignment="Center" VerticalAlignment="Center" Width="379" Height="31" Margin="97,611.5,299,141.5" FontFamily="Arial" FontSize="16" FontWeight="Bold" Foreground="White"/>
+            <Label Content="e) Habilidades del pensamiento" HorizontalAlignment="Center" VerticalAlignment="Center" Width="379" Height="31" Margin="97,654.5,299,98.5" FontFamily="Arial" FontSize="16" FontWeight="Bold" Foreground="White"/>
+            <Label x:Name="labelRespuesta1" Content=" " HorizontalAlignment="Center" VerticalAlignment="Center" Width="303" Height="31" Margin="415,172,57,581" FontFamily="Arial" FontSize="16" FontWeight="Bold" Foreground="White"/>
+            <Label x:Name="labelRespuesta2" Content=" " HorizontalAlignment="Center" VerticalAlignment="Center" Width="303" Height="30" Margin="415,210,57,544" FontFamily="Arial" FontSize="16" FontWeight="Bold" Foreground="White"/>
+            <Label x:Name="labelRespuesta3" Content=" " HorizontalAlignment="Center" VerticalAlignment="Center" Width="303" Height="30" Margin="415,250,57,504" FontFamily="Arial" FontSize="16" FontWeight="Bold" Foreground="White"/>
+            <Label x:Name="labelRespuesta4" Content=" " HorizontalAlignment="Center" VerticalAlignment="Center" Width="303" Height="30" Margin="415,290,57,464" FontFamily="Arial" FontSize="16" FontWeight="Bold" Foreground="White"/>
+            <Label x:Name="labelRespuesta5" Content=" " HorizontalAlignment="Center" VerticalAlignment="Center" Width="303" Height="31" Margin="415,327,57,426" FontFamily="Arial" FontSize="16" FontWeight="Bold" Foreground="White"/>
+            <Label x:Name="labelRespuesta6" Content=" " HorizontalAlignment="Center" VerticalAlignment="Center" Width="303" Height="30" Margin="415,370,57,384" FontFamily="Arial" FontSize="16" FontWeight="Bold" Foreground="White"/>
+            <Label x:Name="labelRespuesta7" Content=" " HorizontalAlignment="Center" VerticalAlignment="Center" Width="303" Height="29" Margin="415,495,57,260" FontFamily="Arial" FontSize="16" FontWeight="Bold" Foreground="White"/>
+            <Label x:Name="labelRespuesta8" Content=" " HorizontalAlignment="Center" VerticalAlignment="Center" Width="303" Height="30" Margin="415,533,57,221" FontFamily="Arial" FontSize="16" FontWeight="Bold" Foreground="White"/>
+            <Label x:Name="labelRespuesta9" Content=" " HorizontalAlignment="Center" VerticalAlignment="Center" Width="303" Height="30" Margin="415,573,57,181" FontFamily="Arial" FontSize="16" FontWeight="Bold" Foreground="White"/>
+            <Label x:Name="labelRespuesta10" Content=" " HorizontalAlignment="Center" VerticalAlignment="Center" Width="303" Height="30" Margin="415,612,57,142" FontFamily="Arial" FontSize="16" FontWeight="Bold" Foreground="White"/>
+            <Label x:Name="labelRespuesta11" Content=" " HorizontalAlignment="Center" VerticalAlignment="Center" Width="303" Height="30" Margin="415,654,57,100" FontFamily="Arial" FontSize="16" FontWeight="Bold" Foreground="White"/>
+
         </Grid>
     </ScrollViewer>
 </Window>

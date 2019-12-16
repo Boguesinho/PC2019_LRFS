@@ -16,12 +16,12 @@
         <Label x:Name="labelCorreo" Content="Correo" HorizontalAlignment="Left" Margin="43,390,0,0" VerticalAlignment="Top" FontSize="20" FontFamily="Arial Black"/>
         <Button x:Name="buttonEditar" Content="Editar" HorizontalAlignment="Left" Margin="43,583,0,0" VerticalAlignment="Top" Width="129" FontSize="20" FontFamily="Arial" Click="ButtonGuardar_Click" Height="38"/>
         <Button x:Name="buttonCancelar" Content="Cancelar" HorizontalAlignment="Left" Margin="458,583,0,0" VerticalAlignment="Top" Width="129" FontSize="20" FontFamily="Arial" Click="ButtonCancelar_Click" Height="38"/>
-        <TextBox x:Name="textboxCorreo" HorizontalAlignment="Left" Height="29" Margin="323,390,0,0" VerticalAlignment="Top" Width="264" FontSize="20" MaxLength="50"/>
-        <TextBox x:Name="textboxNombre" HorizontalAlignment="Left" Height="29" Margin="323,162,0,0" VerticalAlignment="Top" Width="264" FontSize="20" MaxLength="50" />
-        <TextBox x:Name="textboxLicenciatura" HorizontalAlignment="Left" Height="29" Margin="323,318,0,0" VerticalAlignment="Top" Width="264" FontSize="20" MaxLength="50" />
-        <TextBox x:Name="textboxApellidos" HorizontalAlignment="Left" Height="29" Margin="323,241,0,0" VerticalAlignment="Top" Width="264" FontSize="20" MaxLength="50" />
-        <TextBox x:Name="textboxMatricula" HorizontalAlignment="Left" Height="29" Margin="323,81,0,0" VerticalAlignment="Top" Width="264" FontSize="20" MaxLength="50" />
+        <TextBox x:Name="textboxCorreo" HorizontalAlignment="Left" Height="29" Margin="323,390,0,0" VerticalAlignment="Top" Width="264" FontSize="16" MaxLength="50"/>
+        <TextBox x:Name="textboxNombre" HorizontalAlignment="Left" Height="29" Margin="323,162,0,0" VerticalAlignment="Top" Width="264" FontSize="16" MaxLength="50" />
+        <TextBox x:Name="textboxLicenciatura" HorizontalAlignment="Left" Height="29" Margin="323,318,0,0" VerticalAlignment="Top" Width="264" FontSize="16" MaxLength="50" />
+        <TextBox x:Name="textboxApellidos" HorizontalAlignment="Left" Height="29" Margin="323,241,0,0" VerticalAlignment="Top" Width="264" FontSize="16" MaxLength="50" />
+        <TextBox x:Name="textboxMatricula" HorizontalAlignment="Left" Height="29" Margin="323,81,0,0" VerticalAlignment="Top" Width="264" FontSize="16" MaxLength="50" />
         <Label Content="Teléfono" HorizontalAlignment="Left" Margin="43,461,0,0" VerticalAlignment="Top" FontSize="20" FontFamily="Arial Black"/>
-        <TextBox x:Name="textboxTelefono" HorizontalAlignment="Left" Height="29" Margin="323,465,0,0" VerticalAlignment="Top" Width="264" FontSize="20" MaxLength="50" />
+        <TextBox x:Name="textboxTelefono" HorizontalAlignment="Left" Height="29" Margin="323,465,0,0" VerticalAlignment="Top" Width="264" FontSize="16" MaxLength="50" />
     </Grid>
 </Window>

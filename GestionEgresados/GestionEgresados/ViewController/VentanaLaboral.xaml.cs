@@ -23,5 +23,12 @@ namespace GestionEgresados.ViewController
         {
             InitializeComponent();
         }
+
+        private void BtnVolver_Click(object sender, RoutedEventArgs e)
+        {
+            Reportes reportes = new Reportes();
+            reportes.Show();
+            this.Close();
+        }
     }
 }
