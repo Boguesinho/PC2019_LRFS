@@ -189,5 +189,186 @@ namespace GestionEgresados.DAOs
         }
 
 
+        public List<String> GetGeneros()
+        {
+
+            SqlConnection conn = null;
+            List<String> generos = new List<String>();
+
+            try
+            {
+                conn = ConnectionUtils.getConnection();
+                SqlCommand command;
+                SqlDataReader rd;
+                if (conn != null)
+                {
+                    String query = String.Format("SELECT genero FROM dbo.egresado;");
+
+                    Console.WriteLine(query);
+                    command = new SqlCommand(query, conn);
+                    rd = command.ExecuteReader();
+                    while (rd.Read())
+                    {
+                        generos.Add((!rd.IsDBNull(0)) ? rd.GetString(0) : "");
+                    }
+                    rd.Close();
+                    command.Dispose();
+
+                }
+            }
+            //Cambiar las excepciones.
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex.Message);
+            }
+            finally
+            {
+                if (conn != null)
+                {
+                    conn.Close();
+                }
+            }
+            return generos;
+        }
+
+
+
+
+        public List<String> GetCarreras()
+        {
+
+            SqlConnection conn = null;
+            List<String> listaCarreras = new List<String>();
+
+            try
+            {
+                conn = ConnectionUtils.getConnection();
+                SqlCommand command;
+                SqlDataReader rd;
+                if (conn != null)
+                {
+                    String query = String.Format("SELECT licenciatura FROM dbo.egresado;");
+
+                    Console.WriteLine(query);
+                    command = new SqlCommand(query, conn);
+                    rd = command.ExecuteReader();
+                    while (rd.Read())
+                    {
+                        listaCarreras.Add((!rd.IsDBNull(0)) ? rd.GetString(0) : "");
+                    }
+                    rd.Close();
+                    command.Dispose();
+
+                }
+            }
+            //Cambiar las excepciones.
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex.Message);
+            }
+            finally
+            {
+                if (conn != null)
+                {
+                    conn.Close();
+                }
+            }
+            return listaCarreras;
+        }
+
+
+
+        public List<String> GetEstudios()
+        {
+
+            SqlConnection conn = null;
+            List<String> listaEstudios = new List<String>();
+
+            try
+            {
+                conn = ConnectionUtils.getConnection();
+                SqlCommand command;
+                SqlDataReader rd;
+                if (conn != null)
+                {
+                    String query = String.Format("SELECT nivelEstudios FROM dbo.infoAcademica;");
+
+                    Console.WriteLine(query);
+                    command = new SqlCommand(query, conn);
+                    rd = command.ExecuteReader();
+                    while (rd.Read())
+                    {
+                        listaEstudios.Add((!rd.IsDBNull(0)) ? rd.GetString(0) : "");
+                    }
+                    rd.Close();
+                    command.Dispose();
+
+                }
+            }
+            //Cambiar las excepciones.
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex.Message);
+            }
+            finally
+            {
+                if (conn != null)
+                {
+                    conn.Close();
+                }
+            }
+            return listaEstudios;
+        }
+
+
+        public List<int> GetEstatus()
+        {
+
+            SqlConnection conn = null;
+            List<int> listaTrabajo = new List<int>();
+
+            try
+            {
+                conn = ConnectionUtils.getConnection();
+                SqlCommand command;
+                SqlDataReader rd;
+                if (conn != null)
+                {
+                    String query = String.Format("SELECT estatusTrabajo FROM dbo.infoLaboral;");
+
+                    Console.WriteLine(query);
+                    command = new SqlCommand(query, conn);
+                    rd = command.ExecuteReader();
+                    while (rd.Read())
+                    {
+                        listaTrabajo.Add((!rd.IsDBNull(0)) ? rd.GetInt32(0) : 0);
+                    }
+                    rd.Close();
+                    command.Dispose();
+
+                }
+            }
+            //Cambiar las excepciones.
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex.Message);
+            }
+            finally
+            {
+                if (conn != null)
+                {
+                    conn.Close();
+                }
+            }
+            return listaTrabajo;
+        }
+
+
+
+
+
+
+
+
     }
 }
