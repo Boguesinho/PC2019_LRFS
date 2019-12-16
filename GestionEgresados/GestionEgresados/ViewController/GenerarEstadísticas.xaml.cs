@@ -70,5 +70,9 @@ namespace GestionEgresados.ViewController
 
         }
 
+        private void BtnVolver_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }
