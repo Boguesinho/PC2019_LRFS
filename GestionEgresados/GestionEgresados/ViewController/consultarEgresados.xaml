@@ -13,11 +13,11 @@
 
         <DataGrid x:Name="dataGridEgresados" SelectionMode="Single"  AutoGenerateColumns="False" IsReadOnly="True" Height="252" Margin="77,102,68,0" VerticalAlignment="Top" ItemsSource="{Binding}" SelectionChanged="DataGridEgresados_SelectionChanged" RowBackground="#FFF1E6E6" CanUserResizeRows="False">
             <DataGrid.Columns>
-                <DataGridTextColumn Binding="{Binding Path=nombre}" ClipboardContentBinding="{x:Null}" Header="Nombre" HeaderStringFormat="Nombre" Width="200" CanUserReorder="False" CanUserResize="False" CanUserSort="False"/>
+                <DataGridTextColumn Binding="{Binding Path=nombre}" ClipboardContentBinding="{x:Null}" Header="Nombre" HeaderStringFormat="Nombre" Width="190" CanUserReorder="False" CanUserResize="False" CanUserSort="False"/>
                 <DataGridTextColumn Binding="{Binding Path=matricula}" ClipboardContentBinding="{x:Null}" Header="Matrícula" HeaderStringFormat="Matrícula" Width="100" CanUserReorder="False" CanUserResize="False" CanUserSort="False"/>
-                <DataGridTextColumn Binding="{Binding Path=correo}" ClipboardContentBinding="{x:Null}" Header="Correo" HeaderStringFormat="Correo" Width="190" CanUserReorder="False" CanUserResize="False" CanUserSort="False"/>
+                <DataGridTextColumn Binding="{Binding Path=correo}" ClipboardContentBinding="{x:Null}" Header="Correo" HeaderStringFormat="Correo" Width="170" CanUserReorder="False" CanUserResize="False" CanUserSort="False"/>
                 <DataGridTextColumn Binding="{Binding Path=telefono}" ClipboardContentBinding="{x:Null}" Header="Teléfono" HeaderStringFormat="Telefono" Width="85" CanUserReorder="False" CanUserResize="False" CanUserSort="False"/>
-                <DataGridTextColumn Binding="{Binding Path=genero}" ClipboardContentBinding="{x:Null}" Header="Genero" HeaderStringFormat="Genero" Width="60" CanUserReorder="False" CanUserResize="False" CanUserSort="False"/>
+                <DataGridTextColumn Binding="{Binding Path=genero}" ClipboardContentBinding="{x:Null}" Header="Genero" HeaderStringFormat="Genero" Width="75" CanUserReorder="False" CanUserResize="False" CanUserSort="False"/>
             </DataGrid.Columns>
         </DataGrid>
         <Button Content="Modificar" HorizontalAlignment="Left" Margin="568,408,0,0" VerticalAlignment="Top" Width="96" Click="Button_Click_Modificar" Height="33"/>

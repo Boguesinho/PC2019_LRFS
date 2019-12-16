@@ -44,7 +44,9 @@ namespace GestionEgresados.ViewController
 
         private void Button_Click_Estadisticas(object sender, RoutedEventArgs e)
         {
-
+            EstadisticasGeneradas estadisticas = new EstadisticasGeneradas();
+            estadisticas.Show();
+            this.Close();
         }
 
         private void btn_cancelar(object sender, RoutedEventArgs e)
