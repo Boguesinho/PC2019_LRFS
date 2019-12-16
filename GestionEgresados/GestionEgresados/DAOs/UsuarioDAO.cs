@@ -41,7 +41,7 @@ namespace GestionEgresados
                             Idusuario = (!rd.IsDBNull(0))? rd.GetInt32(0) : 0 ,
                             Nombreuser = (!rd.IsDBNull(1)) ? rd.GetString(1) : "",
                             Contrasenia = (!rd.IsDBNull(2)) ? rd.GetString(2) : "",
-                            TipoUsuario = (!rd.IsDBNull(0)) ? rd.GetString(3) : "",
+                            TipoUsuario = (!rd.IsDBNull(3)) ? rd.GetString(3) : "",
                         };
                     }
                     rd.Close();
