@@ -25,7 +25,7 @@ namespace GestionEgresados.ViewController
     {
         EgresadoDAO egresado = new EgresadoDAO();
         String matriculaActual = "";
-        
+
         public modificarEgresado()
         {
             InitializeComponent();
@@ -71,11 +71,11 @@ namespace GestionEgresados.ViewController
                 System.Windows.MessageBox.Show("Hay campos sin rellenar...");
                 check = CheckResult.Failed;
             }
-            else if(validaciones.validarMatricula(textboxMatricula.Text) == Validaciones.ResultadosValidacion.MatriculaInvalida)
+            else if (validaciones.validarMatricula(textboxMatricula.Text) == Validaciones.ResultadosValidacion.MatriculaInvalida)
             {
                 System.Windows.MessageBox.Show("Formato de matricula incorrecto...");
             }
-            else if(validaciones.validarNombre(textboxNombre.Text) == Validaciones.ResultadosValidacion.NombreInvalido)
+            else if (validaciones.validarNombre(textboxNombre.Text) == Validaciones.ResultadosValidacion.NombreInvalido)
             {
                 System.Windows.MessageBox.Show("Hay caracteres incorrectos en el nombre...");
             }
@@ -98,7 +98,7 @@ namespace GestionEgresados.ViewController
             return check;
         }
 
-        
+
 
         public void llenarDatosEgresado(String matricula)
         {
@@ -113,20 +113,20 @@ namespace GestionEgresados.ViewController
             textboxLicenciatura.Text = egresadoSeleccionado[3];
             textboxCorreo.Text = egresadoSeleccionado[4];
             textboxTelefono.Text = egresadoSeleccionado[5];
-                        
+
         }
-        
+
         private void ButtonGuardar_Click(object sender, RoutedEventArgs e)
         {
-            
+
 
 
             if (CheckFields() == CheckResult.Passed)
             {
-                    EgresadoDAO egresadoDAO = new EgresadoDAO();
-                    egresadoDAO.SetInfoEgresado(textboxMatricula.Text, textboxNombre.Text, textboxApellidos.Text,
-                                                textboxLicenciatura.Text, textboxCorreo.Text, textboxTelefono.Text,
-                                                matriculaActual);
+                EgresadoDAO egresadoDAO = new EgresadoDAO();
+                egresadoDAO.SetInfoEgresado(textboxMatricula.Text, textboxNombre.Text, textboxApellidos.Text,
+                                            textboxLicenciatura.Text, textboxCorreo.Text, textboxTelefono.Text,
+                                            matriculaActual);
                 consultarEgresados consultarE = new consultarEgresados();
                 consultarE.Show();
                 this.Close();
@@ -135,10 +135,10 @@ namespace GestionEgresados.ViewController
             {
                 System.Windows.MessageBox.Show("Modifique el/los campos...");
             }
-            
 
 
-            
+
+
         }
 
 
@@ -152,7 +152,7 @@ namespace GestionEgresados.ViewController
 
         private void textboxTelefono_TextChanged(object sender, TextChangedEventArgs e)
         {
-           
+
         }
 
         private void textboxMatricula_TextChanged(object sender, TextChangedEventArgs e)

@@ -74,9 +74,9 @@
       <DependentUpon>AdminLogin.xaml</DependentUpon>
     </Compile>
     <Compile Include="Clases\Egresado.cs" />
+    <Compile Include="Clases\Validaciones.cs" />
     <Compile Include="DAOs\EgresadoDAO.cs" />
     <Compile Include="DAOs\CuestionarioDAO.cs" />
-    <Compile Include="Validaciones.cs" />
     <Compile Include="ViewController\ConsultarEgresados.xaml.cs">
       <DependentUpon>ConsultarEgresados.xaml</DependentUpon>
     </Compile>
