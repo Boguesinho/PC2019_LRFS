@@ -52,6 +52,7 @@
   </Choose>
   <ItemGroup>
     <Compile Include="Clases\ValidacionesTests.cs" />
+    <Compile Include="DataBase\ConnectionUtilsTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -59,6 +60,9 @@
       <Project>{AB4CA342-6EAF-4156-9FC6-49541ACC986F}</Project>
       <Name>GestionEgresados</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="DAOs\" />
   </ItemGroup>
   <Choose>
     <When Condition="'$(VisualStudioVersion)' == '10.0' And '$(IsCodedUITest)' == 'True'">

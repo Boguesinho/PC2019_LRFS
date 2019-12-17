@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace GestionEgresados.DataBase
 {
-    class ConnectionUtils
+    public class ConnectionUtils
     {
         private static String SERVER = "localhost";
         private static String PORT = "1433";
@@ -36,5 +36,6 @@ namespace GestionEgresados.DataBase
             }
             return conn;
         }
+
     }
 }

@@ -1,0 +1,17 @@
+C:\Users\artur\OneDrive\Documentos\repos\PC2019_LRFS\GestionEgresados\GestionEgresadosTests3\bin\Debug\GestionEgresadosTests3.dll
+C:\Users\artur\OneDrive\Documentos\repos\PC2019_LRFS\GestionEgresados\GestionEgresadosTests3\bin\Debug\GestionEgresadosTests3.pdb
+C:\Users\artur\OneDrive\Documentos\repos\PC2019_LRFS\GestionEgresados\GestionEgresadosTests3\bin\Debug\GestionEgresados.exe
+C:\Users\artur\OneDrive\Documentos\repos\PC2019_LRFS\GestionEgresados\GestionEgresadosTests3\bin\Debug\Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll
+C:\Users\artur\OneDrive\Documentos\repos\PC2019_LRFS\GestionEgresados\GestionEgresadosTests3\bin\Debug\LiveCharts.dll
+C:\Users\artur\OneDrive\Documentos\repos\PC2019_LRFS\GestionEgresados\GestionEgresadosTests3\bin\Debug\LiveCharts.Wpf.dll
+C:\Users\artur\OneDrive\Documentos\repos\PC2019_LRFS\GestionEgresados\GestionEgresadosTests3\bin\Debug\GestionEgresados.pdb
+C:\Users\artur\OneDrive\Documentos\repos\PC2019_LRFS\GestionEgresados\GestionEgresadosTests3\bin\Debug\GestionEgresados.exe.config
+C:\Users\artur\OneDrive\Documentos\repos\PC2019_LRFS\GestionEgresados\GestionEgresadosTests3\bin\Debug\LiveCharts.pdb
+C:\Users\artur\OneDrive\Documentos\repos\PC2019_LRFS\GestionEgresados\GestionEgresadosTests3\bin\Debug\LiveCharts.xml
+C:\Users\artur\OneDrive\Documentos\repos\PC2019_LRFS\GestionEgresados\GestionEgresadosTests3\bin\Debug\LiveCharts.Wpf.pdb
+C:\Users\artur\OneDrive\Documentos\repos\PC2019_LRFS\GestionEgresados\GestionEgresadosTests3\bin\Debug\LiveCharts.Wpf.xml
+C:\Users\artur\OneDrive\Documentos\repos\PC2019_LRFS\GestionEgresados\GestionEgresadosTests3\bin\Debug\es\Microsoft.VisualStudio.QualityTools.UnitTestFramework.resources.dll
+C:\Users\artur\OneDrive\Documentos\repos\PC2019_LRFS\GestionEgresados\GestionEgresadosTests3\obj\Debug\GestionEgresadosTests3.csprojAssemblyReference.cache
+C:\Users\artur\OneDrive\Documentos\repos\PC2019_LRFS\GestionEgresados\GestionEgresadosTests3\obj\Debug\GestionEgresadosTests3.csproj.CopyComplete
+C:\Users\artur\OneDrive\Documentos\repos\PC2019_LRFS\GestionEgresados\GestionEgresadosTests3\obj\Debug\GestionEgresadosTests3.dll
+C:\Users\artur\OneDrive\Documentos\repos\PC2019_LRFS\GestionEgresados\GestionEgresadosTests3\obj\Debug\GestionEgresadosTests3.pdb
