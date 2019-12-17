@@ -92,6 +92,9 @@
     <Compile Include="ViewController\ModificarEgresado.xaml.cs">
       <DependentUpon>ModificarEgresado.xaml</DependentUpon>
     </Compile>
+    <Compile Include="ViewController\NuevoEgresado.xaml.cs">
+      <DependentUpon>NuevoEgresado.xaml</DependentUpon>
+    </Compile>
     <Compile Include="ViewController\Reportes.xaml.cs">
       <DependentUpon>Reportes.xaml</DependentUpon>
     </Compile>
@@ -131,6 +134,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="ViewController\ModificarEgresado.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="ViewController\NuevoEgresado.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

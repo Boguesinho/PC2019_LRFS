@@ -5,6 +5,8 @@ using System.Text;
 using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using GestionEgresados.DAOs;
+using GestionEgresados.ViewController;
 
 namespace GestionEgresados
 {
@@ -24,9 +26,25 @@ namespace GestionEgresados
             TelefonoInvalido
         }
 
-        public ResultadosValidacion validarMatricula(string matricula)
+        public ResultadosValidacion validarMatricula(string matricula, string matriculaActual)
         {
             string patron = @"^[A-Z][0-9]+$";
+            EgresadoDAO eg = new EgresadoDAO();
+            modificarEgresado me = new modificarEgresado();
+            List<String> listaMatriculas = eg.GetMatriculas();
+
+            foreach (String matri in listaMatriculas)
+            {
+                if (matricula == matriculaActual)
+                    return ResultadosValidacion.MatriculaValida;
+                else
+                {
+                    if (matricula == matri)
+                        return ResultadosValidacion.MatriculaInvalida;
+                }
+                
+            }
+        
             if (Regex.IsMatch(matricula, patron))
             {
                 return ResultadosValidacion.MatriculaValida;

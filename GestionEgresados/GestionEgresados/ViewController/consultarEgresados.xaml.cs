@@ -1,4 +1,5 @@
-﻿using GestionEgresados.DAOs;
+﻿using GestionEgresados.Clases;
+using GestionEgresados.DAOs;
 using System;
 using System.Collections;
 using System.Collections.Generic;
@@ -24,11 +25,12 @@ namespace GestionEgresados.ViewController
     {
         EgresadoDAO egresado = new EgresadoDAO();
         public String matriculaSeleccionada = "";
+        ArrayList arregloEgresados = new ArrayList();
 
         public consultarEgresados()
         {
             InitializeComponent();
-            ArrayList arregloEgresados = new ArrayList();
+            
             arregloEgresados = egresado.GetInfoEgresado();
             dataGridEgresados.ItemsSource = arregloEgresados;
             
@@ -66,6 +68,45 @@ namespace GestionEgresados.ViewController
         {
             MenuAdmin menuAdmin = new MenuAdmin();
             menuAdmin.Show();
+            this.Close();
+        }
+
+
+
+        private void BtnBuscar_Click(object sender, RoutedEventArgs e)
+        {
+            String matrica = textFiltro.Text;
+
+            Egresado egu = new Egresado();
+            string[] egresadoBusqueda = egresado.GetInfoEgresadoPorMatricula(matrica);
+            ArrayList arregloBusqueda = new ArrayList();
+
+            egu = new Egresado
+            {
+                nombre = egresadoBusqueda[1]+" "+egresadoBusqueda[2],
+                matricula = egresadoBusqueda[0],
+                correo = egresadoBusqueda[4],
+                telefono = egresadoBusqueda[5],
+
+            };
+            arregloBusqueda.Add(egu);
+            
+            dataGridEgresados.ItemsSource = arregloBusqueda;
+            
+        }
+
+        private void BtnMostrarTodos_Click(object sender, RoutedEventArgs e)
+        {
+            arregloEgresados = egresado.GetInfoEgresado();
+            dataGridEgresados.ItemsSource = arregloEgresados;
+        }
+
+        
+
+        private void BtnAgregar_Click(object sender, RoutedEventArgs e)
+        {
+            NuevoEgresado nuevoEgresado = new NuevoEgresado();
+            nuevoEgresado.Show();
             this.Close();
         }
     }

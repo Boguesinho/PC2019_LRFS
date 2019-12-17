@@ -124,3 +124,5 @@ C:\Users\Luis Fajardo\Desktop\GestionEgresados\GestionEgresados\obj\Debug\Gestio
 C:\Users\Luis Fajardo\Desktop\GestionEgresados\GestionEgresados\obj\Debug\GestionEgresados.csproj.CopyComplete
 C:\Users\Luis Fajardo\Desktop\GestionEgresados\GestionEgresados\obj\Debug\GestionEgresados.exe
 C:\Users\Luis Fajardo\Desktop\GestionEgresados\GestionEgresados\obj\Debug\GestionEgresados.pdb
+C:\Users\Alejandro\Documents\GitHub\PC2019_LRFS\GestionEgresados\GestionEgresados\obj\Debug\ViewController\NuevoEgresado.g.cs
+C:\Users\Alejandro\Documents\GitHub\PC2019_LRFS\GestionEgresados\GestionEgresados\obj\Debug\ViewController\NuevoEgresado.baml

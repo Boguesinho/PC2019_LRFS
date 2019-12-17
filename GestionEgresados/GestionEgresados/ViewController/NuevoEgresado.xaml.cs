@@ -21,12 +21,12 @@ namespace GestionEgresados.ViewController
     /// <summary>
     /// Lógica de interacción para modificarEgresado.xaml
     /// </summary>
-    public partial class modificarEgresado : Window
+    public partial class NuevoEgresado : Window
     {
         EgresadoDAO egresado = new EgresadoDAO();
         String matriculaActual = "";
 
-        public modificarEgresado()
+        public NuevoEgresado()
         {
             InitializeComponent();
         }
@@ -50,7 +50,7 @@ namespace GestionEgresados.ViewController
         private CheckResult CheckEmptyFields()
         {
             CheckResult check = CheckResult.Failed;
-            if (textboxMatricula.Text == String.Empty || textboxNombre.Text == String.Empty || textboxApellidos.Text == String.Empty || comboLicenciatura.SelectedItem == null || textboxCorreo.Text == String.Empty || textboxTelefono.Text == String.Empty)
+            if (textboxMatricula.Text == String.Empty || textboxNombre.Text == String.Empty || textboxApellidos.Text == String.Empty || comboLicenciatura.SelectedItem == null || textboxCorreo.Text == String.Empty || comboGenero.SelectedItem == null || textboxTelefono.Text == String.Empty)
             {
                 check = CheckResult.Failed;
             }
@@ -91,9 +91,13 @@ namespace GestionEgresados.ViewController
             {
                 System.Windows.MessageBox.Show("Numero de telefono no correcto...");
             }
-            else if (comboLicenciatura == null)
+            else if (comboLicenciatura.SelectedItem == null)
             {
                 System.Windows.MessageBox.Show("Debes seleccionar una licenciatura...");
+            }
+            else if (comboGenero.SelectedItem == null)
+            {
+                System.Windows.MessageBox.Show("Debes seleccionar un género...");
             }
             else
             {
@@ -104,32 +108,20 @@ namespace GestionEgresados.ViewController
 
 
 
-        public void llenarDatosEgresado(String matricula)
-        {
-            InitializeComponent();
-            EgresadoDAO egresadoDAO = new EgresadoDAO();
-            matriculaActual = matricula;
-            string[] egresadoSeleccionado = egresadoDAO.GetInfoEgresadoPorMatricula(matricula);
-
-
-            textboxMatricula.Text = egresadoSeleccionado[0];
-            textboxNombre.Text = egresadoSeleccionado[1];
-            textboxApellidos.Text = egresadoSeleccionado[2];
-            textboxCorreo.Text = egresadoSeleccionado[4];
-            textboxTelefono.Text = egresadoSeleccionado[5];
-
-        }
-
         private void ButtonGuardar_Click(object sender, RoutedEventArgs e)
         {
+
             if (CheckFields() == CheckResult.Passed)
             {
+                ComboBoxItem cg = (ComboBoxItem)comboGenero.SelectedValue;
+                String genero = "" + cg.Content;
                 ComboBoxItem cb = (ComboBoxItem)comboLicenciatura.SelectedValue;
                 String licenciatura = "" + cb.Content;
                 EgresadoDAO egresadoDAO = new EgresadoDAO();
-                egresadoDAO.SetInfoEgresado(textboxMatricula.Text, textboxNombre.Text, textboxApellidos.Text,
-                                            licenciatura ,textboxCorreo.Text, textboxTelefono.Text,
-                                            matriculaActual);
+
+                egresadoDAO.CrearEgresado(textboxMatricula.Text, textboxNombre.Text, textboxApellidos.Text,
+                                            licenciatura, textboxCorreo.Text, textboxTelefono.Text,
+                                            genero);
                 consultarEgresados consultarE = new consultarEgresados();
                 consultarE.Show();
                 this.Close();
@@ -138,12 +130,7 @@ namespace GestionEgresados.ViewController
             {
                 System.Windows.MessageBox.Show("Modifique el/los campos...");
             }
-
-
-
-
         }
-
 
         private void ButtonCancelar_Click(object sender, RoutedEventArgs e)
         {
@@ -152,13 +139,7 @@ namespace GestionEgresados.ViewController
             this.Close();
         }
 
-
-        private void textboxTelefono_TextChanged(object sender, TextChangedEventArgs e)
-        {
-
-        }
-
-        private void textboxMatricula_TextChanged(object sender, TextChangedEventArgs e)
+        private void ComboBox_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
 
         }
