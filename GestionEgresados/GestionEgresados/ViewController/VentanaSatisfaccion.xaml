@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:GestionEgresados.ViewController"
         mc:Ignorable="d"
-        Title="VentanaSatisfaccion" Height="450" Width="800" WindowStartupLocation="CenterScreen">
+        Title="VentanaSatisfaccion" Height="1000" Width="800" WindowStartupLocation="CenterScreen">
     <ScrollViewer>
         <Grid>
             <Rectangle Fill="#FF8391A8" HorizontalAlignment="Center" Height="35" Stroke="#00000000" VerticalAlignment="Top" Width="638" Margin="80,2248,57,0"/>

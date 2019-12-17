@@ -4,17 +4,17 @@
 winexe
 C#
 .cs
-C:\Users\Luis Fajardo\Desktop\GestionEgresados\GestionEgresados\obj\Debug\
+C:\Users\Luis Fajardo\Documents\GitHub\PC2019_LRFS\GestionEgresados\GestionEgresados\obj\Debug\
 GestionEgresados
 none
 false
 DEBUG;TRACE
-C:\Users\Luis Fajardo\Desktop\GestionEgresados\GestionEgresados\App.xaml
+C:\Users\Luis Fajardo\Documents\GitHub\PC2019_LRFS\GestionEgresados\GestionEgresados\App.xaml
 9948615264
 
-22-1522740266
-20-143834215
+2333579905
+201347657243
 AdminLogin.xaml;ViewController\ConsultarEgresados.xaml;ViewController\EstadisticasGeneradas.xaml;ViewController\GenerarEstadísticas.xaml;ViewController\MenuAdmin.xaml;ViewController\ModificarEgresado.xaml;ViewController\Reportes.xaml;ViewController\VentanaLaboral.xaml;ViewController\VentanaSatisfaccion.xaml;
 
-False
+True
 
