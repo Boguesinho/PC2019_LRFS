@@ -10,6 +10,7 @@ using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Data;
 using System.Windows.Documents;
+using System.Windows.Forms;
 using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
@@ -29,7 +30,76 @@ namespace GestionEgresados.ViewController
         {
             InitializeComponent();
         }
+
+        private enum CheckResult
+        {
+            Passed,
+            Failed
+        }
+
+        public enum OperationResult
+        {
+            Success,
+            NullOrganization,
+            InvalidOrganization,
+            UnknowFail,
+            SQLFail,
+            ExistingRecord
+        }
+
+        private CheckResult CheckEmptyFields()
+        {
+            CheckResult check = CheckResult.Failed;
+            if (textboxMatricula.Text == String.Empty || textboxNombre.Text == String.Empty || textboxApellidos.Text == String.Empty || textboxLicenciatura.Text == String.Empty || textboxCorreo.Text == String.Empty || textboxTelefono.Text == String.Empty)
+            {
+                check = CheckResult.Failed;
+            }
+            else
+            {
+                check = CheckResult.Passed;
+            }
+            return check;
+
+        }
+
+        private CheckResult CheckFields()
+        {
+            CheckResult check = CheckResult.Failed;
+            Validaciones validaciones = new Validaciones();
+            if (CheckEmptyFields() == CheckResult.Failed)
+            {
+                System.Windows.MessageBox.Show("Hay campos sin rellenar...");
+                check = CheckResult.Failed;
+            }
+            else if(validaciones.validarMatricula(textboxMatricula.Text) == Validaciones.ResultadosValidacion.MatriculaInvalida)
+            {
+                System.Windows.MessageBox.Show("Formato de matricula incorrecto...");
+            }
+            else if(validaciones.validarNombre(textboxNombre.Text) == Validaciones.ResultadosValidacion.NombreInvalido)
+            {
+                System.Windows.MessageBox.Show("Hay caracteres incorrectos en el nombre...");
+            }
+            else if (validaciones.validarApellidos(textboxApellidos.Text) == Validaciones.ResultadosValidacion.ApellidosInvalidos)
+            {
+                System.Windows.MessageBox.Show("Hay caracteres incorrectos en el apellido...");
+            }
+            else if (validaciones.validarCorreo(textboxCorreo.Text) == Validaciones.ResultadosValidacion.CorreoInvalido)
+            {
+                System.Windows.MessageBox.Show("No cumple las caracteristicas de un correo electronico...");
+            }
+            else if (validaciones.validarTelefono(textboxTelefono.Text) == Validaciones.ResultadosValidacion.TelefonoInvalido)
+            {
+                System.Windows.MessageBox.Show("Numero de telefono no correcto...");
+            }
+            else
+            {
+                check = CheckResult.Passed;
+            }
+            return check;
+        }
+
         
+
         public void llenarDatosEgresado(String matricula)
         {
             InitializeComponent();
@@ -48,15 +118,27 @@ namespace GestionEgresados.ViewController
         
         private void ButtonGuardar_Click(object sender, RoutedEventArgs e)
         {
-            EgresadoDAO egresadoDAO = new EgresadoDAO();
-            egresadoDAO.SetInfoEgresado(textboxMatricula.Text, textboxNombre.Text, textboxApellidos.Text, 
-                                        textboxLicenciatura.Text, textboxCorreo.Text, textboxTelefono.Text,
-                                        matriculaActual);
+            
+
+
+            if (CheckFields() == CheckResult.Passed)
+            {
+                    EgresadoDAO egresadoDAO = new EgresadoDAO();
+                    egresadoDAO.SetInfoEgresado(textboxMatricula.Text, textboxNombre.Text, textboxApellidos.Text,
+                                                textboxLicenciatura.Text, textboxCorreo.Text, textboxTelefono.Text,
+                                                matriculaActual);
+                consultarEgresados consultarE = new consultarEgresados();
+                consultarE.Show();
+                this.Close();
+            }
+            else
+            {
+                System.Windows.MessageBox.Show("Modifique el/los campos...");
+            }
+            
+
 
             
-            consultarEgresados consultarE = new consultarEgresados();
-            consultarE.Show();
-            this.Close();
         }
 
 
@@ -67,5 +149,15 @@ namespace GestionEgresados.ViewController
             this.Close();
         }
 
+
+        private void textboxTelefono_TextChanged(object sender, TextChangedEventArgs e)
+        {
+           
+        }
+
+        private void textboxMatricula_TextChanged(object sender, TextChangedEventArgs e)
+        {
+
+        }
     }
 }
