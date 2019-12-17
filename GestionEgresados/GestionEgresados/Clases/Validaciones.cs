@@ -10,7 +10,7 @@ using GestionEgresados.ViewController;
 
 namespace GestionEgresados
 {
-    class Validaciones
+    public class Validaciones
     {
         public enum ResultadosValidacion
         {

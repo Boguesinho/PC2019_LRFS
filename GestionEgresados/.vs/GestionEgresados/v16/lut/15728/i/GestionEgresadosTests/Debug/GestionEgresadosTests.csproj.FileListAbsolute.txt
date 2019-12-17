@@ -1,0 +1,10 @@
+C:\Users\artur\OneDrive\Documentos\repos\PC2019_LRFS\GestionEgresados\.vs\GestionEgresados\v16\lut\0\b\Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.dll
+C:\Users\artur\OneDrive\Documentos\repos\PC2019_LRFS\GestionEgresados\.vs\GestionEgresados\v16\lut\0\b\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.Interface.dll
+C:\Users\artur\OneDrive\Documentos\repos\PC2019_LRFS\GestionEgresados\.vs\GestionEgresados\v16\lut\0\b\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.dll
+C:\Users\artur\OneDrive\Documentos\repos\PC2019_LRFS\GestionEgresados\.vs\GestionEgresados\v16\lut\0\b\es\Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.resources.dll
+C:\Users\artur\OneDrive\Documentos\repos\PC2019_LRFS\GestionEgresados\.vs\GestionEgresados\v16\lut\0\b\es\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.resources.dll
+C:\Users\artur\OneDrive\Documentos\repos\PC2019_LRFS\GestionEgresados\.vs\GestionEgresados\v16\lut\0\b\es\Microsoft.VisualStudio.TestPlatform.TestFramework.resources.dll
+C:\Users\artur\OneDrive\Documentos\repos\PC2019_LRFS\GestionEgresados\.vs\GestionEgresados\v16\lut\0\b\GestionEgresadosTests.dll
+C:\Users\artur\OneDrive\Documentos\repos\PC2019_LRFS\GestionEgresados\.vs\GestionEgresados\v16\lut\0\i\GestionEgresadosTests\Debug\GestionEgresadosTests.csprojAssemblyReference.cache
+C:\Users\artur\OneDrive\Documentos\repos\PC2019_LRFS\GestionEgresados\.vs\GestionEgresados\v16\lut\0\i\GestionEgresadosTests\Debug\GestionEgresadosTests.csproj.CopyComplete
+C:\Users\artur\OneDrive\Documentos\repos\PC2019_LRFS\GestionEgresados\.vs\GestionEgresados\v16\lut\0\i\GestionEgresadosTests\Debug\GestionEgresadosTests.dll
