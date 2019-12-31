@@ -19,6 +19,7 @@ namespace GestionEgresados.Clases
             return String.Format("idUsuario: {0} , usuario: {1}, contrasenia: {2}, tipoUsuario: {3} ",
                                  idUsuario, usuario, contrasenia, tipoUsuario);
         }
+       
 
         public int Idusuario { get => idUsuario; set => idUsuario = value; }
 
@@ -27,6 +28,7 @@ namespace GestionEgresados.Clases
         public string Contrasenia { get => contrasenia; set => contrasenia = value; }              
 
         public string TipoUsuario { get => tipoUsuario; set => tipoUsuario = value; }
+
 
     }
 }

@@ -23,6 +23,8 @@ namespace GestionEgresados.ViewController
     {
 
         EgresadoDAO egresado = new EgresadoDAO();
+        string matriculaSeleccionada = "";
+        //Int32 idEgresadoSeleccionado = 0;
 
         public Reportes()
         {
@@ -44,6 +46,12 @@ namespace GestionEgresados.ViewController
 
         private void DataGridEgresados_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
+            DataGrid dataGrid = sender as DataGrid;
+            DataGridRow row = (DataGridRow)dataGrid.ItemContainerGenerator.ContainerFromIndex(dataGrid.SelectedIndex);
+            DataGridCell RowColumn = dataGrid.Columns[1].GetCellContent(row).Parent as DataGridCell;
+            string CellValue = ((TextBlock)RowColumn.Content).Text;
+            matriculaSeleccionada = CellValue;
+            //idEgresadoSeleccionado = CellValue;
 
         }
 
@@ -52,12 +60,6 @@ namespace GestionEgresados.ViewController
 
         }
 
-        private void btn_cancelar(object sender, RoutedEventArgs e)
-        {
-            AdminLogin adminLogin = new AdminLogin();
-            adminLogin.Show();
-            this.Close();
-        }
 
         private void BtnGenerarReporte_Click(object sender, RoutedEventArgs e)
         {
@@ -67,6 +69,8 @@ namespace GestionEgresados.ViewController
                 {
                     VentanaSatisfaccion ventanaSatisfaccion = new VentanaSatisfaccion();
                     ventanaSatisfaccion.Show();
+                    ventanaSatisfaccion.mostrar(matriculaSeleccionada);
+
                     this.Close();
                 }
                 else if (rb_laboral.IsChecked == true)
@@ -94,6 +98,13 @@ namespace GestionEgresados.ViewController
         private void RadioButton_Checked_Laboral(object sender, RoutedEventArgs e)
         {
 
+        }
+
+        private void BtnSalir_Click(object sender, RoutedEventArgs e)
+        {
+            MenuAdmin menuAdmin = new MenuAdmin();
+            menuAdmin.Show();
+            this.Close();
         }
     }
 }

@@ -47,8 +47,13 @@
       <HintPath>..\packages\MaterialDesignThemes.3.0.0\lib\net45\MaterialDesignThemes.Wpf.dll</HintPath>
     </Reference>
     <Reference Include="System" />
+    <Reference Include="System.Configuration" />
     <Reference Include="System.Data" />
     <Reference Include="System.Drawing" />
+    <Reference Include="System.IO.Compression" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Transactions" />
     <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml" />
     <Reference Include="Microsoft.CSharp" />
@@ -74,7 +79,13 @@
       <DependentUpon>AdminLogin.xaml</DependentUpon>
     </Compile>
     <Compile Include="Clases\Egresado.cs" />
+    <Compile Include="Clases\RespuestaLaboral.cs" />
+    <Compile Include="Clases\RespuestaSatisfaccion.cs" />
+    <Compile Include="Clases\Validaciones.cs" />
     <Compile Include="DAOs\EgresadoDAO.cs" />
+    <Compile Include="DAOs\CuestionarioDAO.cs" />
+    <Compile Include="DAOs\RespuestaLaboralDAO.cs" />
+    <Compile Include="DAOs\RespuestaSatisfaccionDAO.cs" />
     <Compile Include="ViewController\ConsultarEgresados.xaml.cs">
       <DependentUpon>ConsultarEgresados.xaml</DependentUpon>
     </Compile>
@@ -90,6 +101,9 @@
     <Compile Include="ViewController\ModificarEgresado.xaml.cs">
       <DependentUpon>ModificarEgresado.xaml</DependentUpon>
     </Compile>
+    <Compile Include="ViewController\NuevoEgresado.xaml.cs">
+      <DependentUpon>NuevoEgresado.xaml</DependentUpon>
+    </Compile>
     <Compile Include="ViewController\Reportes.xaml.cs">
       <DependentUpon>Reportes.xaml</DependentUpon>
     </Compile>
@@ -97,7 +111,6 @@
       <DependentUpon>App.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Clases\Administrador.cs" />
     <Compile Include="Clases\Usuario.cs" />
     <Compile Include="DAOs\AdministradorDAO.cs" />
     <Compile Include="DAOs\UsuarioDAO.cs" />
@@ -129,6 +142,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="ViewController\ModificarEgresado.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="ViewController\NuevoEgresado.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

@@ -5,8 +5,16 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:GestionEgresados.ViewController"
         mc:Ignorable="d"
-        Title="VentanaLaboral" Height="450" Width="800">
-    <Grid>
-        
-    </Grid>
+        WindowStartupLocation="CenterScreen"        
+        Title="VentanaLaboral" Height="2000" Width="800">
+    <ScrollViewer>
+        <Grid>
+            <Rectangle Fill="#27519B" HorizontalAlignment="Center" Height="48" Stroke="#00000000" VerticalAlignment="Top" Width="775"/>
+            <Label Content="Encuesta Laboral" HorizontalAlignment="Center" VerticalAlignment="Center" Width="240" Height="32" Margin="278,12,257,4751" FontFamily="Arial" FontSize="20" FontWeight="Bold" Foreground="White"/>
+            <Rectangle Fill="#FF27519B" HorizontalAlignment="Center" Height="35" Stroke="#00000000" VerticalAlignment="Top" Width="755" Margin="10,53,10,0"/>
+            <Label x:Name ="labelEgresado" Content="Egresado:" HorizontalAlignment="Center" VerticalAlignment="Center" Width="755" Height="30" Margin="10,58,10,4707" FontFamily="Arial" FontSize="16" FontWeight="Bold" Foreground="White"/>
+            
+            
+        </Grid>
+    </ScrollViewer>
 </Window>

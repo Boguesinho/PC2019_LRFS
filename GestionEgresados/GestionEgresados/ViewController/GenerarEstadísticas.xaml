@@ -6,6 +6,25 @@
         xmlns:local="clr-namespace:GestionEgresados.ViewController"
         xmlns:Wpf="clr-namespace:LiveCharts.Wpf;assembly=LiveCharts.Wpf" x:Class="GestionEgresados.ViewController.GenerarEstadísticas"
         mc:Ignorable="d"
-        Title="GenerarEstadísticas" Height="450" Width="800">
-    <Grid/>
+        Title="GenerarEstadísticas" Height="450" Width="800" ResizeMode="NoResize" WindowStartupLocation="CenterScreen">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Rectangle Fill="#FFB9CDE0" HorizontalAlignment="Left" Height="33" Margin="239,162,0,0" Stroke="#00000000" VerticalAlignment="Top" Width="319"/>
+        <Rectangle Fill="#FFB9CDE0" HorizontalAlignment="Left" Height="52" Margin="239,83,0,0" Stroke="#00000000" VerticalAlignment="Top" Width="319"/>
+        <Rectangle Fill="#27519B" HorizontalAlignment="Center" Height="35" Stroke="#00000000" VerticalAlignment="Top" Width="794" Margin="-1,0"/>
+        <Label Content="Generar Estadísticas" HorizontalAlignment="Center" VerticalAlignment="Center" Width="211" Height="31" Margin="297,4,286,386" FontFamily="Arial" FontSize="20" FontWeight="Bold" Foreground="White"/>
+        <Label Content="Generar gráfica por:" HorizontalAlignment="Center" VerticalAlignment="Center" Width="197" Height="39" Margin="311,96,286,286" FontFamily="Arial" FontSize="18" FontWeight="Bold" Foreground="Black" RenderTransformOrigin="0.665,0.417"/>
+        <RadioButton x:Name="radioButtonGenero" Content="Género" HorizontalAlignment="Left" Margin="351,168,0,0" VerticalAlignment="Top" Background="#FF00983D"/>
+        <Button x:Name = "btnGenerarEstadistica" Content="Generar Estadística" HorizontalAlignment="Left" Margin="311,365,0,0" VerticalAlignment="Top" Width="176" BorderBrush="#FF00983D" Background="#FF00983D" BorderThickness="0,1,1,1" Height="36" FontFamily="Arial" FontSize="15" FontWeight="Bold" Foreground="White" Click="BtnGenerarReporte_Click"/>
+        <Rectangle Fill="#FFB9CDE0" HorizontalAlignment="Left" Height="33" Margin="239,206,0,0" Stroke="#00000000" VerticalAlignment="Top" Width="319"/>
+        <RadioButton x:Name="radioButtonCarrera" Content="Carrera" HorizontalAlignment="Left" Margin="351,212,0,0" VerticalAlignment="Top" Background="#FF00983D"/>
+        <Rectangle Fill="#FFB9CDE0" HorizontalAlignment="Left" Height="33" Margin="239,251,0,0" Stroke="#00000000" VerticalAlignment="Top" Width="319"/>
+        <RadioButton x:Name="radioButtonNivelEstudios" Content="Nivel de estudios" HorizontalAlignment="Left" Margin="351,257,0,0" VerticalAlignment="Top" Background="#FF00983D"/>
+        <Rectangle Fill="#FFB9CDE0" HorizontalAlignment="Left" Height="33" Margin="239,295,0,0" Stroke="#00000000" VerticalAlignment="Top" Width="319"/>
+        <RadioButton x:Name ="radioButtonEstatusTrabajo" Content="Estatus trabajo" HorizontalAlignment="Left" Margin="351,301,0,0" VerticalAlignment="Top" Background="#FF00983D"/>
+        <Button x:Name = "btnVolver" Content="Volver" HorizontalAlignment="Left" Margin="24,365,0,0" VerticalAlignment="Top" Width="85" BorderBrush="#FF00983D" Background="#FF747C77" BorderThickness="0,1,1,1" Height="36" FontFamily="Arial" FontSize="15" FontWeight="Bold" Foreground="White" Click="BtnVolver_Click"/>
+        
+    </Grid>
 </Window>

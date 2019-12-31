@@ -1,0 +1,16 @@
+C:\Users\artur\OneDrive\Documentos\repos\PC2019_LRFS\GestionEgresados\PruebasProyecto\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.dll
+C:\Users\artur\OneDrive\Documentos\repos\PC2019_LRFS\GestionEgresados\PruebasProyecto\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.Interface.dll
+C:\Users\artur\OneDrive\Documentos\repos\PC2019_LRFS\GestionEgresados\PruebasProyecto\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.dll
+C:\Users\artur\OneDrive\Documentos\repos\PC2019_LRFS\GestionEgresados\PruebasProyecto\bin\Debug\es\Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.resources.dll
+C:\Users\artur\OneDrive\Documentos\repos\PC2019_LRFS\GestionEgresados\PruebasProyecto\bin\Debug\es\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.resources.dll
+C:\Users\artur\OneDrive\Documentos\repos\PC2019_LRFS\GestionEgresados\PruebasProyecto\bin\Debug\es\Microsoft.VisualStudio.TestPlatform.TestFramework.resources.dll
+C:\Users\artur\OneDrive\Documentos\repos\PC2019_LRFS\GestionEgresados\PruebasProyecto\bin\Debug\PruebasProyecto.dll
+C:\Users\artur\OneDrive\Documentos\repos\PC2019_LRFS\GestionEgresados\PruebasProyecto\bin\Debug\PruebasProyecto.pdb
+C:\Users\artur\OneDrive\Documentos\repos\PC2019_LRFS\GestionEgresados\PruebasProyecto\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.dll
+C:\Users\artur\OneDrive\Documentos\repos\PC2019_LRFS\GestionEgresados\PruebasProyecto\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.dll
+C:\Users\artur\OneDrive\Documentos\repos\PC2019_LRFS\GestionEgresados\PruebasProyecto\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.xml
+C:\Users\artur\OneDrive\Documentos\repos\PC2019_LRFS\GestionEgresados\PruebasProyecto\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.xml
+C:\Users\artur\OneDrive\Documentos\repos\PC2019_LRFS\GestionEgresados\PruebasProyecto\obj\Debug\PruebasProyecto.csprojAssemblyReference.cache
+C:\Users\artur\OneDrive\Documentos\repos\PC2019_LRFS\GestionEgresados\PruebasProyecto\obj\Debug\PruebasProyecto.csproj.CopyComplete
+C:\Users\artur\OneDrive\Documentos\repos\PC2019_LRFS\GestionEgresados\PruebasProyecto\obj\Debug\PruebasProyecto.dll
+C:\Users\artur\OneDrive\Documentos\repos\PC2019_LRFS\GestionEgresados\PruebasProyecto\obj\Debug\PruebasProyecto.pdb

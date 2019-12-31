@@ -37,7 +37,10 @@ namespace GestionEgresados.Clases
             this.genero = genero;
         }
 
-
+        public Egresado(String genero)
+        {
+            this.genero = genero;
+        }
 
         public Egresado()
         {

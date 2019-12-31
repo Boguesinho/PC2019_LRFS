@@ -5,29 +5,28 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:GestionEgresados.ViewController"
         mc:Ignorable="d"
+        WindowStartupLocation="CenterScreen"        
         Title="Consultar Egresados" Height="500" Width="800">
     <Grid>
+        <Rectangle Fill="#FFB9CDE0" HorizontalAlignment="Left" Height="30" Margin="77,102,0,0" Stroke="#00000000" VerticalAlignment="Top" Width="647"/>
         <Rectangle Fill="#27519B" HorizontalAlignment="Center" Height="35" Stroke="#00000000" VerticalAlignment="Top" Width="794"/>
         <Label Content="Consultar egresados" HorizontalAlignment="Center" VerticalAlignment="Center" Width="222" Height="31" Margin="282,3,288,435" FontFamily="Arial" FontSize="20" FontWeight="Bold" Foreground="White"/>
-        <Label Content="Selecciona un egresado" Height="31" Margin="300,34,306,404" FontFamily="Arial" FontSize="15" FontWeight="Bold" Foreground="Black"/>
+        <Label Content="Selecciona un egresado" Height="31" Margin="300,40,68,398" FontFamily="Arial" FontSize="15" FontWeight="Bold" Foreground="Black"/>
 
-        <DataGrid x:Name="dataGridEgresados" SelectionMode="Single"  AutoGenerateColumns="False" IsReadOnly="True" Height="252" Margin="77,102,68,0" VerticalAlignment="Top" ItemsSource="{Binding}" SelectionChanged="DataGridEgresados_SelectionChanged" RowBackground="#FFF1E6E6" CanUserResizeRows="False">
+        <DataGrid x:Name="dataGridEgresados" SelectionMode="Single"  AutoGenerateColumns="False" IsReadOnly="True" Height="252" Margin="77,132,68,0" VerticalAlignment="Top" ItemsSource="{Binding}" SelectionChanged="DataGridEgresados_SelectionChanged" RowBackground="#FFF1E6E6" CanUserResizeRows="False">
             <DataGrid.Columns>
-                <DataGridTextColumn Binding="{Binding Path=nombre}" ClipboardContentBinding="{x:Null}" Header="Nombre" HeaderStringFormat="Nombre" Width="190" CanUserReorder="False" CanUserResize="False" CanUserSort="False"/>
-                <DataGridTextColumn Binding="{Binding Path=matricula}" ClipboardContentBinding="{x:Null}" Header="Matrícula" HeaderStringFormat="Matrícula" Width="100" CanUserReorder="False" CanUserResize="False" CanUserSort="False"/>
-                <DataGridTextColumn Binding="{Binding Path=correo}" ClipboardContentBinding="{x:Null}" Header="Correo" HeaderStringFormat="Correo" Width="170" CanUserReorder="False" CanUserResize="False" CanUserSort="False"/>
-                <DataGridTextColumn Binding="{Binding Path=telefono}" ClipboardContentBinding="{x:Null}" Header="Teléfono" HeaderStringFormat="Telefono" Width="85" CanUserReorder="False" CanUserResize="False" CanUserSort="False"/>
-                <DataGridTextColumn Binding="{Binding Path=genero}" ClipboardContentBinding="{x:Null}" Header="Genero" HeaderStringFormat="Genero" Width="75" CanUserReorder="False" CanUserResize="False" CanUserSort="False"/>
+                <DataGridTextColumn Binding="{Binding nombre}" ClipboardContentBinding="{x:Null}" Header="Nombre" HeaderStringFormat="Nombre" Width="210" CanUserReorder="False" CanUserResize="False" CanUserSort="False"/>
+                <DataGridTextColumn Binding="{Binding matricula}" ClipboardContentBinding="{x:Null}" Header="Matrícula" HeaderStringFormat="Matrícula" Width="100" CanUserReorder="False" CanUserResize="False" CanUserSort="False"/>
+                <DataGridTextColumn Binding="{Binding correo}" ClipboardContentBinding="{x:Null}" Header="Correo" HeaderStringFormat="Correo" Width="170" CanUserReorder="False" CanUserResize="False" CanUserSort="False"/>
+                <DataGridTextColumn Binding="{Binding telefono}" ClipboardContentBinding="{x:Null}" Header="Teléfono" HeaderStringFormat="Telefono" Width="100" CanUserReorder="False" CanUserResize="False" CanUserSort="False"/>
             </DataGrid.Columns>
         </DataGrid>
-        <Button Content="Modificar" HorizontalAlignment="Left" Margin="568,408,0,0" VerticalAlignment="Top" Width="96" Click="Button_Click_Modificar" Height="33"/>
-        <Button Content="Cancelar" HorizontalAlignment="Left" Margin="110,408,0,0" VerticalAlignment="Top" Width="101" Click="btn_cancelar" Height="33" FontSize="16">
-            <Button.Background>
-                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
-                    <GradientStop Color="White" Offset="0"/>
-                    <GradientStop Color="#FFFF3717" Offset="1"/>
-                </LinearGradientBrush>
-            </Button.Background>
-        </Button>
+        <Button Content="Modificar" HorizontalAlignment="Left" Margin="434,407,0,0" VerticalAlignment="Top" Width="139" Click="Button_Click_Modificar" BorderBrush="#FF00983D" Background="#FF747C77" BorderThickness="0,1,1,1" Height="36" FontFamily="Arial" FontSize="15" FontWeight="Bold" Foreground="White"/>
+        <Button x:Name = "btnVolver" Content="Volver" HorizontalAlignment="Left" Margin="32,405,0,0" VerticalAlignment="Top" Width="84" BorderBrush="#FF00983D" Background="#FF747C77" BorderThickness="0,1,1,1" Height="36" FontFamily="Arial" FontSize="15" FontWeight="Bold" Foreground="White" Click="BtnSalir_Click"/>
+        <Label Content="Filtrar por matrícula:" Height="31" Margin="77,101,529,337" FontFamily="Arial" FontSize="15" FontWeight="Bold" Foreground="Black"/>
+        <Button x:Name = "btnBuscar" Content="Buscar" HorizontalAlignment="Left" Margin="383,103,0,0" VerticalAlignment="Top" Width="83" BorderBrush="#FF00983D" Background="#FF00983D" BorderThickness="0,1,1,1" Height="24" FontFamily="Arial" FontSize="12" FontWeight="Bold" Foreground="White" Click="BtnBuscar_Click"/>
+        <Button x:Name = "btnMostrarTodos" Content="Mostrar todos" HorizontalAlignment="Left" Margin="573,103,0,0" VerticalAlignment="Top" Width="119" BorderBrush="#FF00983D" Background="#FF00983D" BorderThickness="0,1,1,1" Height="24" FontFamily="Arial" FontSize="12" FontWeight="Bold" Foreground="White" Click="BtnMostrarTodos_Click"/>
+        <TextBox x:Name="textFiltro" HorizontalAlignment="Left" Height="23" Margin="234,102,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <Button x:Name = "btnAgregar" Content="Agregar Nuevo" HorizontalAlignment="Left" Margin="260,407,0,0" VerticalAlignment="Top" Width="140" BorderBrush="#FF00983D" Background="#FF00983D" BorderThickness="0,1,1,1" Height="36" FontFamily="Arial" FontSize="15" FontWeight="Bold" Foreground="White" Click="BtnAgregar_Click"/>
     </Grid>
 </Window>

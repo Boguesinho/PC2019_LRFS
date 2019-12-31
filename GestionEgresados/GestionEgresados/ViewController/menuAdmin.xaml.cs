@@ -20,11 +20,11 @@ namespace GestionEgresados.ViewController
     /// </summary>
     public partial class MenuAdmin : Window
     {
-        private Usuario loguser { get; set; }
+        //private Usuario loguser { get; set; }
 
-        public MenuAdmin(Usuario user)
+        public MenuAdmin()
         {
-            this.loguser = user;
+            //this.loguser = user;
             InitializeComponent();            
         }
                
@@ -44,12 +44,12 @@ namespace GestionEgresados.ViewController
 
         private void Button_Click_Estadisticas(object sender, RoutedEventArgs e)
         {
-            EstadisticasGeneradas estadisticas = new EstadisticasGeneradas();
+            GenerarEstadísticas estadisticas = new GenerarEstadísticas();
             estadisticas.Show();
             this.Close();
         }
-
-        private void btn_cancelar(object sender, RoutedEventArgs e)
+        
+        private void BtnSalir_Click(object sender, RoutedEventArgs e)
         {
             AdminLogin adminLogin = new AdminLogin();
             adminLogin.Show();
