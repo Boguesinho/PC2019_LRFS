@@ -10,11 +10,19 @@ none
 false
 DEBUG;TRACE
 C:\Users\Luis Fajardo\Documents\GitHub\PC2019_LRFS\GestionEgresados\GestionEgresados\App.xaml
+<<<<<<< HEAD
 10590709076
 
 26-190669474
 25698293218
 AdminLogin.xaml;ViewController\ConsultarEgresados.xaml;ViewController\EstadisticasGeneradas.xaml;ViewController\GenerarEstadísticas.xaml;ViewController\MenuAdmin.xaml;ViewController\ModificarEgresado.xaml;ViewController\NuevoEgresado.xaml;ViewController\Reportes.xaml;ViewController\VentanaLaboral.xaml;ViewController\VentanaSatisfaccion.xaml;
+=======
+9948615264
+
+20186188034
+201347657243
+AdminLogin.xaml;ViewController\ConsultarEgresados.xaml;ViewController\EstadisticasGeneradas.xaml;ViewController\GenerarEstadísticas.xaml;ViewController\MenuAdmin.xaml;ViewController\ModificarEgresado.xaml;ViewController\Reportes.xaml;ViewController\VentanaLaboral.xaml;ViewController\VentanaSatisfaccion.xaml;
+>>>>>>> master
 
 False
 

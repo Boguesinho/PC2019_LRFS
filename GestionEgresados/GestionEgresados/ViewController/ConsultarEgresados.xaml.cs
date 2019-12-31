@@ -1,14 +1,8 @@
 ﻿using GestionEgresados.DAOs;
 using System;
-<<<<<<< HEAD
 using System.Collections;
 using System.Collections.Generic;
 using System.Data;
-=======
-using System.Collections;
-using System.Collections.Generic;
-using System.Data;
->>>>>>> master
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -29,6 +23,7 @@ namespace GestionEgresados.ViewController
     public partial class consultarEgresados : Window
     {
         EgresadoDAO egresado = new EgresadoDAO();
+        public String matriculaSeleccionada = "";
 
         public consultarEgresados()
         {
@@ -36,7 +31,6 @@ namespace GestionEgresados.ViewController
             ArrayList arregloEgresados = new ArrayList();
             arregloEgresados = egresado.GetInfoEgresado();
             dataGridEgresados.ItemsSource = arregloEgresados;
-
             
         }
 
@@ -49,8 +43,8 @@ namespace GestionEgresados.ViewController
             {
                 modificarEgresado modificarEgresado = new modificarEgresado();
                 modificarEgresado.Show();
-
-
+                this.Close();
+                modificarEgresado.llenarDatosEgresado(matriculaSeleccionada);
 
             }
             else
@@ -61,7 +55,11 @@ namespace GestionEgresados.ViewController
 
         private void DataGridEgresados_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
-            prueba.Content = "" + dataGridEgresados.SelectedItem.ToString;
+            DataGrid dataGrid = sender as DataGrid;
+            DataGridRow row = (DataGridRow)dataGrid.ItemContainerGenerator.ContainerFromIndex(dataGrid.SelectedIndex);
+            DataGridCell RowColumn = dataGrid.Columns[1].GetCellContent(row).Parent as DataGridCell;
+            string CellValue = ((TextBlock)RowColumn.Content).Text;
+            matriculaSeleccionada = CellValue;
         }
 
         private void btn_cancelar(object sender, RoutedEventArgs e)

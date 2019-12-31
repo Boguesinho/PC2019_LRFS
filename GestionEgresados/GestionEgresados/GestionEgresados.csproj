@@ -50,10 +50,13 @@
     <Reference Include="System.Configuration" />
     <Reference Include="System.Data" />
     <Reference Include="System.Drawing" />
+<<<<<<< HEAD
     <Reference Include="System.IO.Compression" />
     <Reference Include="System.Runtime.Serialization" />
     <Reference Include="System.ServiceModel" />
     <Reference Include="System.Transactions" />
+=======
+>>>>>>> master
     <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml" />
     <Reference Include="Microsoft.CSharp" />
@@ -79,6 +82,7 @@
       <DependentUpon>AdminLogin.xaml</DependentUpon>
     </Compile>
     <Compile Include="Clases\Egresado.cs" />
+<<<<<<< HEAD
     <Compile Include="Clases\RespuestaLaboral.cs" />
     <Compile Include="Clases\RespuestaSatisfaccion.cs" />
     <Compile Include="Clases\Validaciones.cs" />
@@ -86,6 +90,9 @@
     <Compile Include="DAOs\CuestionarioDAO.cs" />
     <Compile Include="DAOs\RespuestaLaboralDAO.cs" />
     <Compile Include="DAOs\RespuestaSatisfaccionDAO.cs" />
+=======
+    <Compile Include="DAOs\EgresadoDAO.cs" />
+>>>>>>> master
     <Compile Include="ViewController\ConsultarEgresados.xaml.cs">
       <DependentUpon>ConsultarEgresados.xaml</DependentUpon>
     </Compile>
@@ -100,9 +107,12 @@
     </Compile>
     <Compile Include="ViewController\ModificarEgresado.xaml.cs">
       <DependentUpon>ModificarEgresado.xaml</DependentUpon>
+<<<<<<< HEAD
     </Compile>
     <Compile Include="ViewController\NuevoEgresado.xaml.cs">
       <DependentUpon>NuevoEgresado.xaml</DependentUpon>
+=======
+>>>>>>> master
     </Compile>
     <Compile Include="ViewController\Reportes.xaml.cs">
       <DependentUpon>Reportes.xaml</DependentUpon>
@@ -142,10 +152,13 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="ViewController\ModificarEgresado.xaml">
+<<<<<<< HEAD
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="ViewController\NuevoEgresado.xaml">
+=======
+>>>>>>> master
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

@@ -18,6 +18,7 @@ C:\Users\Luis Fajardo\Documents\GitHub\PC2019_LRFS\GestionEgresados\GestionEgres
 C:\Users\Luis Fajardo\Documents\GitHub\PC2019_LRFS\GestionEgresados\GestionEgresados\obj\Debug\AdminLogin.g.cs
 C:\Users\Luis Fajardo\Documents\GitHub\PC2019_LRFS\GestionEgresados\GestionEgresados\obj\Debug\AdminLogin.baml
 C:\Users\Alejandro\Documents\GitHub\PC2019_LRFS\GestionEgresados\GestionEgresados\bin\Debug\GestionEgresados.exe
+<<<<<<< HEAD
 C:\Users\Luis Fajardo\Documents\GitHub\PC2019_LRFS\GestionEgresados\GestionEgresados\obj\Debug\ViewController\consultarEgresados.g.cs
 C:\Users\Luis Fajardo\Documents\GitHub\PC2019_LRFS\GestionEgresados\GestionEgresados\obj\Debug\ViewController\consultarEgresados.baml
 C:\Users\Luis Fajardo\Documents\GitHub\PC2019_LRFS\GestionEgresados\GestionEgresados\obj\Debug\ViewController\modificarEgresado.g.cs
@@ -51,6 +52,9 @@ C:\Users\Alejandro\Documents\GitHub\PC2019_LRFS\GestionEgresados\GestionEgresado
 C:\Users\Alejandro\Documents\GitHub\PC2019_LRFS\GestionEgresados\GestionEgresados\bin\Debug\LiveCharts.Wpf.xml
 C:\Users\Alejandro\Documents\GitHub\PC2019_LRFS\GestionEgresados\GestionEgresados\bin\Debug\MaterialDesignThemes.Wpf.pdb
 C:\Users\Alejandro\Documents\GitHub\PC2019_LRFS\GestionEgresados\GestionEgresados\bin\Debug\MaterialDesignThemes.Wpf.xml
+=======
+C:\Users\Alejandro\Documents\GitHub\PC2019_LRFS\GestionEgresados\GestionEgresados\bin\Debug\GestionEgresados.pdb
+>>>>>>> master
 C:\Users\Alejandro\Documents\GitHub\PC2019_LRFS\GestionEgresados\GestionEgresados\obj\Debug\AdminLogin.g.cs
 C:\Users\Alejandro\Documents\GitHub\PC2019_LRFS\GestionEgresados\GestionEgresados\obj\Debug\ViewController\ConsultarEgresados.g.cs
 C:\Users\Alejandro\Documents\GitHub\PC2019_LRFS\GestionEgresados\GestionEgresados\obj\Debug\ViewController\EstadisticasGeneradas.g.cs
@@ -80,6 +84,7 @@ C:\Users\Alejandro\Documents\GitHub\PC2019_LRFS\GestionEgresados\GestionEgresado
 C:\Users\Alejandro\Documents\GitHub\PC2019_LRFS\GestionEgresados\GestionEgresados\obj\Debug\GestionEgresados.csproj.CopyComplete
 C:\Users\Alejandro\Documents\GitHub\PC2019_LRFS\GestionEgresados\GestionEgresados\obj\Debug\GestionEgresados.exe
 C:\Users\Alejandro\Documents\GitHub\PC2019_LRFS\GestionEgresados\GestionEgresados\obj\Debug\GestionEgresados.pdb
+<<<<<<< HEAD
 C:\Users\Alejandro\Documents\GitHub\PC2019_LRFS\GestionEgresados\GestionEgresados\bin\Debug\GestionEgresados.pdb
 C:\Users\Alejandro\Documents\GitHub\PC2019_LRFS\GestionEgresados\GestionEgresados\obj\Debug\GestionEgresados.csprojAssemblyReference.cache
 C:\Users\Luis Fajardo\Desktop\GestionEgresados\GestionEgresados\bin\Debug\GestionEgresados.exe.config
@@ -171,3 +176,52 @@ C:\Users\artur\OneDrive\Documentos\repos\PC2019_LRFS\GestionEgresados\GestionEgr
 C:\Users\artur\OneDrive\Documentos\repos\PC2019_LRFS\GestionEgresados\GestionEgresados\obj\Debug\GestionEgresados.pdb
 C:\Users\Luis Fajardo\Documents\GitHub\PC2019_LRFS\GestionEgresados\GestionEgresados\obj\Debug\ViewController\NuevoEgresado.g.cs
 C:\Users\Luis Fajardo\Documents\GitHub\PC2019_LRFS\GestionEgresados\GestionEgresados\obj\Debug\ViewController\NuevoEgresado.baml
+=======
+C:\Users\Luis Fajardo\Documents\GitHub\PC2019_LRFS\GestionEgresados\GestionEgresados\obj\Debug\ViewController\consultarEgresados.g.cs
+C:\Users\Luis Fajardo\Documents\GitHub\PC2019_LRFS\GestionEgresados\GestionEgresados\obj\Debug\ViewController\consultarEgresados.baml
+C:\Users\Luis Fajardo\Documents\GitHub\PC2019_LRFS\GestionEgresados\GestionEgresados\obj\Debug\ViewController\modificarEgresado.g.cs
+C:\Users\Luis Fajardo\Documents\GitHub\PC2019_LRFS\GestionEgresados\GestionEgresados\obj\Debug\ViewController\modificarEgresado.baml
+C:\Users\Alejandro\Documents\GitHub\PC2019_LRFS\GestionEgresados\GestionEgresados\obj\Debug\ViewController\consultarEgresados.g.cs
+C:\Users\Alejandro\Documents\GitHub\PC2019_LRFS\GestionEgresados\GestionEgresados\obj\Debug\ViewController\modificarEgresado.g.cs
+C:\Users\Alejandro\Documents\GitHub\PC2019_LRFS\GestionEgresados\GestionEgresados\obj\Debug\ViewController\consultarEgresados.baml
+C:\Users\Alejandro\Documents\GitHub\PC2019_LRFS\GestionEgresados\GestionEgresados\obj\Debug\ViewController\modificarEgresado.baml
+C:\Users\Luis Fajardo\Documents\GitHub\PC2019_LRFS\GestionEgresados\GestionEgresados\obj\Debug\ViewController\VentanaLaboral.g.cs
+C:\Users\Luis Fajardo\Documents\GitHub\PC2019_LRFS\GestionEgresados\GestionEgresados\obj\Debug\ViewController\VentanaSatisfaccion.g.cs
+C:\Users\Luis Fajardo\Documents\GitHub\PC2019_LRFS\GestionEgresados\GestionEgresados\obj\Debug\ViewController\VentanaLaboral.baml
+C:\Users\Luis Fajardo\Documents\GitHub\PC2019_LRFS\GestionEgresados\GestionEgresados\obj\Debug\ViewController\VentanaSatisfaccion.baml
+C:\Users\Alejandro\Documents\GitHub\PC2019_LRFS\GestionEgresados\GestionEgresados\obj\Debug\ViewController\VentanaLaboral.g.cs
+C:\Users\Alejandro\Documents\GitHub\PC2019_LRFS\GestionEgresados\GestionEgresados\obj\Debug\ViewController\VentanaSatisfaccion.g.cs
+C:\Users\Alejandro\Documents\GitHub\PC2019_LRFS\GestionEgresados\GestionEgresados\obj\Debug\ViewController\VentanaLaboral.baml
+C:\Users\Alejandro\Documents\GitHub\PC2019_LRFS\GestionEgresados\GestionEgresados\obj\Debug\ViewController\VentanaSatisfaccion.baml
+C:\Users\Alejandro\Documents\GitHub\PC2019_LRFS\GestionEgresados\GestionEgresados\bin\Debug\MaterialDesignThemes.Wpf.dll
+C:\Users\Alejandro\Documents\GitHub\PC2019_LRFS\GestionEgresados\GestionEgresados\bin\Debug\MaterialDesignThemes.Wpf.pdb
+C:\Users\Alejandro\Documents\GitHub\PC2019_LRFS\GestionEgresados\GestionEgresados\bin\Debug\MaterialDesignThemes.Wpf.xml
+C:\Users\Alejandro\Documents\GitHub\PC2019_LRFS\GestionEgresados\GestionEgresados\obj\Debug\App.baml
+C:\Users\Alejandro\Documents\GitHub\PC2019_LRFS\GestionEgresados\GestionEgresados\obj\Debug\GestionEgresados.csproj.CopyComplete
+C:\Users\Alejandro\Documents\GitHub\PC2019_LRFS\GestionEgresados\GestionEgresados\bin\Debug\LiveCharts.dll
+C:\Users\Alejandro\Documents\GitHub\PC2019_LRFS\GestionEgresados\GestionEgresados\bin\Debug\LiveCharts.Wpf.dll
+C:\Users\Alejandro\Documents\GitHub\PC2019_LRFS\GestionEgresados\GestionEgresados\bin\Debug\LiveCharts.pdb
+C:\Users\Alejandro\Documents\GitHub\PC2019_LRFS\GestionEgresados\GestionEgresados\bin\Debug\LiveCharts.xml
+C:\Users\Alejandro\Documents\GitHub\PC2019_LRFS\GestionEgresados\GestionEgresados\bin\Debug\LiveCharts.Wpf.pdb
+C:\Users\Alejandro\Documents\GitHub\PC2019_LRFS\GestionEgresados\GestionEgresados\bin\Debug\LiveCharts.Wpf.xml
+C:\Users\Alejandro\Documents\GitHub\PC2019_LRFS\GestionEgresados\GestionEgresados\obj\Debug\ViewController\EstadisticasGeneradas.g.cs
+C:\Users\Alejandro\Documents\GitHub\PC2019_LRFS\GestionEgresados\GestionEgresados\obj\Debug\ViewController\GenerarEstadísticas.g.cs
+C:\Users\Alejandro\Documents\GitHub\PC2019_LRFS\GestionEgresados\GestionEgresados\obj\Debug\ViewController\EstadisticasGeneradas.baml
+C:\Users\Alejandro\Documents\GitHub\PC2019_LRFS\GestionEgresados\GestionEgresados\obj\Debug\ViewController\GenerarEstadísticas.baml
+C:\Users\Alejandro\Documents\GitHub\PC2019_LRFS\GestionEgresados\GestionEgresados\obj\Debug\GestionEgresados.csprojAssemblyReference.cache
+C:\Users\Luis Fajardo\Documents\GitHub\PC2019_LRFS\GestionEgresados\GestionEgresados\bin\Debug\LiveCharts.dll
+C:\Users\Luis Fajardo\Documents\GitHub\PC2019_LRFS\GestionEgresados\GestionEgresados\bin\Debug\LiveCharts.Wpf.dll
+C:\Users\Luis Fajardo\Documents\GitHub\PC2019_LRFS\GestionEgresados\GestionEgresados\bin\Debug\MaterialDesignThemes.Wpf.dll
+C:\Users\Luis Fajardo\Documents\GitHub\PC2019_LRFS\GestionEgresados\GestionEgresados\bin\Debug\LiveCharts.pdb
+C:\Users\Luis Fajardo\Documents\GitHub\PC2019_LRFS\GestionEgresados\GestionEgresados\bin\Debug\LiveCharts.xml
+C:\Users\Luis Fajardo\Documents\GitHub\PC2019_LRFS\GestionEgresados\GestionEgresados\bin\Debug\LiveCharts.Wpf.pdb
+C:\Users\Luis Fajardo\Documents\GitHub\PC2019_LRFS\GestionEgresados\GestionEgresados\bin\Debug\LiveCharts.Wpf.xml
+C:\Users\Luis Fajardo\Documents\GitHub\PC2019_LRFS\GestionEgresados\GestionEgresados\bin\Debug\MaterialDesignThemes.Wpf.pdb
+C:\Users\Luis Fajardo\Documents\GitHub\PC2019_LRFS\GestionEgresados\GestionEgresados\bin\Debug\MaterialDesignThemes.Wpf.xml
+C:\Users\Luis Fajardo\Documents\GitHub\PC2019_LRFS\GestionEgresados\GestionEgresados\obj\Debug\ViewController\EstadisticasGeneradas.g.cs
+C:\Users\Luis Fajardo\Documents\GitHub\PC2019_LRFS\GestionEgresados\GestionEgresados\obj\Debug\ViewController\GenerarEstadísticas.g.cs
+C:\Users\Luis Fajardo\Documents\GitHub\PC2019_LRFS\GestionEgresados\GestionEgresados\obj\Debug\App.baml
+C:\Users\Luis Fajardo\Documents\GitHub\PC2019_LRFS\GestionEgresados\GestionEgresados\obj\Debug\ViewController\EstadisticasGeneradas.baml
+C:\Users\Luis Fajardo\Documents\GitHub\PC2019_LRFS\GestionEgresados\GestionEgresados\obj\Debug\ViewController\GenerarEstadísticas.baml
+C:\Users\Luis Fajardo\Documents\GitHub\PC2019_LRFS\GestionEgresados\GestionEgresados\obj\Debug\GestionEgresados.csproj.CopyComplete
+>>>>>>> master

@@ -26,6 +26,7 @@ namespace GestionEgresados.Clases
             this.correo = correo;
             this.telefono = telefono;
 
+<<<<<<< HEAD
         }
 
         public Egresado(String matricula, String nombre, String correo, String telefono, String genero)
@@ -47,6 +48,26 @@ namespace GestionEgresados.Clases
 
         }
 
+=======
+        }
+
+        public Egresado(String matricula, String nombre, String correo, String telefono, String genero)
+        {
+            this.matricula = matricula;
+            this.nombre = nombre;
+            this.correo = correo;
+            this.telefono = telefono;
+            this.genero = genero;
+        }
+
+
+
+        public Egresado()
+        {
+
+        }
+
+>>>>>>> master
 
     }
 }
