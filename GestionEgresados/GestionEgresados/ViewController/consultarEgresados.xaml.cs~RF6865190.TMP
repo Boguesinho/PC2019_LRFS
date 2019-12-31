@@ -1,14 +1,8 @@
 ﻿using GestionEgresados.DAOs;
 using System;
-<<<<<<< HEAD
 using System.Collections;
 using System.Collections.Generic;
 using System.Data;
-=======
-using System.Collections;
-using System.Collections.Generic;
-using System.Data;
->>>>>>> master
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
