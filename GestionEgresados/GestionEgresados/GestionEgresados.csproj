@@ -79,9 +79,13 @@
       <DependentUpon>AdminLogin.xaml</DependentUpon>
     </Compile>
     <Compile Include="Clases\Egresado.cs" />
+    <Compile Include="Clases\RespuestaLaboral.cs" />
+    <Compile Include="Clases\RespuestaSatisfaccion.cs" />
     <Compile Include="Clases\Validaciones.cs" />
     <Compile Include="DAOs\EgresadoDAO.cs" />
     <Compile Include="DAOs\CuestionarioDAO.cs" />
+    <Compile Include="DAOs\RespuestaLaboralDAO.cs" />
+    <Compile Include="DAOs\RespuestaSatisfaccionDAO.cs" />
     <Compile Include="ViewController\ConsultarEgresados.xaml.cs">
       <DependentUpon>ConsultarEgresados.xaml</DependentUpon>
     </Compile>
@@ -107,7 +111,6 @@
       <DependentUpon>App.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Clases\Administrador.cs" />
     <Compile Include="Clases\Usuario.cs" />
     <Compile Include="DAOs\AdministradorDAO.cs" />
     <Compile Include="DAOs\UsuarioDAO.cs" />
@@ -188,9 +191,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Iconos\" />
-  </ItemGroup>
-  <ItemGroup>
-    <Resource Include="pikachu.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Import Project="..\packages\MaterialDesignThemes.3.0.0\build\MaterialDesignThemes.targets" Condition="Exists('..\packages\MaterialDesignThemes.3.0.0\build\MaterialDesignThemes.targets')" />

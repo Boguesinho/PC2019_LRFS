@@ -23,7 +23,8 @@ namespace GestionEgresados.ViewController
     {
 
         EgresadoDAO egresado = new EgresadoDAO();
-        String matriculaSeleccionada = "";
+        string matriculaSeleccionada = "";
+        //Int32 idEgresadoSeleccionado = 0;
 
         public Reportes()
         {
@@ -50,6 +51,7 @@ namespace GestionEgresados.ViewController
             DataGridCell RowColumn = dataGrid.Columns[1].GetCellContent(row).Parent as DataGridCell;
             string CellValue = ((TextBlock)RowColumn.Content).Text;
             matriculaSeleccionada = CellValue;
+            //idEgresadoSeleccionado = CellValue;
 
         }
 
@@ -67,7 +69,7 @@ namespace GestionEgresados.ViewController
                 {
                     VentanaSatisfaccion ventanaSatisfaccion = new VentanaSatisfaccion();
                     ventanaSatisfaccion.Show();
-                    ventanaSatisfaccion.llenar(matriculaSeleccionada);
+                    ventanaSatisfaccion.mostrar(matriculaSeleccionada);
 
                     this.Close();
                 }

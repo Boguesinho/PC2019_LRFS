@@ -10,7 +10,7 @@ using GestionEgresados.ViewController;
 
 namespace GestionEgresados.DAOs
 {
-    class CuestionarioDAO
+    public class CuestionarioDAO
     {
         VentanaSatisfaccion vs = new VentanaSatisfaccion();
 

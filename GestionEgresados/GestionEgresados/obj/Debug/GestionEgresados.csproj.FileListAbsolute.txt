@@ -169,3 +169,5 @@ C:\Users\artur\OneDrive\Documentos\repos\PC2019_LRFS\GestionEgresados\GestionEgr
 C:\Users\artur\OneDrive\Documentos\repos\PC2019_LRFS\GestionEgresados\GestionEgresados\obj\Debug\GestionEgresados.csproj.CopyComplete
 C:\Users\artur\OneDrive\Documentos\repos\PC2019_LRFS\GestionEgresados\GestionEgresados\obj\Debug\GestionEgresados.exe
 C:\Users\artur\OneDrive\Documentos\repos\PC2019_LRFS\GestionEgresados\GestionEgresados\obj\Debug\GestionEgresados.pdb
+C:\Users\Luis Fajardo\Documents\GitHub\PC2019_LRFS\GestionEgresados\GestionEgresados\obj\Debug\ViewController\NuevoEgresado.g.cs
+C:\Users\Luis Fajardo\Documents\GitHub\PC2019_LRFS\GestionEgresados\GestionEgresados\obj\Debug\ViewController\NuevoEgresado.baml

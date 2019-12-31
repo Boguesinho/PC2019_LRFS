@@ -147,8 +147,7 @@ namespace GestionEgresados.DAOs
         }
 
 
-
-
+        
         public string[] GetInfoEgresadoPorMatricula(String matricula)
         {
 
@@ -208,6 +207,62 @@ namespace GestionEgresados.DAOs
             return egresadoSeleccionado;
         }
         
+        
+        public Int32 GetIdEgresadoPorMatricula(string matricula)
+        {
+
+            Int32 idEgresadoSeleccionado = new Int32();
+            SqlConnection conn = null;
+
+            try
+            {
+                conn = ConnectionUtils.getConnection();
+                SqlCommand command;
+                SqlDataReader rd;
+                if (conn != null)
+                {
+                    String query = String.Format("SELECT " +
+                        "x.idEgresado," +
+                        "x.matricula," +
+                        "x.nombre," +
+                        "x.apellidos," +
+                        "x.correo," +
+                        "x.telefono," +
+                        "x.licenciatura," +
+                        "x.genero," +
+                        "x.estatus " +
+                        "FROM dbo.egresado x " +
+                        "WHERE x.matricula = '{0}' ;", matricula);
+
+                    Console.WriteLine(query);
+                    command = new SqlCommand(query, conn);
+                    rd = command.ExecuteReader();
+                    while (rd.Read())
+                    {
+                        idEgresadoSeleccionado = (!rd.IsDBNull(0)) ? rd.GetInt32(0) : 0;
+
+                    }
+                    rd.Close();
+                    command.Dispose();
+
+                }
+            }
+            //Cambiar las excepciones.
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex.Message);
+            }
+            finally
+            {
+                if (conn != null)
+                {
+                    conn.Close();
+                }
+            }
+            return idEgresadoSeleccionado;
+        }
+        
+
 
         public ArrayList GetInfoEgresado()
         {
