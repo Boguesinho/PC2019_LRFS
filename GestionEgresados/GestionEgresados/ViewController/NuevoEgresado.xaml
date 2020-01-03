@@ -5,33 +5,36 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:GestionEgresados.ViewController"
         mc:Ignorable="d"
-        Title="NuevoEgresado" Height="570" Width="565" WindowStartupLocation="CenterScreen">
+        Title="NuevoEgresado" Height="603" Width="565" WindowStartupLocation="CenterScreen">
     <Grid>
-        <Label x:Name="labelMatricula" Content="Matrícula" HorizontalAlignment="Left" Margin="35,54,0,0" VerticalAlignment="Top" FontSize="16" FontFamily="Arial Black"/>
-        <Label x:Name="labelNombre" Content="Nombre" HorizontalAlignment="Left" Margin="35,116,0,0" VerticalAlignment="Top" FontSize="16" FontFamily="Arial Black"/>
-        <Label x:Name="labelApellidos" Content="Apellidos" HorizontalAlignment="Left" Margin="36,183,0,0" VerticalAlignment="Top" FontSize="16" FontFamily="Arial Black" RenderTransformOrigin="0.511,-0.462"/>
-        <Label x:Name="labelLicenciatura" Content="Licenciatura" HorizontalAlignment="Left" Margin="36,246,0,0" VerticalAlignment="Top" FontSize="16" FontFamily="Arial Black"/>
-        <Label x:Name="labelCorreo" Content="Correo" HorizontalAlignment="Left" Margin="36,308,0,0" VerticalAlignment="Top" FontSize="16" FontFamily="Arial Black"/>
-        <TextBox x:Name="textboxCorreo" HorizontalAlignment="Left" Height="29" Margin="260,308,0,0" VerticalAlignment="Top" Width="264" FontSize="14" MaxLength="50"/>
-        <TextBox x:Name="textboxNombre" HorizontalAlignment="Left" Height="29" Margin="260,116,0,0" VerticalAlignment="Top" Width="264" FontSize="14" MaxLength="50" />
-        <TextBox x:Name="textboxApellidos" HorizontalAlignment="Left" Height="29" Margin="260,183,0,0" VerticalAlignment="Top" Width="264" FontSize="14" MaxLength="50" />
-        <TextBox x:Name="textboxMatricula" HorizontalAlignment="Left" Height="29" Margin="260,51,0,0" VerticalAlignment="Top" Width="264" FontSize="14" MaxLength="50" />
-        <Label Content="Teléfono" HorizontalAlignment="Left" Margin="35,373,0,0" VerticalAlignment="Top" FontSize="16" FontFamily="Arial Black"/>
-        <TextBox x:Name="textboxTelefono" HorizontalAlignment="Left" Height="29" Margin="260,373,0,0" VerticalAlignment="Top" Width="264" FontSize="14" MaxLength="50" />
-        <Button x:Name = "btnGuardar" Content="Guardar" HorizontalAlignment="Left" Margin="426,482,0,0" VerticalAlignment="Top" Width="98" BorderBrush="#FF00983D" Background="#FF00983D" BorderThickness="0,1,1,1" Height="33" FontFamily="Arial" FontSize="12" FontWeight="Bold" Foreground="White" Click="ButtonGuardar_Click"/>
-        <Button x:Name = "btnVolver" Content="Cancelar" HorizontalAlignment="Left" Margin="21,482,0,0" VerticalAlignment="Top" Width="97" BorderBrush="#FF00983D" Background="#FF747C77" BorderThickness="0,1,1,1" Height="33" FontFamily="Arial" FontSize="15" FontWeight="Bold" Foreground="White" Click="ButtonCancelar_Click"/>
+        <Label x:Name="labelMatricula" Content="Matrícula" HorizontalAlignment="Left" Margin="35,42,0,0" VerticalAlignment="Top" FontSize="16" FontFamily="Arial Black"/>
+        <Label x:Name="labelNombre" Content="Nombre" HorizontalAlignment="Left" Margin="35,104,0,0" VerticalAlignment="Top" FontSize="16" FontFamily="Arial Black"/>
+        <Label x:Name="labelApellidos" Content="Apellidos" HorizontalAlignment="Left" Margin="36,171,0,0" VerticalAlignment="Top" FontSize="16" FontFamily="Arial Black" RenderTransformOrigin="0.511,-0.462"/>
+        <Label x:Name="labelLicenciatura" Content="Licenciatura" HorizontalAlignment="Left" Margin="36,234,0,0" VerticalAlignment="Top" FontSize="16" FontFamily="Arial Black"/>
+        <Label x:Name="labelCorreo" Content="Correo" HorizontalAlignment="Left" Margin="36,296,0,0" VerticalAlignment="Top" FontSize="16" FontFamily="Arial Black"/>
+        <TextBox x:Name="textboxCorreo" HorizontalAlignment="Left" Height="29" Margin="260,296,0,0" VerticalAlignment="Top" Width="264" FontSize="14" MaxLength="50"/>
+        <TextBox x:Name="textboxNombre" HorizontalAlignment="Left" Height="29" Margin="260,104,0,0" VerticalAlignment="Top" Width="264" FontSize="14" MaxLength="50" />
+        <TextBox x:Name="textboxApellidos" HorizontalAlignment="Left" Height="29" Margin="260,171,0,0" VerticalAlignment="Top" Width="264" FontSize="14" MaxLength="50" />
+        <TextBox x:Name="textboxMatricula" HorizontalAlignment="Left" Height="29" Margin="260,39,0,0" VerticalAlignment="Top" Width="264" FontSize="14" MaxLength="50" />
+        <Label Content="Teléfono" HorizontalAlignment="Left" Margin="35,361,0,0" VerticalAlignment="Top" FontSize="16" FontFamily="Arial Black"/>
+        <TextBox x:Name="textboxTelefono" HorizontalAlignment="Left" Height="29" Margin="260,361,0,0" VerticalAlignment="Top" Width="264" FontSize="14" MaxLength="50" />
+        <Button x:Name = "btnGuardar" Content="Guardar" HorizontalAlignment="Left" Margin="433,510,0,0" VerticalAlignment="Top" Width="98" BorderBrush="#FF00983D" Background="#FF00983D" BorderThickness="0,1,1,1" Height="34" FontFamily="Arial" FontSize="12" FontWeight="Bold" Foreground="White" Click="ButtonGuardar_Click"/>
+        <Button x:Name = "btnVolver" Content="Cancelar" HorizontalAlignment="Left" Margin="28,510,0,0" VerticalAlignment="Top" Width="97" BorderBrush="#FF00983D" Background="#FF747C77" BorderThickness="0,1,1,1" Height="34" FontFamily="Arial" FontSize="15" FontWeight="Bold" Foreground="White" Click="ButtonCancelar_Click"/>
         <Rectangle Fill="#27519B" HorizontalAlignment="Center" Height="35" Stroke="#00000000" VerticalAlignment="Top" Width="557" Margin="-1,0,1,0"/>
-        <Label Content="Registrar Egresado" HorizontalAlignment="Center" VerticalAlignment="Center" Width="230" Height="31" Margin="175,4,152,504" FontFamily="Arial" FontSize="20" FontWeight="Bold" Foreground="White"/>
-        <Label Content="Género" HorizontalAlignment="Left" Margin="35,431,0,0" VerticalAlignment="Top" FontSize="16" FontFamily="Arial Black"/>
-        <ComboBox x:Name="comboLicenciatura" HorizontalAlignment="Left" Margin="260,246,0,0" VerticalAlignment="Top" Width="264" SelectionChanged="ComboBox_SelectionChanged">
+        <Label Content="Registrar Egresado" HorizontalAlignment="Center" VerticalAlignment="Center" Width="230" Height="31" Margin="175,4,152,537" FontFamily="Arial" FontSize="20" FontWeight="Bold" Foreground="White"/>
+        <Label Content="Género" HorizontalAlignment="Left" Margin="35,412,0,0" VerticalAlignment="Top" FontSize="16" FontFamily="Arial Black"/>
+        <ComboBox x:Name="comboLicenciatura" HorizontalAlignment="Left" Margin="260,234,0,0" VerticalAlignment="Top" Width="264" SelectionChanged="ComboBox_SelectionChanged">
             <ComboBoxItem Content="Ingeniería de Software" HorizontalAlignment="Left" Width="262"/>
             <ComboBoxItem Content="Redes y servicios de cómputo" HorizontalAlignment="Left" Width="262"/>
             <ComboBoxItem Content="Tecnologías de la computación" HorizontalAlignment="Left" Width="262"/>
         </ComboBox>
-        <ComboBox x:Name="comboGenero" HorizontalAlignment="Left" Margin="260,431,0,0" VerticalAlignment="Top" Width="264" SelectionChanged="ComboBox_SelectionChanged">
+        <ComboBox x:Name="comboGenero" HorizontalAlignment="Left" Margin="260,412,0,0" VerticalAlignment="Top" Width="264" SelectionChanged="ComboBox_SelectionChanged">
             <ComboBoxItem Content="Masculino" HorizontalAlignment="Left" Width="262"/>
             <ComboBoxItem Content="Femenino" HorizontalAlignment="Left" Width="262"/>
         </ComboBox>
+        <Label Content="Estatus" HorizontalAlignment="Left" Margin="35,466,0,0" VerticalAlignment="Top" FontSize="16" FontFamily="Arial Black"/>
+        <RadioButton x:Name="rbEstudiante" Content="Estudiante" HorizontalAlignment="Left" Margin="278,470,0,0" VerticalAlignment="Top" FontFamily="Arial" FontSize="14" Background="#FF00983D" Checked="RbEstudiante_Checked" />
+        <RadioButton x:Name="rbEgresado" Content="Egresado" HorizontalAlignment="Left" Margin="433,470,0,0" VerticalAlignment="Top" FontFamily="Arial" FontSize="14" Background="#FF00983D" Checked="RbEgresado_Checked"/>
 
     </Grid>
 </Window>

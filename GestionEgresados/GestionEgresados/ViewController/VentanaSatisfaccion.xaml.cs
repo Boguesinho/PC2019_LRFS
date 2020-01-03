@@ -240,7 +240,10 @@ namespace GestionEgresados.ViewController
                     case 66:
                         respuesta10.Text = respuesta;
                         break;
-                        
+                    case 67:
+                        respuesta11.Text = respuesta;
+                        break;
+
 
                 }
                 i++;

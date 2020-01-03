@@ -25,6 +25,7 @@ namespace GestionEgresados.ViewController
     {
         EgresadoDAO egresado = new EgresadoDAO();
         String matriculaActual = "";
+        String checado = "";
 
         public NuevoEgresado()
         {
@@ -111,7 +112,7 @@ namespace GestionEgresados.ViewController
         private void ButtonGuardar_Click(object sender, RoutedEventArgs e)
         {
 
-            if (CheckFields() == CheckResult.Passed)
+            if (CheckFields() == CheckResult.Passed && (checado == "Egresado" || checado == "Estudiante"))
             {
                 ComboBoxItem cg = (ComboBoxItem)comboGenero.SelectedValue;
                 String genero = "" + cg.Content;
@@ -121,14 +122,14 @@ namespace GestionEgresados.ViewController
 
                 egresadoDAO.CrearEgresado(textboxMatricula.Text, textboxNombre.Text, textboxApellidos.Text,
                                             licenciatura, textboxCorreo.Text, textboxTelefono.Text,
-                                            genero);
+                                            genero, checado);
                 consultarEgresados consultarE = new consultarEgresados();
                 consultarE.Show();
                 this.Close();
             }
             else
             {
-                System.Windows.MessageBox.Show("Modifique el/los campos...");
+                System.Windows.MessageBox.Show("Verifique el/los campos...");
             }
         }
 
@@ -142,6 +143,16 @@ namespace GestionEgresados.ViewController
         private void ComboBox_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
 
+        }
+
+        private void RbEstudiante_Checked(object sender, RoutedEventArgs e)
+        {
+            checado = "Estudiante";
+        }
+
+        private void RbEgresado_Checked(object sender, RoutedEventArgs e)
+        {
+            checado = "Egresado";
         }
     }
 }

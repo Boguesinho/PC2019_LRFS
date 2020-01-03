@@ -16,9 +16,13 @@ namespace GestionEgresados.DAOs
         
 
 
-        public void SetInfoEgresado (String matricula, String nombre, String apellidos, String licenciatura, String correo, String telefono, String matriculaActual)
+        public void SetInfoEgresado (String matricula, String nombre, String apellidos, String licenciatura, String correo, String telefono, String matriculaActual, String estatus)
         {
             SqlConnection conn = null;
+            Int32 estat = 0;
+
+            if (estatus == "Egresado")
+                estat = 1;
 
             try
             {
@@ -31,9 +35,10 @@ namespace GestionEgresados.DAOs
                         "dbo.egresado.apellidos = '{2}', "+
                         "dbo.egresado.licenciatura = '{3}', "+
                         "dbo.egresado.correo = '{4}', "+
-                        "dbo.egresado.telefono = '{5}' "+
-                        "WHERE dbo.egresado.matricula = '{6}';"
-                        , matricula, nombre, apellidos, licenciatura, correo, telefono, matriculaActual);
+                        "dbo.egresado.telefono = '{5}', "+
+                        "dbo.egresado.estatus = {6} "+
+                        "WHERE dbo.egresado.matricula = '{7}';"
+                        , matricula, nombre, apellidos, licenciatura, correo, telefono, estat, matriculaActual);
                     
                     Console.WriteLine(query);
                     command = new SqlCommand(query, conn);
@@ -62,10 +67,15 @@ namespace GestionEgresados.DAOs
 
 
 
-        public void CrearEgresado(String matricula, String nombre, String apellidos, String licenciatura, String correo, String telefono, String genero)
+        public void CrearEgresado(String matricula, String nombre, String apellidos, String licenciatura, String correo, String telefono, String genero, String estatus)
         {
             SqlConnection conn = null;
             int cantidadEgresados = getCantiadEgresados() + 1;
+
+            Int32 estat = 0;
+
+            if (estatus == "Egresado")
+                estat = 1;
 
             try
             {
@@ -75,8 +85,8 @@ namespace GestionEgresados.DAOs
                 {
                     String query = String.Format("INSERT INTO dbo.egresado " +
                         "(idEgresado, matricula, nombre, apellidos, licenciatura, correo, telefono, genero, estatus, idUsuario)	"+	
-                        "VALUES({0}, '{1}', '{2}', '{3}', '{4}', '{5}', '{6}', '{7}', 1, 1); "
-                        , cantidadEgresados, matricula, nombre, apellidos, licenciatura, correo, telefono, genero);
+                        "VALUES({0}, '{1}', '{2}', '{3}', '{4}', '{5}', '{6}', '{7}', {8}, 1); "
+                        , cantidadEgresados, matricula, nombre, apellidos, licenciatura, correo, telefono, genero, estat);
 
                     Console.WriteLine(query);
                     command = new SqlCommand(query, conn);
@@ -151,7 +161,7 @@ namespace GestionEgresados.DAOs
         public string[] GetInfoEgresadoPorMatricula(String matricula)
         {
 
-            string[] egresadoSeleccionado = new string[6];
+            string[] egresadoSeleccionado = new string[7];
             SqlConnection conn = null;
 
             try
@@ -185,6 +195,8 @@ namespace GestionEgresados.DAOs
                         egresadoSeleccionado[3] = (!rd.IsDBNull(6)) ? rd.GetString(6) : "";
                         egresadoSeleccionado[4] = (!rd.IsDBNull(4)) ? rd.GetString(4) : "";
                         egresadoSeleccionado[5] = (!rd.IsDBNull(5)) ? rd.GetString(5) : "";
+                        egresadoSeleccionado[6] = (!rd.IsDBNull(8)) ? ""+ rd.GetInt32(8) : "";
+
 
                     }
                     rd.Close();

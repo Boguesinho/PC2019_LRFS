@@ -25,6 +25,7 @@ namespace GestionEgresados.ViewController
     {
         EgresadoDAO egresado = new EgresadoDAO();
         String matriculaActual = "";
+        String checado = "";
 
         public modificarEgresado()
         {
@@ -118,29 +119,46 @@ namespace GestionEgresados.ViewController
             textboxCorreo.Text = egresadoSeleccionado[4];
             textboxTelefono.Text = egresadoSeleccionado[5];
 
+            if (egresadoSeleccionado[3] == "Ingeniería de Software")
+            {
+                comboLicenciatura.SelectedIndex = 0;
+            }
+            if (egresadoSeleccionado[3] == "Redes y servicios de cómputo")
+            {
+                comboLicenciatura.SelectedIndex = 1;
+            }
+            if (egresadoSeleccionado[3] == "Tecnologías de la computación")
+            {
+                comboLicenciatura.SelectedIndex = 2;
+            }
+
+            if (egresadoSeleccionado[6] == "1")
+                rbEgresado.IsChecked = true;
+            else
+                rbEstudiante.IsChecked = true;
+
         }
 
         private void ButtonGuardar_Click(object sender, RoutedEventArgs e)
         {
-            if (CheckFields() == CheckResult.Passed)
+            if (CheckFields() == CheckResult.Passed && (checado == "Egresado" || checado == "Estudiante"))
             {
+
                 ComboBoxItem cb = (ComboBoxItem)comboLicenciatura.SelectedValue;
                 String licenciatura = "" + cb.Content;
                 EgresadoDAO egresadoDAO = new EgresadoDAO();                
                 egresadoDAO.SetInfoEgresado(textboxMatricula.Text, textboxNombre.Text, textboxApellidos.Text,
                                             licenciatura ,textboxCorreo.Text, textboxTelefono.Text,
-                                            matriculaActual);                
+                                            matriculaActual, checado);                
                 consultarEgresados consultarE = new consultarEgresados();
                 consultarE.Show();
                 this.Close();
+                    
             }
             else
             {
                 System.Windows.MessageBox.Show("Modifique el/los campos...");
             }
-
-
-
 
         }
 
@@ -161,6 +179,16 @@ namespace GestionEgresados.ViewController
         private void textboxMatricula_TextChanged(object sender, TextChangedEventArgs e)
         {
 
+        }
+
+        private void RbEstudiante_Checked(object sender, RoutedEventArgs e)
+        {
+            checado = "Estudiante";
+        }
+
+        private void RbEgresado_Checked(object sender, RoutedEventArgs e)
+        {
+            checado = "Egresado";
         }
     }
 }

@@ -6,8 +6,9 @@
         xmlns:local="clr-namespace:GestionEgresados.ViewController"
         mc:Ignorable="d"
         Title="VentanaSatisfaccion" Height="600" Width="800" WindowStartupLocation="CenterScreen">
+
     <ScrollViewer>
-        <Grid>
+        <Grid Height="4790">
             <Rectangle Fill="#FF8391A8" HorizontalAlignment="Center" Height="35" Stroke="#00000000" VerticalAlignment="Top" Width="638" Margin="80,2248,57,0"/>
             <Rectangle Fill="#FF8391A8" HorizontalAlignment="Center" Height="35" Stroke="#00000000" VerticalAlignment="Top" Width="638" Margin="80,2248,57,0"/>
             <Rectangle Fill="#FF8391A8" HorizontalAlignment="Center" Height="35" Stroke="#00000000" VerticalAlignment="Top" Width="638" Margin="80,1931,57,0"/>
@@ -339,25 +340,29 @@
             <TextBlock HorizontalAlignment="Left" Margin="97,3839,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="49" Width="621" FontFamily="Arial" FontSize="16" Foreground="White"><Run Text="6.- . Indique las actitudes/valores (saberes axiológicos) que considere haber adquirido,"/><LineBreak/><Run Text="desarrollado o fortalecido durante su formación profesional."/></TextBlock>
             <Rectangle Fill="#FF8391A8" HorizontalAlignment="Center" Height="102" Stroke="#00000000" VerticalAlignment="Top" Width="638" Margin="80,3888,57,0"/>
             <TextBlock x:Name="respuesta6" HorizontalAlignment="Left" Margin="97,3893,0,0" TextWrapping="Wrap" Text="Respuesta" VerticalAlignment="Top" Height="83" Width="621" FontFamily="Arial" FontSize="16" Foreground="White"/>
-            <Rectangle Fill="#FF535D6E" HorizontalAlignment="Center" Height="57" Stroke="#00000000" VerticalAlignment="Top" Width="638" Margin="80,3997,57,0"/>
-            <TextBlock HorizontalAlignment="Left" Margin="97,4005,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="49" Width="621" FontFamily="Arial" FontSize="16" Foreground="White"><Run Text="7.- Describa en forma breve las funciones que desempeña con mayor frecuencia"/><Run Text="."/></TextBlock>
-            <Rectangle Fill="#FF8391A8" HorizontalAlignment="Center" Height="102" Stroke="#00000000" VerticalAlignment="Top" Width="638" Margin="80,4054,57,0"/>
-            <TextBlock x:Name="respuesta7" HorizontalAlignment="Left" Margin="97,4059,0,0" TextWrapping="Wrap" Text="Respuesta" VerticalAlignment="Top" Height="83" Width="621" FontFamily="Arial" FontSize="16" Foreground="White"/>
-            <Rectangle Fill="#FF535D6E" HorizontalAlignment="Center" Height="57" Stroke="#00000000" VerticalAlignment="Top" Width="638" Margin="80,4163,57,0"/>
-            <TextBlock HorizontalAlignment="Left" Margin="97,4171,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="49" Width="621" FontFamily="Arial" FontSize="16" Foreground="White" Text="8.- ¿Qué problemática(s) social(es) ha contribuido a solucionar con su desempeño profesional?"/>
-            <Rectangle Fill="#FF8391A8" HorizontalAlignment="Center" Height="102" Stroke="#00000000" VerticalAlignment="Top" Width="638" Margin="80,4220,57,0"/>
-            <TextBlock x:Name="respuesta8" HorizontalAlignment="Left" Margin="97,4225,0,0" TextWrapping="Wrap" Text="Respuesta" VerticalAlignment="Top" Height="83" Width="621" FontFamily="Arial" FontSize="16" Foreground="White"/>
-            <Rectangle Fill="#FF535D6E" HorizontalAlignment="Center" Height="57" Stroke="#00000000" VerticalAlignment="Top" Width="638" Margin="80,4331,57,0"/>
-            <TextBlock HorizontalAlignment="Left" Margin="97,4339,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="49" Width="605" FontFamily="Arial" FontSize="16" Foreground="White"><Run Text="9.- "/><Run Text="P"/><Run Text="romedio de ingreso mensual que percibe como"/><Run Text=" "/><Run Text="producto de su práctica profesional "/></TextBlock>
-            <Rectangle Fill="#FF8391A8" HorizontalAlignment="Center" Height="102" Stroke="#00000000" VerticalAlignment="Top" Width="638" Margin="80,4388,57,0"/>
-            <TextBlock x:Name="respuesta9" HorizontalAlignment="Left" Margin="97,4393,0,0" TextWrapping="Wrap" Text="Respuesta" VerticalAlignment="Top" Height="83" Width="621" FontFamily="Arial" FontSize="16" Foreground="White"/>
-            <Rectangle Fill="#FF27519B" HorizontalAlignment="Center" Height="35" Stroke="#00000000" VerticalAlignment="Top" Width="638" Margin="80,4520,57,0"/>
-            <Label Content="Comentarios y sugerencias" HorizontalAlignment="Center" VerticalAlignment="Center" Width="252" Height="30" Margin="278,4525,245,240" FontFamily="Arial" FontSize="18" FontWeight="Bold" Foreground="White"/>
+            <Rectangle Fill="#FF535D6E" HorizontalAlignment="Center" Height="57" Stroke="#00000000" VerticalAlignment="Top" Width="638" Margin="80,4171,57,0"/>
+            <TextBlock HorizontalAlignment="Left" Margin="97,4179,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="49" Width="621" FontFamily="Arial" FontSize="16" Foreground="White"><Run Text="8"/><Run Text=".- Describa en forma breve las funciones que desempeña con mayor frecuencia"/><Run Text="."/></TextBlock>
+            <Rectangle Fill="#FF8391A8" HorizontalAlignment="Center" Height="102" Stroke="#00000000" VerticalAlignment="Top" Width="638" Margin="80,4228,57,0"/>
+            <TextBlock x:Name="respuesta8" HorizontalAlignment="Left" Margin="97,4233,0,0" TextWrapping="Wrap" Text="Respuesta" VerticalAlignment="Top" Height="83" Width="621" FontFamily="Arial" FontSize="16" Foreground="White"/>
+            <Rectangle Fill="#FF535D6E" HorizontalAlignment="Center" Height="57" Stroke="#00000000" VerticalAlignment="Top" Width="638" Margin="80,4337,57,0"/>
+            <TextBlock HorizontalAlignment="Left" Margin="97,4345,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="49" Width="621" FontFamily="Arial" FontSize="16" Foreground="White"><Run Text="9"/><Run Text=".- ¿Qué problemática(s) social(es) ha contribuido a solucionar con su desempeño profesional?"/></TextBlock>
+            <Rectangle Fill="#FF8391A8" HorizontalAlignment="Center" Height="102" Stroke="#00000000" VerticalAlignment="Top" Width="638" Margin="80,4394,57,0"/>
+            <TextBlock x:Name="respuesta9" HorizontalAlignment="Left" Margin="97,4399,0,0" TextWrapping="Wrap" Text="Respuesta" VerticalAlignment="Top" Height="83" Width="621" FontFamily="Arial" FontSize="16" Foreground="White"/>
+            <Rectangle Fill="#FF535D6E" HorizontalAlignment="Center" Height="57" Stroke="#00000000" VerticalAlignment="Top" Width="638" Margin="80,4505,57,0"/>
+            <TextBlock HorizontalAlignment="Left" Margin="97,4513,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="49" Width="605" FontFamily="Arial" FontSize="16" Foreground="White"><Run Text="10"/><Run Text=".- "/><Run Text="P"/><Run Text="romedio de ingreso mensual que percibe como"/><Run Text=" "/><Run Text="producto de su práctica profesional "/></TextBlock>
+            <Rectangle Fill="#FF8391A8" HorizontalAlignment="Center" Height="102" Stroke="#00000000" VerticalAlignment="Top" Width="638" Margin="80,4562,57,0"/>
+            <TextBlock x:Name="respuesta10" HorizontalAlignment="Left" Margin="97,4567,0,0" TextWrapping="Wrap" Text="Respuesta" VerticalAlignment="Top" Height="83" Width="621" FontFamily="Arial" FontSize="16" Foreground="White"/>
+            <Rectangle Fill="#FF27519B" HorizontalAlignment="Center" Height="34" Stroke="#00000000" VerticalAlignment="Top" Width="638" Margin="80,4674,57,0"/>
+            <Label Content="Comentarios y sugerencias" HorizontalAlignment="Center" VerticalAlignment="Center" Width="252" Height="30" Margin="278,4678,245,288" FontFamily="Arial" FontSize="18" FontWeight="Bold" Foreground="White"/>
             <TextBlock HorizontalAlignment="Left" Margin="224,4579,0,0" TextWrapping="Wrap" Text="Comentarios y sugerencias que considere necesarios." VerticalAlignment="Top" Height="34" Width="391" FontFamily="Arial" FontSize="16" Foreground="White"/>
-            <Rectangle Fill="#FF8391A8" HorizontalAlignment="Center" Height="102" Stroke="#00000000" VerticalAlignment="Top" Width="638" Margin="80,4559,57,0"/>
-            <TextBlock x:Name="respuesta10" HorizontalAlignment="Left" Margin="97,4564,0,0" TextWrapping="Wrap" Text="Respuesta" VerticalAlignment="Top" Height="83" Width="621" FontFamily="Arial" FontSize="16" Foreground="White"/>
-            <Button x:Name = "btnVolver2" Content="Volver" HorizontalAlignment="Left" Margin="358,4720,0,0" VerticalAlignment="Top" Width="85" BorderBrush="#FF00983D" Background="#FF747C77" BorderThickness="0,1,1,1" Height="36" FontFamily="Arial" FontSize="15" FontWeight="Bold" Foreground="White" Click="BtnVolver_Click"/>
+            <Rectangle Fill="#FF8391A8" HorizontalAlignment="Center" Height="102" Stroke="#00000000" VerticalAlignment="Top" Width="638" Margin="80,4708,57,0"/>
+            <TextBlock x:Name="respuesta11" HorizontalAlignment="Left" Margin="97,4728,0,0" TextWrapping="Wrap" Text="Respuesta" VerticalAlignment="Top" Height="82" Width="621" FontFamily="Arial" FontSize="16" Foreground="White"/>
+            <Button x:Name = "btnVolver2" Content="Volver" HorizontalAlignment="Left" Margin="356,4914,0,0" VerticalAlignment="Top" Width="86" BorderBrush="#FF00983D" Background="#FF747C77" BorderThickness="0,1,1,1" Height="36" FontFamily="Arial" FontSize="15" FontWeight="Bold" Foreground="White" Click="BtnVolver_Click"/>
             <Label x:Name="labelRespuesta41" Content=" " HorizontalAlignment="Center" VerticalAlignment="Center" Width="303" Height="30" Margin="415,2248,57,2517" FontFamily="Arial" FontSize="16" FontWeight="Bold" Foreground="White"/>
+            <Rectangle Fill="#FF535D6E" HorizontalAlignment="Center" Height="57" Stroke="#00000000" VerticalAlignment="Top" Width="638" Margin="80,3999,57,0"/>
+            <TextBlock HorizontalAlignment="Left" Margin="97,4007,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="49" Width="621" FontFamily="Arial" FontSize="16" Foreground="White" Text="7.- Señale cuál es el tipo de funciones y/o actividades que realiza en su trabajo."/>
+            <Rectangle Fill="#FF8391A8" HorizontalAlignment="Center" Height="102" Stroke="#00000000" VerticalAlignment="Top" Width="638" Margin="80,4056,57,0"/>
+            <TextBlock x:Name="respuesta7" HorizontalAlignment="Left" Margin="97,4061,0,0" TextWrapping="Wrap" Text="Respuesta" VerticalAlignment="Top" Height="83" Width="621" FontFamily="Arial" FontSize="16" Foreground="White"/>
 
         </Grid>
     </ScrollViewer>
