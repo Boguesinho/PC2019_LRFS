@@ -126,10 +126,10 @@ namespace GestionEgresados.ViewController
             {
                 ComboBoxItem cb = (ComboBoxItem)comboLicenciatura.SelectedValue;
                 String licenciatura = "" + cb.Content;
-                EgresadoDAO egresadoDAO = new EgresadoDAO();
+                EgresadoDAO egresadoDAO = new EgresadoDAO();                
                 egresadoDAO.SetInfoEgresado(textboxMatricula.Text, textboxNombre.Text, textboxApellidos.Text,
                                             licenciatura ,textboxCorreo.Text, textboxTelefono.Text,
-                                            matriculaActual);
+                                            matriculaActual);                
                 consultarEgresados consultarE = new consultarEgresados();
                 consultarE.Show();
                 this.Close();

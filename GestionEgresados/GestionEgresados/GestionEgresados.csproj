@@ -83,7 +83,6 @@
     <Compile Include="Clases\RespuestaSatisfaccion.cs" />
     <Compile Include="Clases\Validaciones.cs" />
     <Compile Include="DAOs\EgresadoDAO.cs" />
-    <Compile Include="DAOs\CuestionarioDAO.cs" />
     <Compile Include="DAOs\RespuestaLaboralDAO.cs" />
     <Compile Include="DAOs\RespuestaSatisfaccionDAO.cs" />
     <Compile Include="ViewController\ConsultarEgresados.xaml.cs">
@@ -112,7 +111,6 @@
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="Clases\Usuario.cs" />
-    <Compile Include="DAOs\AdministradorDAO.cs" />
     <Compile Include="DAOs\UsuarioDAO.cs" />
     <Compile Include="DataBase\Connection.cs" />
     <Compile Include="ViewController\VentanaLaboral.xaml.cs">
