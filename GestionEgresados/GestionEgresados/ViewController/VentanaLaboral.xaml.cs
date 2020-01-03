@@ -40,43 +40,43 @@ namespace GestionEgresados.ViewController
                 switch (i)
                 {
                     case 1:
-                        //labelRespuesta1.Content = respuesta;
+                        labelRespuesta1.Content = respuesta;
                         break;
                     case 2:
-                        //labelRespuesta2.Content = respuesta;
+                        labelRespuesta2.Content = respuesta;
                         break;
                     case 3:
-                        //labelRespuesta3.Content = respuesta;
+                        labelRespuesta3.Content = respuesta;
                         break;
                     case 4:
-                        //labelRespuesta4.Content = respuesta;
+                        labelRespuesta4.Text = respuesta;
                         break;
                     case 5:
-                        //labelRespuesta5.Content = respuesta;
+                        labelRespuesta5.Text = respuesta;
                         break;
                     case 6:
-                        //labelRespuesta6.Content = respuesta;
+                        labelRespuesta6.Text = respuesta;
                         break;
                     case 7:
-                        //labelRespuesta7.Content = respuesta;
+                        labelRespuesta7.Text = respuesta;
                         break;
                     case 8:
-                        //labelRespuesta8.Content = respuesta;
+                        labelRespuesta8.Text = respuesta;
                         break;
                     case 9:
-                        //labelRespuesta9.Content = respuesta;
+                        labelRespuesta9.Text = respuesta;
                         break;
                     case 10:
-                        //labelRespuesta10.Content = respuesta;
+                        labelRespuesta10.Text = respuesta;
                         break;
                     case 11:
-                        //labelRespuesta11.Content = respuesta;
+                        labelRespuesta11.Text = respuesta;
                         break;
                     case 12:
-                        //labelRespuesta12.Content = respuesta;
+                        labelRespuesta12.Text = respuesta;
                         break;
                     case 13:
-                        //labelRespuesta13.Content = respuesta;
+                        labelRespuesta13.Text = respuesta;
                         break;
                 }
                 i++;

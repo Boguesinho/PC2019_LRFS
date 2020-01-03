@@ -77,6 +77,7 @@ namespace GestionEgresados.ViewController
                 {
                     VentanaLaboral ventanaLaboral = new VentanaLaboral();
                     ventanaLaboral.Show();
+                    ventanaLaboral.mostrar(matriculaSeleccionada);
                     this.Close();
                 }
                 else

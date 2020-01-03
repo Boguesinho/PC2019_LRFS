@@ -32,7 +32,7 @@ namespace GestionEgresados.DAOs
                 SqlDataReader rd;
                 if (conn != null)
                 {
-                    String query = String.Format("Select respuesta from respuestaSatisfaccion a," +
+                    String query = String.Format("Select respuesta from respuestaLaboral a," +
                                                 " egresado b" +
                                                 " where(a.idEgresado = b.idEgresado)" +
                                                 " AND(b.idEgresado = '{0}'); ", idEgresado);
