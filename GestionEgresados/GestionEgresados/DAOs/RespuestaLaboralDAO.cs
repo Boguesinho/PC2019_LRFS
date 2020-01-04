@@ -35,6 +35,7 @@ namespace GestionEgresados.DAOs
                     String query = String.Format("Select respuesta from respuestaLaboral a," +
                                                 " egresado b" +
                                                 " where(a.idEgresado = b.idEgresado)" +
+                                                " AND(b.estatus = 1)" +
                                                 " AND(b.idEgresado = '{0}'); ", idEgresado);
 
 
