@@ -92,6 +92,10 @@ namespace GestionEgresados.ViewController
             {
                 System.Windows.MessageBox.Show("Numero de telefono no correcto...");
             }
+            else if (textboxTelefono.Text.Length > 10)
+            {
+                System.Windows.MessageBox.Show("Numero de teléfono muy largo...");
+            }
             else if (comboLicenciatura.SelectedItem == null)
             {
                 System.Windows.MessageBox.Show("Debes seleccionar una licenciatura...");
@@ -99,6 +103,10 @@ namespace GestionEgresados.ViewController
             else if (comboGenero.SelectedItem == null)
             {
                 System.Windows.MessageBox.Show("Debes seleccionar un género...");
+            }
+            else if (checado == "")
+            {
+                System.Windows.MessageBox.Show("Debes seleccionar un estatus...");
             }
             else
             {
@@ -112,7 +120,7 @@ namespace GestionEgresados.ViewController
         private void ButtonGuardar_Click(object sender, RoutedEventArgs e)
         {
 
-            if (CheckFields() == CheckResult.Passed && (checado == "Egresado" || checado == "Estudiante"))
+            if (CheckFields() == CheckResult.Passed)
             {
                 ComboBoxItem cg = (ComboBoxItem)comboGenero.SelectedValue;
                 String genero = "" + cg.Content;

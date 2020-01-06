@@ -54,7 +54,7 @@ namespace GestionEgresados
 
         public ResultadosValidacion validarNombre(string nombre)
         {
-            string patron = @"^[a-zA-Z' ']+$";
+            string patron = @"^[a-zA-Z' 'áéíóúÁÉÍÓÚ]+$";
             if (Regex.IsMatch(nombre, patron))
             {
                 return ResultadosValidacion.NombreValido;
@@ -64,7 +64,7 @@ namespace GestionEgresados
 
         public ResultadosValidacion validarApellidos(string apellidos)
         {
-            string patron = @"^[a-zA-Z' ']+$";
+            string patron = @"^[a-zA-Z' 'áéíóúÁÉÍÓÚ]+$";
             if (Regex.IsMatch(apellidos, patron))
             {
                 return ResultadosValidacion.ApellidosValidos;
