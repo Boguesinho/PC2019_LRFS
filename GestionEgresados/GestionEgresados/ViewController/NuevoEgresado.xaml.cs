@@ -76,6 +76,10 @@ namespace GestionEgresados.ViewController
             {
                 System.Windows.MessageBox.Show("La Matrícula es inválida o ya está registrada...");
             }
+            else if (textboxMatricula.Text.Length != 9)
+            {
+                System.Windows.MessageBox.Show("La matrícula debe contener 9 caracteres...");
+            }
             else if (validaciones.validarNombre(textboxNombre.Text) == Validaciones.ResultadosValidacion.NombreInvalido)
             {
                 System.Windows.MessageBox.Show("Hay caracteres incorrectos en el nombre...");
@@ -134,10 +138,6 @@ namespace GestionEgresados.ViewController
                 consultarEgresados consultarE = new consultarEgresados();
                 consultarE.Show();
                 this.Close();
-            }
-            else
-            {
-                System.Windows.MessageBox.Show("Verifique el/los campos...");
             }
         }
 
